@@ -17,8 +17,8 @@ const Hero = () => {
           height={150}
           className="rounded-full border-8 border-[#0c0c48aa]"
         />
-        <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide">
-          Hi 👋 I&apos;m Silki{" "}
+        <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 px-4 text-center font-bold tracking-wide">
+          Hi I&apos;m Silki{" "}
           <span className="text-cyan-200">Fullstack Developer</span>
         </h1>
         <h2 className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
