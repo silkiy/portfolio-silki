@@ -5,11 +5,12 @@ type Props = {
   icon: string;
   name: string;
   description: string;
+  className?: string;
 };
 
-const ServiceCard = ({ icon, name, description }: Props) => {
+const ServiceCard = ({ icon, name, description, className }: Props) => {
   return (
-    <div>
+    <div className={className}>
       <Image src={icon} alt="img" width={60} height={60} />
       <h1 className="mt-6 text-xl md:text-2xl font-bold text-gray-300">
         {name}

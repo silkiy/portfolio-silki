@@ -8,9 +8,10 @@ const Service = () => {
         Colleborate with brand <br /> and agencies to create <br /> impactful
         results
       </h1>
-      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center">
+      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-stretch">
         <div className="xl:col-start-2">
           <ServiceCard
+            className="p-8 bg-white/5 rounded-2xl shadow-lg h-full"
             icon="/images/s2.png"
             name="Web and Mobile App"
             description="Designing interfaces that are intuitive, efficient, and enjoyable to use."
@@ -18,6 +19,7 @@ const Service = () => {
         </div>
         <div className="xl:col-start-3">
           <ServiceCard
+            className="p-8 bg-white/5 rounded-2xl shadow-lg h-full"
             icon="/images/s4.png"
             name="Development"
             description="Designing interfaces that are intuitive, efficient, and enjoyable to use."
