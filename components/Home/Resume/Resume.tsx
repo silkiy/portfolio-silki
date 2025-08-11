@@ -1,0 +1,79 @@
+import React from "react";
+import ResumeCard from "./ResumeCard";
+import { FaCodepen, FaMobile, FaReact } from "react-icons/fa";
+import { BsDatabase } from "react-icons/bs";
+import { BiBadge, BiCertification } from "react-icons/bi";
+
+const Resume = () => {
+  return (
+    <div className="pt-20 pb-16">
+      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
+        {/* Work Part */}
+        <div>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white">
+            My Work <span className="text-cyan-200"> Experience</span>
+          </h1>
+          <div className="mt-10">
+            <ResumeCard
+              Icon={FaCodepen}
+              role="Full-Stack Developer"
+              description="Built end-to-end web applications using Node.js, Express, TypeScript, and MongoDB. Developed RESTful APIs, implemented multi-role authentication, and integrated systems."
+            />
+            <ResumeCard
+              Icon={FaReact}
+              role="Front-End Developer"
+              description="Implemented responsive and interactive user interfaces with React, Next.js, and Flutter, focusing on intuitive UX and high performance across devices."
+            />
+            <ResumeCard
+              Icon={BsDatabase}
+              role="Backend Developer"
+              description="Designed and developed scalable backend services using Node.js & Express with TypeScript. Managed MongoDB databases, created well-structured schemas with Mongoose, and optimized queries for high performance."
+            />
+            <ResumeCard
+              Icon={FaMobile}
+              role="Mobile Apps Developer"
+              description="Developed cross-platform mobile applications such as Absensi RSD Mangusada and Blayu Mobile using Flutter & Firebase. Integrated Google ML Kit for facial recognition, location tracking, and academic data management."
+            />
+          </div>
+        </div>
+        {/* Education Part */}
+        <div>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white">
+            My<span className="text-cyan-200"> Education</span>
+          </h1>
+          <div className="mt-10">
+            <ResumeCard
+              Icon={BiBadge}
+              role="SMPN 3 Tulungagung"
+              date="2019 - 2022"
+            />
+            <ResumeCard
+              Icon={BiBadge}
+              role="SMK Telkom Malang"
+              date="2022 - 2025"
+            />
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">
+              My<span className="text-cyan-200"> Licenses</span>
+              <div className="mt-10">
+                <ResumeCard
+                  Icon={BiCertification}
+                  role="Junior Mobile Programmer"
+                />
+                <ResumeCard
+                  Icon={BiCertification}
+                  role="Rapid Developer Certification"
+                />
+                <ResumeCard
+                  Icon={BiCertification}
+                  role="DOT Certificate of Competency"
+                />
+              </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Resume;
