@@ -43,13 +43,17 @@ const Nav = ({ openNav }: Props) => {
         <div className="hidden lg:flex items-center space-x-10">
           {NavLink.map((link) => {
             return (
-              <Link
+              <button
                 key={link.id}
-                href={link.url}
+                onClick={() => {
+                  document
+                    .getElementById(link.url)
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="text-base hover:text-cyan-300 text-white font-medium transition-all duration-200"
               >
-                <p>{link.label}</p>
-              </Link>
+                {link.label}
+              </button>
             );
           })}
         </div>

@@ -1,27 +1,27 @@
 export const NavLink = [
     {
         id: 1,
-        url: "#",
+        url: "home",
         label: "Home"
     },
     {
         id: 2,
-        url: "#",
+        url: "resume",
         label: "Resume"
     },
     {
         id: 3,
-        url: "#",
+        url: "projects",
         label: "Works"
     },
-        {
+    {
         id: 4,
-        url: "#",
+        url: "skills",
         label: "Skills"
     },
-        {
+    {
         id: 5,
-        url: "#",
+        url: "contact",
         label: "Contact"
     },
 ]
