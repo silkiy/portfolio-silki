@@ -76,7 +76,7 @@ const Skills = () => {
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         My <span className="text-cyan-300">Skills</span>
       </h1>
-      <div className="flex flex-wrap justify-center gap-6 mt-16">
+      <div className="lg:w-[70%] mx-auto flex flex-wrap justify-center gap-6 mt-16">
         {skills.map((skil) => {
           return (
             <Tilt key={skil.name} scale={1.5} transitionSpeed={400}>
