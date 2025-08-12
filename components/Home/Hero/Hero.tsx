@@ -7,15 +7,19 @@ import ParticlesHero from "./ParticleBackground";
 
 const Hero = () => {
   return (
-    <div id="home" className="relative h-screen flex items-center justify-center text-white overflow-hidden flex-col">
+    <div
+      id="home"
+      className="relative h-screen flex items-center justify-center text-white overflow-hidden flex-col"
+    >
       <ParticlesHero />
       <div className="relative z-10 flex flex-col items-center">
         <Image
-          src="/images/s6.jpg"
+          src="/images/s5.jpg"
           alt="HeroImage"
-          width={150}
-          height={150}
-          className="rounded-full border-8 border-[#0c0c48aa]"
+          width={0}
+          height={0}
+          sizes="(min-width: 1024px) 250px, 200px"
+          className="w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] rounded-full border-4 border-[#0c0c48aa]"
           data-aos="fade-up"
         />
         <h1

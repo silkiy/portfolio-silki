@@ -1,6 +1,5 @@
 "use client";
 import { NavLink } from "@/constant/constant";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiDownload } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
