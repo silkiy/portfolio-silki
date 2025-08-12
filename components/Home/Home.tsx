@@ -1,14 +1,14 @@
 import React from 'react'
 import Hero from './Hero/Hero'
-import Service from './Services/Services'
 import Resume from './Resume/Resume'
+import Projects from './Projects/projects'
 
 const Home = () => {
   return (
     <div className='overflow-hidden'>
       <Hero/>
-      <Service/>
       <Resume/>
+      <Projects/>
     </div>
   )
 }
