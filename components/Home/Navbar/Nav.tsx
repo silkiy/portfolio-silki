@@ -1,7 +1,7 @@
 "use client";
+import DownloadCVButton from "@/components/Helper/DownloadCVButton";
 import { NavLink } from "@/constant/constant";
 import React, { useEffect, useState } from "react";
-import { BiDownload } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
@@ -59,10 +59,7 @@ const Nav = ({ openNav }: Props) => {
         {/* Buttons */}
         <div className="flex items-center space-x-4">
           {/* CV Buttons */}
-          <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2">
-            <BiDownload className="w-5 h-5" />
-            <span>Download CV</span>
-          </button>
+          <DownloadCVButton/>
           {/* Burger Button */}
           <HiBars3BottomRight
             onClick={openNav}
