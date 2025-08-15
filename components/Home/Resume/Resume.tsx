@@ -1,6 +1,6 @@
 import React from "react";
 import ResumeCard from "./ResumeCard";
-import { FaCodepen, FaMobile, FaReact } from "react-icons/fa";
+import { FaCodepen, FaMobile, FaReact, FaStream } from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
 import { BiBadge, BiCertification } from "react-icons/bi";
 
@@ -38,6 +38,11 @@ const Resume = () => {
               Icon={FaMobile}
               role="Mobile Apps Developer"
               description="Developed cross-platform mobile applications such as Absensi RSD Mangusada and Blayu Mobile using Flutter & Firebase. Integrated Google ML Kit for facial recognition, location tracking, and academic data management."
+            />
+            <ResumeCard
+              Icon={FaStream}
+              role="Motion Graphics Designer"
+              description="Created engaging motion graphics and animations using Adobe After Effects and Twinmotion. Developed promotional videos and visual content for various projects."
             />
           </div>
         </div>
