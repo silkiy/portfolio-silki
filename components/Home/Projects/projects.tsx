@@ -61,6 +61,24 @@ const projects = () => {
             listings, job applications and institutional data verification.
           </h1>
         </div>
+        {/* Project 4 */}
+        <div>
+          <Image
+            src="/images/p4.png"
+            alt="img"
+            width={800}
+            height={650}
+            className="rounded-lg"
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            Bumper Disnat
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80">
+            Created a motion graphic bumper for the 31st Anniversary (Dies
+            Natalis) of SMK Telkom Malang, bringing the “Moklet Go Global” theme
+            to life with dynamic visuals in Adobe After Effects.
+          </h1>
+        </div>
       </div>
     </div>
   );
