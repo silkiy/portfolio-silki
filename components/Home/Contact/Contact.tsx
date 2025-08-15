@@ -4,7 +4,12 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className="pt-16 pb-16 flex justify-center">
+    <div
+      id="contact"
+      className="pt-16 pb-16 flex justify-center"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <div className="w-[90%] md:w-[70%] lg:w-[60%] text-center">
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200 leading-snug">

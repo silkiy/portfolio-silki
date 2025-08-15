@@ -3,7 +3,12 @@ import React from "react";
 
 const projects = () => {
   return (
-    <div id="projects" className="pt-16 pb-16">
+    <div
+      id="projects"
+      className="pt-16 pb-16"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         A small selection of recent <br />{" "}
         <span className="text-cyan-300"> projects</span>
@@ -71,7 +76,7 @@ const projects = () => {
             className="rounded-lg"
           />
           <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
-            Bumper Disnat
+            Event Organizer – Motion Graphic Bumper
           </h1>
           <h1 className="pt-2 font-medium text-white/80">
             Created a motion graphic bumper for the 31st Anniversary (Dies
