@@ -14,7 +14,7 @@ const Hero = () => {
       <ParticlesHero />
       <div className="relative z-10 flex flex-col items-center">
         <Image
-          src="/images/s5.jpg"
+          src="/images/silki_vr.png"
           alt="HeroImage"
           width={0}
           height={0}
@@ -43,6 +43,9 @@ const Hero = () => {
                   "Frontend Developer",
                   "Backend Developer",
                   "Mobile Apps Developer",
+                  "Game Developer",
+                  "AI Enthusiast",
+                  "Motion Graphics Designer",
                 ],
                 autoStart: true,
                 loop: true,
