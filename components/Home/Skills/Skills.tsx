@@ -29,10 +29,6 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
   {
-    name: "MongoDB",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-  },
-  {
     name: "Golang",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
   },
@@ -53,6 +49,10 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
+    name: "TensorFlow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+  },
+  {
     name: "Flutter",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
   },
@@ -61,12 +61,36 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
   },
   {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    name: "Postman",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+  },
+  {
     name: "Git",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
     name: "Docker",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  {
+    name: "Unity",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg",
+  },
+  {
+    name: "Unreal Engine",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg",
+  },
+  {
+    name: "Blender",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
+  },
+  {
+    name: "After Effects",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg",
   },
 ];
 
@@ -82,8 +106,8 @@ const Skills = () => {
             <Tilt key={skil.name} scale={1.5} transitionSpeed={400}>
               <div className="bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105">
                 <Image
-                  src={skil.icon}
-                  alt={skil.name}
+                  src={skil.icon ?? "Skill icon not found"}
+                  alt={skil.name ?? "Skill icon"}
                   width={64}
                   height={64}
                   className="mb-2"
