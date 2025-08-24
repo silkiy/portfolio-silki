@@ -8,9 +8,9 @@ export default function DownloadCVButton() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const cvLinks = {
-    indo: "https://drive.google.com/uc?export=download&id=1wJgdxRQBD_SC7Azph4Op35P3vID7hp_A",
+    indo: "https://drive.google.com/uc?export=download&id=1MpiPL1SuS52zUwtb2Q9hyfTwsuWh2fOm",
     english:
-      "https://drive.google.com/uc?export=download&id=1UkeDXk5TEr8lv325LVXXmuDcbiMjWIq4",
+      "https://drive.google.com/uc?export=download&id=1izo4ozL7IRUEZkdVYKXmFlaZPflySN05",
   };
 
   const handleDownload = (lang: "indo" | "english") => {
