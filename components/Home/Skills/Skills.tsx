@@ -57,8 +57,8 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
-    name:"Odoo",
-    icon:"images/logo/odoo.svg"
+    name: "Odoo",
+    icon: "images/logo/odoo.svg",
   },
   {
     name: "TensorFlow",
@@ -119,34 +119,31 @@ const otherSkills = [
 
 const Skills = () => {
   return (
-    <div
-      id="skills"
-      className="text-white pt-16 pb-16"
-      data-aos="fade-up"
-      data-aos-delay="100"
-    >
-      <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
-        My <span className="text-cyan-300">Skills</span>
-      </h1>
-      <div className="lg:w-[70%] mx-auto flex flex-wrap justify-center gap-6 mt-16">
-        {skills.map((skil) => {
-          return (
-            <Tilt key={skil.name} scale={1.5} transitionSpeed={400}>
-              <div className="bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105">
-                <Image
-                  src={skil.icon ?? "Skill icon not found"}
-                  alt={skil.name ?? "Skill icon"}
-                  width={64}
-                  height={64}
-                  className="mb-2"
-                />
-                <h1 className="text-lg font-semibold">{skil.name}</h1>
-              </div>
-            </Tilt>
-          );
-        })}
+    <div id="skills" className="text-white pt-16 pb-16">
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
+          My <span className="text-cyan-300">Skills</span>
+        </h1>
+        <div className="lg:w-[70%] mx-auto flex flex-wrap justify-center gap-6 mt-16">
+          {skills.map((skil) => {
+            return (
+              <Tilt key={skil.name} scale={1.5} transitionSpeed={400}>
+                <div className="bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105">
+                  <Image
+                    src={skil.icon ?? "Skill icon not found"}
+                    alt={skil.name ?? "Skill icon"}
+                    width={64}
+                    height={64}
+                    className="mb-2"
+                  />
+                  <h1 className="text-lg font-semibold">{skil.name}</h1>
+                </div>
+              </Tilt>
+            );
+          })}
+        </div>
       </div>
-      <div className="mt-20">
+      <div className="mt-20" data-aos="fade-up" data-aos-delay="100">
         <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
           My Other <span className="text-cyan-300">Skills</span>
         </h1>
