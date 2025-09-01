@@ -14,7 +14,7 @@ const Hero = () => {
       <ParticlesHero />
       <div className="relative z-10 flex flex-col items-center">
         <Image
-          src="/images/silki_vr.png"
+          src="/images/s8.jpg"
           alt="HeroImage"
           width={0}
           height={0}
