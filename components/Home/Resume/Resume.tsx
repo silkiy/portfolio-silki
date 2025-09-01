@@ -77,6 +77,14 @@ const Resume = () => {
                   Icon={BiCertification}
                   role="DOT Certificate of Competency"
                 />
+                <ResumeCard
+                  Icon={BiCertification}
+                  role="Getting Started with AI on Jetson Nano"
+                />
+                <ResumeCard
+                  Icon={BiCertification}
+                  role="Learn OpenUSD: Understanding Model Kinds"
+                />
               </div>
             </h1>
           </div>
