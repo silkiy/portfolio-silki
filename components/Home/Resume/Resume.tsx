@@ -2,7 +2,7 @@ import React from "react";
 import ResumeCard from "./ResumeCard";
 import { FaCodepen, FaMobile, FaReact, FaStream } from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
-import { BiBadge, BiCertification } from "react-icons/bi";
+import { HiAcademicCap, HiOutlineBadgeCheck } from "react-icons/hi";
 
 const Resume = () => {
   return (
@@ -53,12 +53,12 @@ const Resume = () => {
           </h1>
           <div className="mt-10">
             <ResumeCard
-              Icon={BiBadge}
+              Icon={HiAcademicCap}
               role="SMPN 3 Tulungagung"
               date="2019 - 2022"
             />
             <ResumeCard
-              Icon={BiBadge}
+              Icon={HiAcademicCap}
               role="SMK Telkom Malang"
               date="2022 - 2025"
             />
@@ -66,24 +66,29 @@ const Resume = () => {
               My<span className="text-cyan-200"> Licenses</span>
               <div className="mt-10">
                 <ResumeCard
-                  Icon={BiCertification}
+                  Icon={HiOutlineBadgeCheck}
                   role="Junior Mobile Programmer"
+                  description="Telkom Indonesia"
                 />
                 <ResumeCard
-                  Icon={BiCertification}
+                  Icon={HiOutlineBadgeCheck}
                   role="Rapid Developer Certification"
+                  description="Mendix"
                 />
                 <ResumeCard
-                  Icon={BiCertification}
+                  Icon={HiOutlineBadgeCheck}
                   role="DOT Certificate of Competency"
+                  description="DOT Indonesia"
                 />
                 <ResumeCard
-                  Icon={BiCertification}
+                  Icon={HiOutlineBadgeCheck}
                   role="Getting Started with AI on Jetson Nano"
+                  description="NVIDIA"
                 />
                 <ResumeCard
-                  Icon={BiCertification}
+                  Icon={HiOutlineBadgeCheck}
                   role="Learn OpenUSD: Understanding Model Kinds"
+                  description="NVIDIA"
                 />
               </div>
             </h1>
