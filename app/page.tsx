@@ -6,7 +6,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-
-
-// loccalhost:3000
-// localhost:3000/about
