@@ -1,6 +1,12 @@
 import React from "react";
 import ResumeCard from "./ResumeCard";
-import { FaCodepen, FaMobile, FaReact, FaStream } from "react-icons/fa";
+import {
+  FaCodepen,
+  FaDatabase,
+  FaMobile,
+  FaReact,
+  FaStream,
+} from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
 import { HiAcademicCap, HiOutlineBadgeCheck } from "react-icons/hi";
 
@@ -22,27 +28,32 @@ const Resume = () => {
             <ResumeCard
               Icon={FaCodepen}
               role="Full-Stack Developer"
-              description="Built end-to-end web applications using Node.js, Express, TypeScript, and MongoDB. Developed RESTful APIs, implemented multi-role authentication, and integrated systems."
+              description="As a Full-Stack Developer, I focus on delivering complete and scalable digital solutions from concept to deployment. I take ownership of both the client and server sides of development, ensuring seamless integration and consistent performance across all layers. My role involves collaborating with cross-functional teams to translate business needs into functional features, optimizing workflows, and maintaining code quality through structured architecture and efficient development practices."
             />
             <ResumeCard
               Icon={FaReact}
               role="Front-End Developer"
-              description="Implemented responsive and interactive user interfaces with React, Next.js, and Flutter, focusing on intuitive UX and high performance across devices."
+              description="As a Front-End Developer, I specialize in crafting intuitive, accessible, and visually engaging interfaces that enhance user interaction and experience. I work closely with designers and stakeholders to transform concepts into responsive, dynamic, and polished interfaces. My approach emphasizes usability, maintainability, and pixel-perfect precision, ensuring that every interaction feels natural and aligns with modern design standards."
             />
             <ResumeCard
               Icon={BsDatabase}
               role="Backend Developer"
-              description="Designed and developed scalable backend services using Node.js & Express with TypeScript. Managed MongoDB databases, created well-structured schemas with Mongoose, and optimized queries for high performance."
+              description="In my role as a Backend Developer, I am responsible for building and maintaining the foundation that powers web and mobile applications. This includes architecting robust data structures, managing APIs, and ensuring security, scalability, and efficiency of server-side processes. I focus on creating well-organized systems that can handle high volumes of data and transactions while maintaining optimal performance and reliability for end-users."
+            />
+            <ResumeCard
+              Icon={FaDatabase}
+              role="Blockchain Developer"
+              description="As a Blockchain Developer, I specialize in designing and implementing decentralized applications (dApps) and smart contracts that leverage blockchain technology to enhance security, transparency, and efficiency. My role involves developing solutions that facilitate peer-to-peer transactions, data integrity, and trustless interactions across various industries. I focus on creating scalable and robust blockchain architectures that align with business objectives while adhering to best practices in cryptography and distributed ledger technology."
             />
             <ResumeCard
               Icon={FaMobile}
               role="Mobile Apps Developer"
-              description="Developed cross-platform mobile applications such as Absensi RSD Mangusada and Blayu Mobile using Flutter & Firebase. Integrated Google ML Kit for facial recognition, location tracking, and academic data management."
+              description="As a Mobile Apps Developer, I focus on delivering seamless digital experiences across mobile platforms. My responsibilities include designing user-centered application flows, implementing consistent UI/UX principles, and ensuring smooth performance across different devices. I strive to create applications that not only meet functional requirements but also provide a delightful and efficient experience for users on the go."
             />
             <ResumeCard
               Icon={FaStream}
               role="Motion Graphics Designer"
-              description="Created engaging motion graphics and animations using Adobe After Effects and Twinmotion. Developed promotional videos and visual content for various projects."
+              description="As a Motion Graphics Designer, I combine creativity, storytelling, and technical skill to produce captivating visual experiences. I conceptualize and design animations, visual effects, and motion content for promotional, educational, and branding purposes. My work focuses on visual rhythm, balance, and clarity—transforming complex ideas into visually appealing narratives that enhance audience engagement and elevate brand identity."
             />
           </div>
         </div>
@@ -61,6 +72,11 @@ const Resume = () => {
               Icon={HiAcademicCap}
               role="SMK Telkom Malang"
               date="2022 - 2025"
+            />
+            <ResumeCard
+              Icon={HiAcademicCap}
+              role="UISI - Universitas Internasional Semen Indonesia"
+              date="2025 - Now"
             />
             <h1 className="text-3xl sm:text-4xl font-bold text-white">
               My<span className="text-cyan-200"> Licenses</span>
@@ -89,6 +105,11 @@ const Resume = () => {
                   Icon={HiOutlineBadgeCheck}
                   role="Learn OpenUSD: Understanding Model Kinds"
                   description="NVIDIA"
+                />
+                <ResumeCard
+                  Icon={HiOutlineBadgeCheck}
+                  role="Certification: Blockchain Basics"
+                  description="Cyfrin Updraft"
                 />
               </div>
             </h1>
