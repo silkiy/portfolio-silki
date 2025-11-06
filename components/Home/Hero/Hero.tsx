@@ -28,7 +28,7 @@ const Hero = () => {
           className="text-xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 px-4 text-center font-bold tracking-wide"
         >
           Hi I&apos;m Silki{" "}
-          <span className="text-cyan-200">Fullstack Developer</span>
+          <span className="text-cyan-200">Software Engineer</span>
         </h1>
         <h2
           data-aos="fade-up"
@@ -45,6 +45,7 @@ const Hero = () => {
                   "Mobile Apps Developer",
                   "Game Developer",
                   "AI Enthusiast",
+                  "Web3 Enthusiast",
                   "Motion Graphics Designer",
                 ],
                 autoStart: true,
