@@ -84,6 +84,42 @@ const projects = () => {
             to life with dynamic visuals in Adobe After Effects.
           </h1>
         </div>
+        {/* Project 5 */}
+        <div>
+          <Image
+            src="/images/p5.png"
+            alt="img"
+            width={800}
+            height={650}
+            className="rounded-lg"
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            Challenge Token Vendor Blockchain
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80">
+            Developed and deployed a smart contract-based token vendor on the
+            Ethereum blockchain using Solidity and Hardhat, enabling secure
+            token purchases and sales with real-time balance updates.
+          </h1>
+        </div>
+        {/* Project 6 */}
+        <div>
+          <Image
+            src="/images/p6.png"
+            alt="img"
+            width={800}
+            height={650}
+            className="rounded-lg"
+          />
+          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            Challenge Simple NFT
+          </h1>
+          <h1 className="pt-2 font-medium text-white/80">
+            Created and deployed a simple NFT smart contract on the Ethereum
+            blockchain using Solidity and Hardhat, allowing users to mint,
+            transfer, and view unique digital assets securely.
+          </h1>
+        </div>
       </div>
     </div>
   );
