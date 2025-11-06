@@ -21,6 +21,10 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
   {
+    name: "Hardhat",
+    icon: "images/logo/hardhat-logo-dark.svg",
+  },
+  {
     name: "React",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
