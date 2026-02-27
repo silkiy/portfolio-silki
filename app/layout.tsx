@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     "Professional portfolio of Wildan Silki, a passionate developer specializing in Next.js, React, Smart Contracts, and Quantitative Trading.",
   keywords: [
     "Wildan Silki",
+    "Wildan Silki Sawabiqil Abroor",
+    "Silki",
     "Portfolio",
     "Full-Stack Developer",
     "Smart Contract Developer",
