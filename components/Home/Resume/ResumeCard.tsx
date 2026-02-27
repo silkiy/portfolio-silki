@@ -10,27 +10,21 @@ type Props = {
 
 const ResumeCard = ({ role, Icon, date, description }: Props) => {
   return (
-    <div className="mb-6">
-      <div className="flex items-start space-x-6 bg-blue-950/20 transition-all duration-300 p-4 sm:p-8 rounded-md">
-        <div className="sm:w-14 sm:h-14 w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col">
-          <Icon className="sm:w-8 sm:h-8 w-6 h-6 text-white" />
-        </div>
-        <div className="flex-1">
-          {date && (
-            <h1
-              className="mb-2 sm:px-6 sm:py-1.5 px-4 py-1 rounded-full bg-cyan-200 text-cyan-900 w-fit sm:text-lg text-sm font-bold"
-            >
-              {date}
-            </h1>
-          )}
-          <h1 className="text-gray-200 text-lg sm:text-xl font-semibold">
-            {role}
-          </h1>
-          <p className="text-gray-300 text-sm sm:text-base pt-3">
-            {description}
-          </p>
-        </div>
+    <div className="bg-blue-950/20 hover:bg-blue-900/40 border border-blue-900/30 hover:border-cyan-400/50 transition-all duration-300 p-6 sm:p-8 rounded-2xl h-full flex flex-col items-center text-center group">
+      <div className="w-16 h-16 bg-blue-900/40 group-hover:bg-cyan-900/50 rounded-full flex items-center justify-center mb-5 transition-colors duration-300 flex-shrink-0">
+        <Icon className="w-8 h-8 text-cyan-400 group-hover:text-cyan-200 transition-colors duration-300" />
       </div>
+      {date && (
+        <h1 className="mb-4 px-4 py-1.5 rounded-full bg-cyan-950 text-cyan-300 text-sm font-semibold border border-cyan-800/50 w-max">
+          {date}
+        </h1>
+      )}
+      <h1 className="text-white text-lg sm:text-xl font-bold mb-3">
+        {role}
+      </h1>
+      <p className="text-gray-400 text-sm sm:text-base leading-relaxed flex-1">
+        {description}
+      </p>
     </div>
   );
 };

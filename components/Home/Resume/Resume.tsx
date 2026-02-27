@@ -1,11 +1,14 @@
 import React from "react";
 import ResumeCard from "./ResumeCard";
+import BadgeCard from "./BadgeCard";
 import {
   FaCodepen,
   FaDatabase,
   FaMobile,
   FaReact,
   FaStream,
+  FaChartBar,
+  FaChartLine,
 } from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
 import { HiAcademicCap, HiOutlineBadgeCheck } from "react-icons/hi";
@@ -18,13 +21,13 @@ const Resume = () => {
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
+      <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto max-w-7xl">
         {/* Work Part */}
-        <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white">
+        <div className="mb-16">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white text-center mb-10">
             My Work <span className="text-cyan-200"> Experience</span>
           </h1>
-          <div className="mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 items-stretch">
             <ResumeCard
               Icon={FaCodepen}
               role="Full-Stack Developer"
@@ -55,64 +58,82 @@ const Resume = () => {
               role="Motion Graphics Designer"
               description="As a Motion Graphics Designer, I combine creativity, storytelling, and technical skill to produce captivating visual experiences. I conceptualize and design animations, visual effects, and motion content for promotional, educational, and branding purposes. My work focuses on visual rhythm, balance, and clarity—transforming complex ideas into visually appealing narratives that enhance audience engagement and elevate brand identity."
             />
+            <ResumeCard
+              Icon={FaChartBar}
+              role="Algo Trader"
+              description="As an Algorithmic Trader, I design and implement automated trading systems that execute trades based on pre-defined technical criteria and risk management protocols. I specialize in developing custom strategies using Pine Script and integrating them with automated execution platforms to ensure disciplined and consistent trading. My approach focuses on market microstructure, statistical analysis, and continuous optimization to adapt to changing market conditions."
+            />
+            <ResumeCard
+              Icon={FaChartLine}
+              role="Quantitative Developer"
+              description="As a Quantitative Developer, I specialize in the implementation of high-performance algorithmic trading systems and mathematical models. I bridge the gap between quantitative research and software engineering, ensuring that complex strategies are executed with precision and reliability. My work involves designing robust trading infrastructure, conducting extensive backtesting using historical data, and optimizing execution algorithms to minimize latency and maximize efficiency."
+            />
           </div>
         </div>
-        {/* Education Part */}
-        <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white">
-            My<span className="text-cyan-200"> Education</span>
-          </h1>
-          <div className="mt-10">
-            <ResumeCard
-              Icon={HiAcademicCap}
-              role="SMPN 3 Tulungagung"
-              date="2019 - 2022"
-            />
-            <ResumeCard
-              Icon={HiAcademicCap}
-              role="SMK Telkom Malang"
-              date="2022 - 2025"
-            />
-            <ResumeCard
-              Icon={HiAcademicCap}
-              role="UISI - Universitas Internasional Semen Indonesia"
-              date="2025 - Now"
-            />
-            <h1 className="text-3xl sm:text-4xl font-bold text-white">
-              My<span className="text-cyan-200"> Licenses</span>
-              <div className="mt-10">
-                <ResumeCard
-                  Icon={HiOutlineBadgeCheck}
-                  role="Junior Mobile Programmer"
-                  description="Telkom Indonesia"
-                />
-                <ResumeCard
-                  Icon={HiOutlineBadgeCheck}
-                  role="Rapid Developer Certification"
-                  description="Mendix"
-                />
-                <ResumeCard
-                  Icon={HiOutlineBadgeCheck}
-                  role="DOT Certificate of Competency"
-                  description="DOT Indonesia"
-                />
-                <ResumeCard
-                  Icon={HiOutlineBadgeCheck}
-                  role="Getting Started with AI on Jetson Nano"
-                  description="NVIDIA"
-                />
-                <ResumeCard
-                  Icon={HiOutlineBadgeCheck}
-                  role="Learn OpenUSD: Understanding Model Kinds"
-                  description="NVIDIA"
-                />
-                <ResumeCard
-                  Icon={HiOutlineBadgeCheck}
-                  role="Certification: Blockchain Basics"
-                  description="Cyfrin Updraft"
-                />
-              </div>
+
+        {/* Education & Licenses Part */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Education */}
+          <div>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-10">
+              My<span className="text-cyan-200"> Education</span>
             </h1>
+            <div className="flex flex-col gap-6">
+              <BadgeCard
+                Icon={HiAcademicCap}
+                title="SMPN 3 Tulungagung"
+                date="2019 - 2022"
+              />
+              <BadgeCard
+                Icon={HiAcademicCap}
+                title="SMK Telkom Malang"
+                date="2022 - 2025"
+              />
+              <BadgeCard
+                Icon={HiAcademicCap}
+                title="UISI - Universitas Internasional Semen Indonesia"
+                date="2025 - Now"
+              />
+            </div>
+          </div>
+
+          {/* Licenses */}
+          <div>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-10">
+              My<span className="text-cyan-200"> Licenses</span>
+            </h1>
+            <div className="flex flex-col gap-6">
+              <BadgeCard
+                Icon={HiOutlineBadgeCheck}
+                title="Junior Mobile Programmer"
+                subtitle="Telkom Indonesia"
+              />
+              <BadgeCard
+                Icon={HiOutlineBadgeCheck}
+                title="Rapid Developer Certification"
+                subtitle="Mendix"
+              />
+              <BadgeCard
+                Icon={HiOutlineBadgeCheck}
+                title="DOT Certificate of Competency"
+                subtitle="DOT Indonesia"
+              />
+              <BadgeCard
+                Icon={HiOutlineBadgeCheck}
+                title="Getting Started with AI on Jetson Nano"
+                subtitle="NVIDIA"
+              />
+              <BadgeCard
+                Icon={HiOutlineBadgeCheck}
+                title="Learn OpenUSD: Understanding Model Kinds"
+                subtitle="NVIDIA"
+              />
+              <BadgeCard
+                Icon={HiOutlineBadgeCheck}
+                title="Certification: Blockchain Basics"
+                subtitle="Cyfrin Updraft"
+              />
+            </div>
           </div>
         </div>
       </div>
