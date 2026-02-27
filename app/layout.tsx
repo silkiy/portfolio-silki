@@ -32,8 +32,22 @@ export const metadata: Metadata = {
     description: "Explore the projects and skills of Wildan Silki.",
     url: "https://wildansilki.xyz",
     siteName: "Wildan Silki Portfolio",
+    images: [
+      {
+        url: "/images/s8.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Wildan Silki - Software Engineer",
+      },
+    ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wildan Silki | Full-Stack & Smart Contract Developer",
+    description: "Professional portfolio of Wildan Silki, a passionate developer specializing in Next.js, React, Smart Contracts, and Quantitative Trading.",
+    images: ["/images/s8.jpg"],
   },
   alternates: {
     canonical: "/",
@@ -44,6 +58,29 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Wildan Silki Sawabiqil Abroor",
+  jobTitle: "Software Engineer",
+  url: "https://wildansilki.xyz",
+  image: "https://wildansilki.xyz/images/s8.jpg",
+  sameAs: [
+    "https://github.com/silkiy",
+    "https://www.linkedin.com/in/wildan-silki-69768a272/",
+    "https://www.instagram.com/project_silki"
+  ],
+  knowsAbout: [
+    "Software Engineering",
+    "Full-Stack Development",
+    "Smart Contracts",
+    "Quantitative Trading",
+    "Next.js",
+    "Solidity",
+    "React"
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,6 +88,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${font.className} antialiased bg-[#0d0d1f]`}>
         <ResponsiveNav />
         {children}
