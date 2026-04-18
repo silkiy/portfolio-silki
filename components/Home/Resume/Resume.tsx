@@ -63,11 +63,6 @@ const Resume = () => {
               role="Algo Trader"
               description="As an Algorithmic Trader, I design and implement automated trading systems that execute trades based on pre-defined technical criteria and risk management protocols. I specialize in developing custom strategies using Pine Script and integrating them with automated execution platforms to ensure disciplined and consistent trading. My approach focuses on market microstructure, statistical analysis, and continuous optimization to adapt to changing market conditions."
             />
-            <ResumeCard
-              Icon={FaChartLine}
-              role="Quantitative Developer"
-              description="As a Quantitative Developer, I specialize in the implementation of high-performance algorithmic trading systems and mathematical models. I bridge the gap between quantitative research and software engineering, ensuring that complex strategies are executed with precision and reliability. My work involves designing robust trading infrastructure, conducting extensive backtesting using historical data, and optimizing execution algorithms to minimize latency and maximize efficiency."
-            />
           </div>
         </div>
 

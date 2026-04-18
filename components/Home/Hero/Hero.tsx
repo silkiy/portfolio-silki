@@ -48,7 +48,6 @@ const Hero = () => {
                   "Web3 Enthusiast",
                   "Motion Graphics Designer",
                   "Algo Trader",
-                  "Quantitative Developer",
                 ],
                 autoStart: true,
                 loop: true,
