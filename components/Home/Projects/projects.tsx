@@ -18,107 +18,104 @@ const projects = () => {
         <div>
           <Image
             src="/images/p1.png"
-            alt="img"
+            alt="Blayu Mobile - Academic Data and Attendance Tracking App"
             width={800}
             height={650}
             className="rounded-lg"
           />
-          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
             Blayu Mobile
-          </h1>
-          <h1 className="pt-2 font-medium text-white/80">
+          </h2>
+          <p className="pt-2 font-medium text-white/80">
             A mobile application for managing academic data, attendance, and
             location tracking using Flutter and Firebase.
-          </h1>
+          </p>
         </div>
         {/* Project 2 */}
         <div>
           <Image
             src="/images/p2.png"
-            alt="img"
+            alt="Absensi RSD Mangusada - Facial Recognition Attendance App"
             width={800}
             height={650}
             className="rounded-lg"
           />
-          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
             Absensi RSD Mangusada
-          </h1>
-          <h1 className="pt-2 font-medium text-white/80">
-            A mobile application for attendance management using Flutter.
-            featuring facial recognition and location tracking.
-          </h1>
+          </h2>
+          <p className="pt-2 font-medium text-white/80">
+            A mobile application for attendance management using Flutter featuring facial recognition and location tracking.
+          </p>
         </div>
         {/* Project 3 */}
         <div>
           <Image
             src="/images/p3.png"
-            alt="img"
+            alt="Dashboard Profiling MIT - Backend API Development"
             width={800}
             height={650}
             className="rounded-lg"
           />
-          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
             Dashboard Profiling MIT
-          </h1>
-          <h1 className="pt-2 font-medium text-white/80">
-            I designed and implemented RESTful APIs tosupport features such as
-            multi-role user authentication, profile, resume management, job
-            listings, job applications and institutional data verification.
-          </h1>
+          </h2>
+          <p className="pt-2 font-medium text-white/80">
+            Responsible for developing scalable backend services using Node.js and Express with TypeScript at PT Merkle Inovasi Teknologi (MIT). Designed and implemented RESTful APIs for multi-role authentication, resume management, and data verification using MongoDB and Mongoose.
+          </p>
         </div>
         {/* Project 4 */}
         <div>
           <Image
             src="/images/p4.png"
-            alt="img"
+            alt="Event Organizer - Motion Graphic Bumper SMK Telkom Malang"
             width={800}
             height={650}
             className="rounded-lg"
           />
-          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
             Event Organizer – Motion Graphic Bumper
-          </h1>
-          <h1 className="pt-2 font-medium text-white/80">
+          </h2>
+          <p className="pt-2 font-medium text-white/80">
             Created a motion graphic bumper for the 31st Anniversary (Dies
             Natalis) of SMK Telkom Malang, bringing the “Moklet Go Global” theme
             to life with dynamic visuals in Adobe After Effects.
-          </h1>
+          </p>
         </div>
         {/* Project 5 */}
         <div>
           <Image
             src="/images/p5.png"
-            alt="img"
+            alt="Challenge Token Vendor Blockchain - Solidity Smart Contract"
             width={800}
             height={650}
             className="rounded-lg"
           />
-          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
             Challenge Token Vendor Blockchain
-          </h1>
-          <h1 className="pt-2 font-medium text-white/80">
+          </h2>
+          <p className="pt-2 font-medium text-white/80">
             Developed and deployed a smart contract-based token vendor on the
             Ethereum blockchain using Solidity and Hardhat, enabling secure
             token purchases and sales with real-time balance updates.
-          </h1>
+          </p>
         </div>
         {/* Project 6 */}
         <div>
           <Image
             src="/images/p6.png"
-            alt="img"
+            alt="Challenge Simple NFT - Ethereum Blockchain Smart Contract"
             width={800}
             height={650}
             className="rounded-lg"
           />
-          <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
             Challenge Simple NFT
-          </h1>
-          <h1 className="pt-2 font-medium text-white/80">
+          </h2>
+          <p className="pt-2 font-medium text-white/80">
             Created and deployed a simple NFT smart contract on the Ethereum
             blockchain using Solidity and Hardhat, allowing users to mint,
             transfer, and view unique digital assets securely.
-          </h1>
+          </p>
         </div>
         {/* Project 7 */}
         <div>

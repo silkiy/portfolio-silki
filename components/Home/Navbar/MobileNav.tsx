@@ -21,18 +21,20 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
       >
         {NavLink.map((link) => {
           return (
-            <button
+            <a
               key={link.id}
-              onClick={() => {
+              href={`#${link.url}`}
+              onClick={(e) => {
+                e.preventDefault();
                 document
                   .getElementById(link.url)
                   ?.scrollIntoView({ behavior: "smooth" });
                 closeNav();
               }}
-              className="text-base hover:text-cyan-300 text-white font-medium transition-all duration-200"
+              className="text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px] hover:text-cyan-300 text-white font-medium transition-all duration-200"
             >
               {link.label}
-            </button>
+            </a>
           );
         })}
         {/* cross icon */}

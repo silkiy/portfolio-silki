@@ -152,9 +152,9 @@ const Skills = () => {
   return (
     <div id="skills" className="text-white pt-16 pb-16">
       <div data-aos="fade-up" data-aos-delay="100">
-        <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
+        <h2 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
           My <span className="text-cyan-300">Skills</span>
-        </h1>
+        </h2>
         <div className="lg:w-[70%] mx-auto flex flex-wrap justify-center gap-6 mt-16">
           {skills.map((skil) => {
             return (
@@ -162,12 +162,12 @@ const Skills = () => {
                 <div className="bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105">
                   <Image
                     src={skil.icon ?? "Skill icon not found"}
-                    alt={skil.name ?? "Skill icon"}
+                    alt={`Wildan Silki Skill - ${skil.name}`}
                     width={64}
                     height={64}
                     className="mb-2"
                   />
-                  <h1 className="text-lg font-semibold">{skil.name}</h1>
+                  <h3 className="text-lg font-semibold">{skil.name}</h3>
                 </div>
               </Tilt>
             );
@@ -175,9 +175,9 @@ const Skills = () => {
         </div>
       </div>
       <div className="mt-20" data-aos="fade-up" data-aos-delay="100">
-        <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
+        <h2 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
           My Other <span className="text-cyan-300">Skills</span>
-        </h1>
+        </h2>
         <div className="lg:w-[70%] mx-auto flex flex-wrap justify-center gap-6 mt-16">
           {otherSkills.map((skil) => {
             return (
@@ -185,12 +185,12 @@ const Skills = () => {
                 <div className="bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105">
                   <Image
                     src={skil.icon ?? "Skill icon not found"}
-                    alt={skil.name ?? "Skill icon"}
+                    alt={`Wildan Silki Skill - ${skil.name}`}
                     width={64}
                     height={64}
                     className="mb-2"
                   />
-                  <h1 className="text-lg font-semibold">{skil.name}</h1>
+                  <h3 className="text-lg font-semibold">{skil.name}</h3>
                 </div>
               </Tilt>
             );

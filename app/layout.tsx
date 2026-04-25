@@ -57,11 +57,19 @@ export const metadata: Metadata = {
     description: "Professional portfolio of Wildan Silki, a passionate developer specializing in Next.js, React, Smart Contracts, and Quantitative Trading.",
     images: ["/images/s8.jpg"],
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   alternates: {
     canonical: "/",
     types: {
       'application/rss+xml': 'https://wildansilki.xyz/sitemap.xml',
     },
+  },
+  other: {
+    "google-site-verification": "KODE_DARI_SEARCH_CONSOLE", // Masukkan kode jika ada
   },
   robots: {
     index: true,
