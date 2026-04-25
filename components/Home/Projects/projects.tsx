@@ -120,6 +120,22 @@ const projects = () => {
             transfer, and view unique digital assets securely.
           </h1>
         </div>
+        {/* Project 7 */}
+        <div>
+          <Image
+            src="/images/p7.jpeg"
+            alt="MaYPI - Meter Reading and Bill Management Platform"
+            width={800}
+            height={650}
+            className="rounded-lg"
+          />
+          <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+            MaYPI
+          </h2>
+          <p className="pt-2 font-medium text-white/80">
+            A professional platform to simplify meter reading operations, bill management, and accurate data analysis reporting.
+          </p>
+        </div>
       </div>
     </div>
   );
