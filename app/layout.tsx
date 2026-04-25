@@ -59,6 +59,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
+    types: {
+      'application/rss+xml': 'https://wildansilki.xyz/sitemap.xml',
+    },
   },
   robots: {
     index: true,
