@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center">
         <Image
           src="/images/s8.jpg"
-          alt="HeroImage"
+          alt="Wildan Silki Sawabiqil Abroor - Software Engineer"
           width={0}
           height={0}
           sizes="(min-width: 1024px) 250px, 200px"
@@ -27,8 +27,7 @@ const Hero = () => {
           data-aos-delay="200"
           className="text-xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 px-4 text-center font-bold tracking-wide"
         >
-          Hi I&apos;m Silki{" "}
-          <span className="text-cyan-200">Software Engineer</span>
+          Hi I&apos;m <span className="text-cyan-200">Wildan Silki</span>
         </h1>
         <h2
           data-aos="fade-up"
@@ -58,6 +57,9 @@ const Hero = () => {
             />
           </span>
         </h2>
+        <p className="sr-only">
+          Wildan Silki Sawabiqil Abroor is a professional Software Engineer based in Indonesia, specializing in Full-Stack Development, Smart Contract Engineering, and Algorithmic Trading. With expertise in Next.js, React, Solidity, and Quantitative Trading, Wildan delivers high-performance digital solutions and decentralized applications.
+        </p>
         <button
           onClick={() =>
             document

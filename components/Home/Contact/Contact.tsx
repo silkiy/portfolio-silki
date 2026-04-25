@@ -12,9 +12,9 @@ const Contact = () => {
     >
       <div className="w-[90%] md:w-[70%] lg:w-[60%] text-center">
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200 leading-snug">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200 leading-snug">
           Schedule a call with me to see if I can help
-        </h1>
+        </h2>
         <p className="text-gray-400 mt-6 text-base sm:text-lg leading-relaxed">
           Reach out to me today and let’s discuss how I can help you achieve
           your goals.

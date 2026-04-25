@@ -24,9 +24,9 @@ const Resume = () => {
       <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto max-w-7xl">
         {/* Work Part */}
         <div className="mb-16">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white text-center mb-10">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-10">
             My Work <span className="text-cyan-200"> Experience</span>
-          </h1>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 items-stretch">
             <ResumeCard
               Icon={FaCodepen}
@@ -70,9 +70,9 @@ const Resume = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Education */}
           <div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
               My<span className="text-cyan-200"> Education</span>
-            </h1>
+            </h2>
             <div className="flex flex-col gap-6">
               <BadgeCard
                 Icon={HiAcademicCap}
@@ -94,9 +94,9 @@ const Resume = () => {
 
           {/* Licenses */}
           <div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
               My<span className="text-cyan-200"> Licenses</span>
-            </h1>
+            </h2>
             <div className="flex flex-col gap-6">
               <BadgeCard
                 Icon={HiOutlineBadgeCheck}
