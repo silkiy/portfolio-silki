@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import ResumeCard from "./ResumeCard";
 import BadgeCard from "./BadgeCard";
@@ -22,11 +23,21 @@ const Resume = () => {
       data-aos-delay="100"
     >
       <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto max-w-7xl">
+        <h2 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white mb-8">
+          My <span className="text-cyan-300">Resume</span>
+        </h2>
+        
+        {/* Professional Summary for AI & SEO */}
+        <div className="mb-16 bg-[#14134145] p-8 rounded-2xl border border-white/10" data-aos="fade-right">
+          <p className="text-lg md:text-xl text-white/90 leading-relaxed italic">
+            "A highly motivated <strong>Software Engineer</strong> with a strong foundation in <strong>Full-Stack Development</strong>, specializing in <strong>Next.js, React, and Node.js</strong>. With a proven track record of <strong>International Achievements</strong> in Game Development and a passion for <strong>Blockchain technology</strong>, I am dedicated to building high-performance, scalable, and innovative digital solutions that bridge the gap between complex technology and user-centric design."
+          </p>
+        </div>
         {/* Work Part */}
-        <div className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-10">
-            My Work <span className="text-cyan-200"> Experience</span>
-          </h2>
+        <div id="experience" className="mb-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white text-center mb-10">
+            Professional <span className="text-cyan-200"> Experience</span>
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 items-stretch">
             <ResumeCard
               Icon={FaCodepen}
@@ -69,10 +80,10 @@ const Resume = () => {
         {/* Education & Licenses Part */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Education */}
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
+          <div id="education">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-10">
               My<span className="text-cyan-200"> Education</span>
-            </h2>
+            </h3>
             <div className="flex flex-col gap-6">
               <BadgeCard
                 Icon={HiAcademicCap}
@@ -94,9 +105,9 @@ const Resume = () => {
 
           {/* Licenses */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-10">
               My<span className="text-cyan-200"> Licenses</span>
-            </h2>
+            </h3>
             <div className="flex flex-col gap-6">
               <BadgeCard
                 Icon={HiOutlineBadgeCheck}
@@ -128,6 +139,63 @@ const Resume = () => {
                 title="Certification: Blockchain Basics"
                 subtitle="Cyfrin Updraft"
               />
+            </div>
+          </div>
+        </div>
+
+        {/* Achievement Part */}
+        <div id="achievements" className="mt-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white text-center mb-10">
+            Awards & <span className="text-cyan-200"> Achievements</span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Achievement 1 */}
+            <div data-aos="zoom-in" data-aos-delay="200">
+              <Image
+                src="/images/a1.jpeg"
+                alt="Wildan Silki Achievement - 2nd Place International Code Olympiad 2023"
+                width={800}
+                height={500}
+                className="rounded-lg object-cover w-full h-[300px] md:h-[400px]"
+              />
+              <h4 className="mt-4 text-xl font-semibold text-white">
+                Provincial Recognition for International Achievement
+              </h4>
+              <p className="pt-2 font-medium text-white/80 leading-relaxed">
+                Honored to receive this international recognition for <strong>Game Development (Group 1D)</strong> by Coding Bee Academy. The award was presented directly by the <strong>Acting Governor of East Java, Adhi Karyono</strong>, during the 2024 National Education Day Ceremony. A testament to perseverance and the incredible support from my teachers, family, and friends.
+              </p>
+            </div>
+            {/* Achievement 2 */}
+            <div data-aos="zoom-in" data-aos-delay="400">
+              <Image
+                src="/images/a2.jpg"
+                alt="Wildan Silki Achievement - SMK Telkom Malang Graduate"
+                width={800}
+                height={500}
+                className="rounded-lg object-cover w-full h-[300px] md:h-[400px]"
+              />
+              <h4 className="mt-4 text-xl font-semibold text-white">
+                SMK Telkom Malang Outstanding Graduate
+              </h4>
+              <p className="pt-2 font-medium text-white/80 leading-relaxed">
+                Received special recognition during graduation at <strong>SMK Telkom Malang (Moklet)</strong> for achieving <strong>2nd Place International</strong> in the Code Olympiad 2023.
+              </p>
+            </div>
+            {/* Achievement 3 */}
+            <div data-aos="zoom-in" data-aos-delay="600">
+              <Image
+                src="/images/r1.jpg"
+                alt="Wildan Silki Achievement - Presentation to Telkom Foundation"
+                width={800}
+                height={500}
+                className="rounded-lg object-cover w-full h-[300px] md:h-[400px]"
+              />
+              <h4 className="mt-4 text-xl font-semibold text-white">
+                Executive Game Presentation
+              </h4>
+              <p className="pt-2 font-medium text-white/80 leading-relaxed">
+                Selected to present an original game development project directly to the <strong>Executives of the Telkom Education Foundation</strong> during my time at SMK Telkom Malang.
+              </p>
             </div>
           </div>
         </div>

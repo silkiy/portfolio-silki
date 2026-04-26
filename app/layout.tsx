@@ -13,25 +13,22 @@ const font = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wildansilki.xyz"),
   title: {
-    default: "Wildan Silki | Full-Stack & Smart Contract Developer",
+    default: "Wildan Silki | Professional Software Engineer & Web3 Specialist",
     template: "%s | Wildan Silki"
   },
   description:
-    "Official portfolio of Wildan Silki Sawabiqil Abroor. A Full-Stack Developer, Smart Contract Expert, and Algorithmic Trader. Professional background in Next.js, React, Solidity, and Quantitative Trading.",
+    "Official portfolio of Wildan Silki Sawabiqil Abroor, a Professional Software Engineer specializing in Full-Stack development (Next.js, React, Node.js) and Web3. International award winner from Indonesia, available for Remote Work and dedicated to building scalable digital solutions.",
   keywords: [
     "Wildan Silki",
     "Wildan Silki Sawabiqil Abroor",
-    "Silki",
-    "Portfolio Wildan Silki",
-    "Full-Stack Developer Indonesia",
-    "Smart Contract Developer Indonesia",
-    "Software Engineer Indonesia",
-    "Algo Trader",
-    "Next.js Developer",
-    "Blockchain Developer",
-    "Solidity Expert",
-    "React Developer",
-    "Web3 Developer",
+    "Remote Software Engineer",
+    "Remote Full-Stack Developer Indonesia",
+    "Web3 Specialist Remote",
+    "Next.js Developer Remote",
+    "Blockchain Engineer Remote",
+    "Available for Remote Work",
+    "Professional Developer Portfolio",
+    "Software Engineer Indonesia Remote",
   ],
   authors: [{ name: "Wildan Silki Sawabiqil Abroor", url: "https://wildansilki.xyz" }],
   creator: "Wildan Silki",
@@ -93,8 +90,8 @@ const jsonLd = [
     "@type": "Person",
     "name": "Wildan Silki Sawabiqil Abroor",
     "alternateName": "Wildan Silki",
-    "jobTitle": "Full-Stack Developer & Smart Contract Engineer",
-    "description": "Wildan Silki is a professional Software Engineer specializing in Web Development (Next.js, React), Blockchain (Solidity, Smart Contracts), and Algorithmic Trading.",
+    "jobTitle": "Professional Software Engineer (Remote-Ready)",
+    "description": "Wildan Silki is a highly skilled Software Engineer from Indonesia, currently studying at UISI and specializing in Full-Stack development and Web3 technology. International award winner, available for Remote Work global opportunities.",
     "url": "https://wildansilki.xyz",
     "image": "https://wildansilki.xyz/images/s8.jpg",
     "address": {
@@ -107,7 +104,9 @@ const jsonLd = [
       {
         "@type": "EducationalOrganization",
         "name": "SMK Telkom Malang"
-      },
+      }
+    ],
+    "memberOf": [
       {
         "@type": "EducationalOrganization",
         "name": "UISI - Universitas Internasional Semen Indonesia"

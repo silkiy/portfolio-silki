@@ -29,6 +29,20 @@ const Hero = () => {
         >
           Hi I&apos;m <span className="text-cyan-200">Wildan Silki</span>
         </h1>
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] text-white">
+          Software Engineer
+        </h1>
+
+        {/* Remote Work Indicator */}
+        <div className="flex items-center space-x-2 mt-4 bg-white/5 w-fit px-4 py-2 rounded-full border border-white/10" data-aos="fade-up" data-aos-delay="400">
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          </span>
+          <p className="text-sm md:text-base text-white/80 font-medium">
+            Available for Remote Work
+          </p>
+        </div>
         <h2
           data-aos="fade-up"
           data-aos-delay="400"
