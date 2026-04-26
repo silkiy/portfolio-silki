@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "preinstall": "node preinstall.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@tsparticles/engine": "^3.9.1",
