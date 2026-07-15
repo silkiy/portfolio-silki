@@ -25,15 +25,19 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div className="fixed bottom-4 animate-pulse right-4">
-      {isVisible && (
-        <button
-          className="bg-blue-950/60 cursor-pointer text-white rounded-full w-12 h-12 flex items-center justify-center focus:outline-none"
-          onClick={scrollToTop}
-        >
-          <FaArrowUp/>
-        </button>
-      )}
+    <div className="fixed bottom-6 right-6 z-[9999]">
+      <button
+        onClick={scrollToTop}
+        aria-label="Scroll back to top"
+        className={`bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white rounded-full w-12 h-12 flex items-center justify-center focus:outline-none shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] transform transition-all duration-500 cursor-pointer focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0d0d1f]
+          ${
+            isVisible
+              ? "opacity-100 translate-y-0 pointer-events-auto scale-100"
+              : "opacity-0 translate-y-4 pointer-events-none scale-75"
+          }`}
+      >
+        <FaArrowUp className="w-5 h-5 transition-transform duration-300 hover:-translate-y-0.5" />
+      </button>
     </div>
   );
 };

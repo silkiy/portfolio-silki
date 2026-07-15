@@ -16,29 +16,34 @@ import { HiAcademicCap, HiOutlineBadgeCheck } from "react-icons/hi";
 
 const Resume = () => {
   return (
-    <div
+    <section
       id="resume"
-      className="pt-20 pb-16"
+      className="pt-24 pb-20 border-b border-white/5 relative"
       data-aos="fade-up"
       data-aos-delay="100"
+      aria-label="Resume and Experience"
     >
       <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto max-w-7xl">
-        <h2 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white mb-8">
-          My <span className="text-cyan-300">Resume</span>
+        <h2 className="text-center text-3xl md:text-5xl font-extrabold text-white mb-12 tracking-tight">
+          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">Resume</span>
         </h2>
         
         {/* Professional Summary for AI & SEO */}
-        <div className="mb-16 bg-[#14134145] p-8 rounded-2xl border border-white/10" data-aos="fade-right">
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed italic">
-            "A highly motivated <strong>Software Engineer</strong> with a strong foundation in <strong>Full-Stack Development</strong>, specializing in <strong>Next.js, React, and Node.js</strong>. With a proven track record of <strong>International Achievements</strong> in Game Development and a passion for <strong>Blockchain technology</strong>, I am dedicated to building high-performance, scalable, and innovative digital solutions that bridge the gap between complex technology and user-centric design."
+        <div 
+          className="mb-20 bg-gradient-to-r from-blue-950/30 to-[#14134145] backdrop-blur-md p-8 rounded-2xl border-l-4 border-l-cyan-400 border-y border-r border-white/5 shadow-xl shadow-black/10" 
+          data-aos="fade-right"
+        >
+          <p className="text-lg md:text-xl text-slate-200 leading-relaxed italic font-medium">
+            &ldquo;A highly motivated <strong className="text-cyan-300 font-semibold">Software Engineer</strong> with a strong foundation in <strong className="text-cyan-300 font-semibold">Full-Stack Development</strong>, specializing in <strong className="text-cyan-300 font-semibold">Next.js, React, and Node.js</strong>. With a proven track record of <strong className="text-cyan-300 font-semibold">International Achievements</strong> in Game Development and a passion for <strong className="text-cyan-300 font-semibold">Blockchain technology</strong>, I am dedicated to building high-performance, scalable, and innovative digital solutions that bridge the gap between complex technology and user-centric design.&rdquo;
           </p>
         </div>
+
         {/* Work Part */}
-        <div id="experience" className="mb-16">
-          <h3 className="text-2xl sm:text-3xl font-bold text-white text-center mb-10">
-            Professional <span className="text-cyan-200"> Experience</span>
+        <div id="experience" className="mb-20">
+          <h3 className="text-2xl sm:text-3.5xl font-bold text-white text-center mb-12 tracking-tight">
+            Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">Experience</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             <ResumeCard
               Icon={FaCodepen}
               role="Full-Stack Developer"
@@ -78,11 +83,11 @@ const Resume = () => {
         </div>
 
         {/* Education & Licenses Part */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
           {/* Education */}
-          <div id="education">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-10">
-              My<span className="text-cyan-200"> Education</span>
+          <div id="education" className="space-y-8">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight border-b border-white/5 pb-4">
+              My <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">Education</span>
             </h3>
             <div className="flex flex-col gap-6">
               <BadgeCard
@@ -104,11 +109,11 @@ const Resume = () => {
           </div>
 
           {/* Licenses */}
-          <div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-10">
-              My<span className="text-cyan-200"> Licenses</span>
+          <div className="space-y-8">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight border-b border-white/5 pb-4">
+              My <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">Licenses</span>
             </h3>
-            <div className="flex flex-col gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4">
               <BadgeCard
                 Icon={HiOutlineBadgeCheck}
                 title="Junior Mobile Programmer"
@@ -145,62 +150,88 @@ const Resume = () => {
 
         {/* Achievement Part */}
         <div id="achievements" className="mt-20">
-          <h3 className="text-2xl sm:text-3xl font-bold text-white text-center mb-10">
-            Awards & <span className="text-cyan-200"> Achievements</span>
+          <h3 className="text-2xl sm:text-3.5xl font-bold text-white text-center mb-12 tracking-tight">
+            Awards & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">Achievements</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Achievement 1 */}
-            <div data-aos="zoom-in" data-aos-delay="200">
-              <Image
-                src="/images/a1.jpeg"
-                alt="Wildan Silki Achievement - 2nd Place International Code Olympiad 2023"
-                width={800}
-                height={500}
-                className="rounded-lg object-cover w-full h-[300px] md:h-[400px]"
-              />
-              <h4 className="mt-4 text-xl font-semibold text-white">
-                Provincial Recognition for International Achievement
-              </h4>
-              <p className="pt-2 font-medium text-white/80 leading-relaxed">
-                Honored to receive this international recognition for <strong>Game Development (Group 1D)</strong> by Coding Bee Academy. The award was presented directly by the <strong>Acting Governor of East Java, Adhi Karyono</strong>, during the 2024 National Education Day Ceremony. A testament to perseverance and the incredible support from my teachers, family, and friends.
-              </p>
-            </div>
+            <article 
+              className="bg-[#14134145] backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1.5 group flex flex-col"
+              data-aos="zoom-in" 
+              data-aos-delay="200"
+            >
+              <div className="overflow-hidden w-full h-[220px] relative">
+                <Image
+                  src="/images/a1.jpeg"
+                  alt="Wildan Silki Achievement - 2nd Place International Code Olympiad 2023"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+                <h4 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Provincial Recognition for International Achievement
+                </h4>
+                <p className="pt-3 text-slate-400 text-sm leading-relaxed flex-1">
+                  Honored to receive this international recognition for <strong className="text-cyan-400 font-semibold">Game Development (Group 1D)</strong> by Coding Bee Academy. The award was presented directly by the <strong className="text-cyan-400 font-semibold">Acting Governor of East Java, Adhi Karyono</strong>, during the 2024 National Education Day Ceremony. A testament to perseverance and the incredible support from my teachers, family, and friends.
+                </p>
+              </div>
+            </article>
+            
             {/* Achievement 2 */}
-            <div data-aos="zoom-in" data-aos-delay="400">
-              <Image
-                src="/images/a2.jpg"
-                alt="Wildan Silki Achievement - SMK Telkom Malang Graduate"
-                width={800}
-                height={500}
-                className="rounded-lg object-cover w-full h-[300px] md:h-[400px]"
-              />
-              <h4 className="mt-4 text-xl font-semibold text-white">
-                SMK Telkom Malang Outstanding Graduate
-              </h4>
-              <p className="pt-2 font-medium text-white/80 leading-relaxed">
-                Received special recognition during graduation at <strong>SMK Telkom Malang (Moklet)</strong> for achieving <strong>2nd Place International</strong> in the Code Olympiad 2023.
-              </p>
-            </div>
+            <article 
+              className="bg-[#14134145] backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1.5 group flex flex-col"
+              data-aos="zoom-in" 
+              data-aos-delay="400"
+            >
+              <div className="overflow-hidden w-full h-[220px] relative">
+                <Image
+                  src="/images/a2.jpg"
+                  alt="Wildan Silki Achievement - SMK Telkom Malang Graduate"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+                <h4 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  SMK Telkom Malang Outstanding Graduate
+                </h4>
+                <p className="pt-3 text-slate-400 text-sm leading-relaxed flex-1">
+                  Received special recognition during graduation at <strong className="text-cyan-400 font-semibold">SMK Telkom Malang (Moklet)</strong> for achieving <strong className="text-cyan-400 font-semibold">2nd Place International</strong> in the Code Olympiad 2023.
+                </p>
+              </div>
+            </article>
+
             {/* Achievement 3 */}
-            <div data-aos="zoom-in" data-aos-delay="600">
-              <Image
-                src="/images/r1.jpg"
-                alt="Wildan Silki Achievement - Presentation to Telkom Foundation"
-                width={800}
-                height={500}
-                className="rounded-lg object-cover w-full h-[300px] md:h-[400px]"
-              />
-              <h4 className="mt-4 text-xl font-semibold text-white">
-                Executive Game Presentation
-              </h4>
-              <p className="pt-2 font-medium text-white/80 leading-relaxed">
-                Selected to present an original game development project directly to the <strong>Executives of the Telkom Education Foundation</strong> during my time at SMK Telkom Malang.
-              </p>
-            </div>
+            <article 
+              className="bg-[#14134145] backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1.5 group flex flex-col"
+              data-aos="zoom-in" 
+              data-aos-delay="600"
+            >
+              <div className="overflow-hidden w-full h-[220px] relative">
+                <Image
+                  src="/images/r1.jpg"
+                  alt="Wildan Silki Achievement - Presentation to Telkom Foundation"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+                <h4 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Executive Game Presentation
+                </h4>
+                <p className="pt-3 text-slate-400 text-sm leading-relaxed flex-1">
+                  Selected to present an original game development project directly to the <strong className="text-cyan-400 font-semibold">Executives of the Telkom Education Foundation</strong> during my time at SMK Telkom Malang.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

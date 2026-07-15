@@ -11,37 +11,46 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
   const navOpen = showNav ? "translate-x-0" : "translate-x-[100%]";
 
   return (
-    <div>
+    <div className={`fixed inset-0 z-[100050] transition-all duration-300 ${showNav ? "visible pointer-events-auto" : "invisible pointer-events-none"}`}>
       {/* Overlay */}
       <div
-        className={`fixed inset-0 ${navOpen} transform transition-all right-0 duration-500 z-[100002] bg-black opacity-70 w-full h-screen`}
-      ></div>
+        onClick={closeNav}
+        className={`absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+          showNav ? "opacity-100" : "opacity-0"
+        }`}
+      />
+      {/* Menu Container */}
       <div
-        className={`text-white ${navOpen} fixed justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-cyan-800 space-y-6 z-[100050] right-0`}
+        className={`fixed top-0 right-0 h-full w-[75%] sm:w-[50%] bg-[#0d0d1f]/95 backdrop-blur-md border-l border-white/10 shadow-2xl flex flex-col justify-center space-y-6 z-[100060] transition-transform duration-300 ease-in-out transform ${navOpen}`}
       >
-        {NavLink.map((link) => {
-          return (
-            <a
-              key={link.id}
-              href={`#${link.url}`}
-              onClick={(e) => {
-                e.preventDefault();
-                document
-                  .getElementById(link.url)
-                  ?.scrollIntoView({ behavior: "smooth" });
-                closeNav();
-              }}
-              className="text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px] hover:text-cyan-300 text-white font-medium transition-all duration-200"
-            >
-              {link.label}
-            </a>
-          );
-        })}
-        {/* cross icon */}
-        <CgClose
+        <button
           onClick={closeNav}
-          className="absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6"
-        />
+          aria-label="Close navigation menu"
+          className="absolute top-6 right-6 p-2 rounded-full hover:bg-white/5 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-400"
+        >
+          <CgClose className="w-6 h-6" />
+        </button>
+
+        <nav className="flex flex-col space-y-4 px-10">
+          {NavLink.map((link) => {
+            return (
+              <a
+                key={link.id}
+                href={`#${link.url}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById(link.url)
+                    ?.scrollIntoView({ behavior: "smooth" });
+                  closeNav();
+                }}
+                className="text-lg py-2 border-b border-white/5 hover:text-cyan-300 text-slate-300 font-bold uppercase tracking-wide transition-colors duration-200"
+              >
+                {link.label}
+              </a>
+            );
+          })}
+        </nav>
       </div>
     </div>
   );

@@ -7,6 +7,14 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
       },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+      },
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+      },
     ],
     sitemap: "https://wildansilki.xyz/sitemap.xml",
   };

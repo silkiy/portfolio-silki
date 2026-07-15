@@ -146,16 +146,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="en" className="scroll-smooth">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${font.className} antialiased bg-[#0d0d1f]`}>
+      <body className={`${font.className} antialiased bg-[#0d0d1f] text-slate-100 min-h-screen flex flex-col`}>
         <ResponsiveNav />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
         <ScrollToTop />
       </body>
