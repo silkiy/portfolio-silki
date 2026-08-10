@@ -9,7 +9,7 @@ import Contact from "./Contact/Contact";
 const Home = () => {
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden w-full">
       <Hero />
       <Resume />
       <Projects />

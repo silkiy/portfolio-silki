@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
@@ -10,6 +10,13 @@ const font = JetBrains_Mono({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wildansilki.xyz"),
@@ -171,7 +178,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${font.className} antialiased bg-background text-foreground min-h-screen flex flex-col`}>
+      <body className={`${font.className} antialiased bg-background text-foreground min-h-[100dvh] flex flex-col overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

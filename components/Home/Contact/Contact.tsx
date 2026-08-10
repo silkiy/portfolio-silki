@@ -85,7 +85,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="pt-32 pb-24 border-b border-border/50 relative bg-background"
+      className="pt-24 pb-16 md:pt-32 md:pb-24 border-b border-border/50 relative bg-background"
       aria-label="Contact Section"
     >
       <div className="w-[90%] lg:w-[80%] mx-auto max-w-7xl relative z-10">
@@ -96,7 +96,7 @@ const Contact = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 border-b border-border/50 pb-8"
         >
-          <h2 className="text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
             Initialize Connection
           </h2>
           <p className="font-mono text-sm text-foreground/50 mt-2 tracking-widest uppercase">
@@ -111,18 +111,18 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="lg:col-span-5 space-y-6"
+            className="lg:col-span-5 space-y-4 md:space-y-6"
           >
-            <p className="font-mono text-sm text-foreground/70 uppercase leading-relaxed mb-8">
+            <p className="font-mono text-xs md:text-sm text-foreground/70 uppercase leading-relaxed mb-6 md:mb-8">
               Available for remote software engineering contracts and Web3 architecture consultations. Ping me directly or use the secure form.
             </p>
 
-            <div className="border border-border/50 bg-background/50 p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
-              <div>
-                <span className="font-mono text-xs text-foreground/50 uppercase tracking-widest block mb-1">E-Mail</span>
+            <div className="border border-border/50 bg-background/50 p-4 md:p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
+              <div className="overflow-hidden mr-4">
+                <span className="font-mono text-[10px] md:text-xs text-foreground/50 uppercase tracking-widest block mb-1">E-Mail</span>
                 <a
                   href="mailto:contact.wildansilki@gmail.com"
-                  className="font-mono text-sm sm:text-base font-bold text-foreground hover:underline break-all"
+                  className="font-mono text-xs sm:text-sm md:text-base font-bold text-foreground hover:underline break-words"
                 >
                   contact.wildansilki@gmail.com
                 </a>
@@ -136,12 +136,12 @@ const Contact = () => {
               </button>
             </div>
 
-            <div className="border border-border/50 bg-background/50 p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
+            <div className="border border-border/50 bg-background/50 p-4 md:p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
               <div>
-                <span className="font-mono text-xs text-foreground/50 uppercase tracking-widest block mb-1">Phone</span>
+                <span className="font-mono text-[10px] md:text-xs text-foreground/50 uppercase tracking-widest block mb-1">Phone</span>
                 <a
                   href="tel:+6281232522276"
-                  className="font-mono text-sm sm:text-base font-bold text-foreground hover:underline"
+                  className="font-mono text-xs sm:text-sm md:text-base font-bold text-foreground hover:underline"
                 >
                   +62 812-3252-2276
                 </a>
@@ -194,9 +194,9 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="lg:col-span-7"
+            className="lg:col-span-7 mt-8 lg:mt-0"
           >
-            <div className="border border-border/50 bg-background/50 p-8">
+            <div className="border border-border/50 bg-background/50 p-6 md:p-8">
               {status === "success" ? (
                 <div className="text-center py-16 flex flex-col items-center">
                   <div className="w-16 h-16 border border-foreground flex items-center justify-center text-foreground mb-6">

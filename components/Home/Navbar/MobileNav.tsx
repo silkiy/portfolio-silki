@@ -21,7 +21,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
       />
       {/* Menu Container */}
       <div
-        className={`fixed top-0 right-0 h-full w-[80%] sm:w-[50%] bg-background/95 backdrop-blur-md border-l border-border/50 flex flex-col justify-center space-y-8 z-[100060] transition-transform duration-500 ease-out transform ${navOpen}`}
+        className={`fixed top-0 right-0 h-full w-[80%] sm:w-[50%] md:w-[40%] lg:w-[30%] bg-background/95 backdrop-blur-md border-l border-border/50 flex flex-col justify-center space-y-8 z-[100060] transition-transform duration-500 ease-out transform ${navOpen}`}
       >
         <button
           onClick={closeNav}
@@ -31,12 +31,12 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
           <CgClose className="w-6 h-6 group-hover:scale-90 transition-transform" />
         </button>
 
-        <div className="px-10 mb-8 border-b border-border/50 pb-8">
+        <div className="px-6 sm:px-10 mb-8 border-b border-border/50 pb-8">
           <span className="font-mono text-xs text-foreground/50 uppercase tracking-widest block mb-2">SYS.LOG</span>
           <span className="font-mono text-lg font-black text-foreground uppercase tracking-tighter">NAVIGATION</span>
         </div>
 
-        <nav className="flex flex-col space-y-0 px-10">
+        <nav className="flex flex-col space-y-0 px-6 sm:px-10">
           {NavLink.map((link) => {
             return (
               <a
@@ -62,7 +62,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
           })}
         </nav>
 
-        <div className="absolute bottom-10 left-10">
+        <div className="absolute bottom-10 left-6 sm:left-10">
           <p className="font-mono text-[10px] text-foreground/30 uppercase tracking-widest">
             TERMINAL // ACTIVE
           </p>

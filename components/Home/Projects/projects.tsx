@@ -63,7 +63,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="pt-32 pb-24 border-b border-border/50 relative bg-background"
+      className="pt-24 pb-16 md:pt-32 md:pb-24 border-b border-border/50 relative bg-background"
       aria-label="Recent Projects Showcase"
     >
       <div className="w-[90%] lg:w-[80%] mx-auto max-w-7xl relative z-10">
@@ -74,7 +74,7 @@ const Projects = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 border-b border-border/50 pb-8"
         >
-          <h2 className="text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
             Projects
           </h2>
           <p className="font-mono text-sm text-foreground/50 mt-2 tracking-widest uppercase">
@@ -95,7 +95,7 @@ const Projects = () => {
             >
               {/* Text Area */}
               <div className="z-10 relative pointer-events-none md:pointer-events-auto">
-                <h3 className="text-3xl md:text-5xl lg:text-6xl font-mono font-black tracking-tighter uppercase text-foreground/50 group-hover:text-foreground transition-colors duration-500">
+                <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-mono font-black tracking-tighter uppercase text-foreground/50 group-hover:text-foreground transition-colors duration-500">
                   {project.title}
                 </h3>
                 <div className="flex flex-wrap items-center gap-4 mt-2">

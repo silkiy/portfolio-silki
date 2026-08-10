@@ -25,7 +25,7 @@ const Nav = ({ openNav }: Props) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full h-[10vh] z-[10000] transition-colors duration-300 ${
+      className={`fixed top-0 left-0 w-full h-16 md:h-20 z-[10000] transition-colors duration-300 ${
         navBg
           ? "bg-background/80 backdrop-blur-md border-b border-border/50"
           : "bg-transparent border-b border-transparent"
@@ -34,15 +34,15 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[90%] mx-auto max-w-7xl">
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-foreground text-background flex items-center justify-center">
-            <FaCode className="w-5 h-5" />
+          <div className="w-8 h-8 md:w-10 md:h-10 bg-foreground text-background flex items-center justify-center">
+            <FaCode className="w-4 h-4 md:w-5 md:h-5" />
           </div>
-          <span className="text-xl hidden sm:block md:text-2xl text-foreground font-mono font-bold tracking-tighter uppercase">
+          <span className="text-lg hidden sm:block md:text-2xl text-foreground font-mono font-bold tracking-tighter uppercase">
             SILKI
           </span>
         </div>
         {/* Navigation Links */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden xl:flex items-center space-x-8">
           {NavLink.map((link) => {
             return (
               <a
@@ -63,14 +63,14 @@ const Nav = ({ openNav }: Props) => {
           })}
         </div>
         {/* Buttons */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 md:space-x-4">
           <ModeToggle />
           <DownloadCVButton />
           {/* Burger Button */}
           <button
             onClick={openNav}
             aria-label="Open navigation menu"
-            className="p-2 hover:bg-foreground/5 transition-colors lg:hidden focus:outline-none"
+            className="p-2 hover:bg-foreground/5 transition-colors xl:hidden focus:outline-none"
           >
             <HiBars3BottomRight className="w-8 h-8 text-foreground cursor-pointer" />
           </button>

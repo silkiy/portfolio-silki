@@ -78,7 +78,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="pt-32 pb-24 border-b border-border/50 relative overflow-hidden"
+      className="pt-24 pb-16 md:pt-32 md:pb-24 border-b border-border/50 relative overflow-hidden"
       aria-label="My Technical Skills"
     >
       <div className="w-[90%] lg:w-[80%] mx-auto max-w-7xl relative z-10">
@@ -91,7 +91,7 @@ const Skills = () => {
           className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 border-b border-border/50 pb-8"
         >
           <div>
-            <h2 className="text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
               Tech Matrix
             </h2>
             <p className="font-mono text-sm text-foreground/50 mt-2 tracking-widest uppercase">
@@ -106,7 +106,7 @@ const Skills = () => {
                 role="tab"
                 aria-selected={activeTab === category.id}
                 onClick={() => setActiveTab(category.id)}
-                className={`px-4 py-2 text-xs font-mono tracking-widest transition-colors duration-300 border focus:outline-none uppercase ${
+                className={`px-3 py-1.5 md:px-4 md:py-2 text-[10px] sm:text-xs font-mono tracking-widest transition-colors duration-300 border focus:outline-none uppercase ${
                   activeTab === category.id
                     ? "bg-foreground text-background border-foreground"
                     : "bg-transparent text-foreground/70 border-border hover:bg-foreground/5 hover:text-foreground"
@@ -130,19 +130,18 @@ const Skills = () => {
             <motion.div 
               variants={itemVariants}
               key={`${skill.name}-${i}`} 
-              className="group border border-border/50 bg-background/20 backdrop-blur-sm -ml-[1px] -mt-[1px] p-8 flex flex-col items-center justify-center transition-all duration-500 hover:bg-foreground/5 hover:border-foreground hover:z-10 relative cursor-crosshair"
+              className="group border border-border/50 bg-background/20 backdrop-blur-sm -ml-[1px] -mt-[1px] p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center transition-all duration-500 hover:bg-foreground/5 hover:border-foreground hover:z-10 relative cursor-crosshair"
             >
-              <div className="relative w-12 h-12 mb-6 grayscale opacity-50 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110">
+              <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-4 md:mb-6 grayscale opacity-50 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110">
                 <Image
                   src={skill.icon}
                   alt={skill.name}
-                  width={48}
-                  height={48}
+                  fill
                   unoptimized
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-xs font-mono font-bold text-foreground/50 tracking-widest uppercase group-hover:text-foreground transition-colors duration-500">
+              <h3 className="text-[10px] sm:text-xs font-mono font-bold text-foreground/50 tracking-widest uppercase text-center group-hover:text-foreground transition-colors duration-500">
                 {skill.name}
               </h3>
             </motion.div>

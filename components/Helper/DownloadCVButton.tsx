@@ -40,7 +40,7 @@ export default function DownloadCVButton() {
       <button
         onClick={() => setOpen((prev) => !prev)}
         disabled={loading}
-        className={`px-8 py-3.5 text-sm cursor-pointer border border-border/50 flex items-center space-x-2 transition-colors duration-300 font-mono tracking-tight uppercase
+        className={`px-3 py-2 md:px-8 md:py-3.5 text-[10px] sm:text-xs md:text-sm cursor-pointer border border-border/50 flex items-center space-x-1 md:space-x-2 transition-colors duration-300 font-mono tracking-tight uppercase whitespace-nowrap
           ${loading ? "bg-muted text-muted-foreground" : "bg-foreground text-background hover:bg-foreground/90"} 
           `}
       >
@@ -79,8 +79,8 @@ export default function DownloadCVButton() {
 
       {/* Dropdown */}
       <div
-        className={`absolute mt-2 w-48 bg-background border border-border/50 shadow-lg overflow-hidden z-50 
-          transition-all duration-200 ease-out transform origin-top
+        className={`absolute right-0 mt-2 w-48 bg-background border border-border/50 shadow-lg overflow-hidden z-50 
+          transition-all duration-200 ease-out transform origin-top-right
           ${
             open
               ? "opacity-100 translate-y-0 scale-y-100"

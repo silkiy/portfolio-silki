@@ -20,7 +20,7 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="pt-32 pb-24 border-b border-border/50 relative bg-background"
+      className="pt-24 pb-16 md:pt-32 md:pb-24 border-b border-border/50 relative bg-background"
       aria-label="Resume and Experience"
     >
       <div className="w-[90%] lg:w-[80%] mx-auto max-w-7xl relative z-10">
@@ -31,7 +31,7 @@ const Resume = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 border-b border-border/50 pb-8"
         >
-          <h2 className="text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
             Data Streams
           </h2>
           <p className="font-mono text-sm text-foreground/50 mt-2 tracking-widest uppercase">
@@ -45,16 +45,16 @@ const Resume = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mb-20 border border-border/50 bg-background/50 p-8 border-l-4 border-l-foreground" 
+          className="mb-16 md:mb-20 border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground" 
         >
-          <p className="text-lg md:text-xl text-foreground/70 leading-relaxed font-mono">
+          <p className="text-base md:text-lg lg:text-xl text-foreground/70 leading-relaxed font-mono">
             &ldquo;A highly motivated <strong className="text-foreground font-semibold uppercase">Software Engineer</strong> with a strong foundation in <strong className="text-foreground font-semibold uppercase">Full-Stack Development</strong>, specializing in <strong className="text-foreground font-semibold uppercase">Next.js, React, and Node.js</strong>. With a proven track record of <strong className="text-foreground font-semibold uppercase">International Achievements</strong> in Game Development and a passion for <strong className="text-foreground font-semibold uppercase">Blockchain technology</strong>, I am dedicated to building high-performance, scalable, and innovative digital solutions that bridge the gap between complex technology and user-centric design.&rdquo;
           </p>
         </motion.div>
 
         {/* Work Part */}
-        <div id="experience" className="mb-24">
-          <h3 className="font-mono text-2xl font-black text-foreground mb-12 tracking-widest uppercase border-b border-border/50 pb-4">
+        <div id="experience" className="mb-16 md:mb-24">
+          <h3 className="font-mono text-xl sm:text-2xl font-black text-foreground mb-8 md:mb-12 tracking-widest uppercase border-b border-border/50 pb-4">
             [01] Professional Experience
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
@@ -92,9 +92,9 @@ const Resume = () => {
         </div>
 
         {/* Education & Licenses Part */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 md:mb-24">
           <div id="education" className="space-y-8">
-            <h3 className="font-mono text-2xl font-black text-foreground tracking-widest uppercase border-b border-border/50 pb-4">
+            <h3 className="font-mono text-xl sm:text-2xl font-black text-foreground tracking-widest uppercase border-b border-border/50 pb-4">
               [02] Education
             </h3>
             <div className="flex flex-col gap-0 border border-border/50 bg-background/20">
@@ -105,7 +105,7 @@ const Resume = () => {
           </div>
 
           <div className="space-y-8">
-            <h3 className="font-mono text-2xl font-black text-foreground tracking-widest uppercase border-b border-border/50 pb-4">
+            <h3 className="font-mono text-xl sm:text-2xl font-black text-foreground tracking-widest uppercase border-b border-border/50 pb-4">
               [03] Licenses
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-0 border border-border/50 bg-background/20">
@@ -118,8 +118,8 @@ const Resume = () => {
         </div>
 
         {/* Achievement Part */}
-        <div id="achievements" className="mt-24">
-          <h3 className="font-mono text-2xl font-black text-foreground mb-12 tracking-widest uppercase border-b border-border/50 pb-4">
+        <div id="achievements" className="mt-16 md:mt-24">
+          <h3 className="font-mono text-xl sm:text-2xl font-black text-foreground mb-8 md:mb-12 tracking-widest uppercase border-b border-border/50 pb-4">
             [04] Achievements
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

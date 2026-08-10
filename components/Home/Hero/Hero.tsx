@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden flex-col pt-20"
+      className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden flex-col pt-16 md:pt-20"
       aria-label="Introduction Section"
     >
       <SplineBackground />
@@ -39,7 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-          className="text-4xl md:text-6xl lg:text-8xl mt-12 px-4 text-center font-mono font-black tracking-tighter uppercase leading-none text-foreground"
+          className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl mt-8 md:mt-12 px-2 text-center font-mono font-black tracking-tighter uppercase leading-none text-foreground"
         >
           WILDAN SILKI
         </motion.h1>
@@ -49,7 +49,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="text-lg md:text-2xl lg:text-3xl font-mono mt-6 text-foreground/70 tracking-widest uppercase text-center"
+          className="text-sm sm:text-lg md:text-2xl lg:text-3xl font-mono mt-4 md:mt-6 text-foreground/70 tracking-widest uppercase text-center"
         >
           Backend & Smart Contract Developer
         </motion.h2>
@@ -59,7 +59,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-          className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl font-mono text-xs md:text-sm uppercase tracking-tight text-center"
+          className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 w-full max-w-2xl font-mono text-xs md:text-sm uppercase tracking-tight text-center"
         >
           <div className="border border-border/50 bg-background/30 backdrop-blur-md p-4 flex flex-col justify-center">
             <span className="text-foreground/50 mb-1">Status</span>
@@ -91,7 +91,7 @@ const Hero = () => {
               ?.scrollIntoView({ behavior: "smooth" })
           }
           aria-label="Scroll down to view my projects"
-          className="mt-16 px-8 py-4 border border-border/50 bg-foreground text-background hover:bg-background hover:text-foreground transition-colors duration-500 cursor-pointer text-sm font-mono tracking-widest uppercase flex items-center space-x-3 group"
+          className="mt-12 md:mt-16 px-6 py-3 md:px-8 md:py-4 border border-border/50 bg-foreground text-background hover:bg-background hover:text-foreground transition-colors duration-500 cursor-pointer text-xs md:text-sm font-mono tracking-widest uppercase flex items-center space-x-3 group"
         >
           <span>Explore Matrix</span>
           <BsArrowRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-2" />
