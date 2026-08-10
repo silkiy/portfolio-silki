@@ -1,9 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
 import { NavLink } from "@/constant/constant";
-import { FaCode, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const [year, setYear] = useState<number>(new Date().getFullYear());
@@ -13,27 +12,31 @@ const Footer: React.FC = () => {
   }, []);
 
   return (
-    <footer className="bg-[#0b0b18]/90 backdrop-blur-md border-t border-white/5 pt-16 pb-8 relative">
-      <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto max-w-7xl">
+    <footer className="bg-background border-t border-border/50 pt-16 pb-8 relative mt-auto">
+      <div className="w-[90%] lg:w-[80%] mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
           {/* Logo & Description */}
           <div className="md:col-span-6 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.2)]">
-                <FaCode className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 bg-foreground text-background flex items-center justify-center">
+                <FaCode className="w-5 h-5" />
               </div>
-              <span className="text-xl text-white font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">
+              <span className="text-xl text-foreground font-mono font-bold tracking-tighter uppercase">
                 SILKI
               </span>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed max-w-md font-medium">
-              Wildan Silki Sawabiqil Abroor is a Professional Software Engineer based in Indonesia, specializing in Full-Stack development, Web3 systems, and high-performance digital solutions.
+            <p className="text-foreground/50 text-sm leading-relaxed max-w-md font-mono tracking-wide">
+              Wildan Silki Sawabiqil Abroor. <br />
+              System Architecture & Web3. <br />
+              Indonesia (GMT+7).
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="md:col-span-3 space-y-4">
-            <h4 className="text-white text-sm font-bold uppercase tracking-wider">Quick Navigation</h4>
+            <h4 className="text-foreground text-xs font-mono font-bold uppercase tracking-widest">
+              NAVIGATION
+            </h4>
             <ul className="space-y-2.5">
               {NavLink.slice(0, 4).map((link) => (
                 <li key={link.id}>
@@ -43,9 +46,12 @@ const Footer: React.FC = () => {
                       e.preventDefault();
                       document.getElementById(link.url)?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="text-slate-400 hover:text-cyan-300 transition-colors text-sm font-semibold focus:outline-none focus:underline"
+                    className="text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
                   >
-                    {link.label}
+                    <span className="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
+                      &gt;
+                    </span>
+                    <span>{link.label}</span>
                   </a>
                 </li>
               ))}
@@ -53,7 +59,9 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="md:col-span-3 space-y-4">
-            <h4 className="text-white text-sm font-bold uppercase tracking-wider">More Info</h4>
+            <h4 className="text-foreground text-xs font-mono font-bold uppercase tracking-widest">
+              MORE INFO
+            </h4>
             <ul className="space-y-2.5">
               {NavLink.slice(4).map((link) => (
                 <li key={link.id}>
@@ -63,9 +71,12 @@ const Footer: React.FC = () => {
                       e.preventDefault();
                       document.getElementById(link.url)?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="text-slate-400 hover:text-cyan-300 transition-colors text-sm font-semibold focus:outline-none focus:underline"
+                    className="text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
                   >
-                    {link.label}
+                    <span className="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
+                      &gt;
+                    </span>
+                    <span>{link.label}</span>
                   </a>
                 </li>
               ))}
@@ -74,12 +85,12 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Separator & Bottom Info */}
-        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-500 font-medium">
-            &copy; {year} Wildan Silki Sawabiqil Abroor. All Rights Reserved.
+        <div className="pt-8 border-t border-border/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-foreground/50 font-mono tracking-widest uppercase">
+            &copy; {year} W.SILKI. ALL RIGHTS RESERVED.
           </p>
-          <p className="text-xs text-slate-600 font-semibold tracking-wider uppercase">
-            Handcrafted with React &amp; Next.js
+          <p className="text-xs text-foreground/50 font-mono tracking-widest uppercase">
+            Crafted with ❤️ by Wildan Silki Sawabiqil Abroor
           </p>
         </div>
       </div>

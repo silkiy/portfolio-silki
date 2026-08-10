@@ -1,13 +1,13 @@
 "use client";
+
 import React, { useState } from "react";
-import { BiEnvelope, BiMap, BiPhone, BiCopy, BiCheck } from "react-icons/bi";
+import { BiCopy, BiCheck } from "react-icons/bi";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Contact = () => {
-  // Clipboard states
   const [copiedText, setCopiedText] = useState<string | null>(null);
 
-  // Form states
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,313 +33,279 @@ const Contact = () => {
 
   const validateForm = () => {
     const tempErrors: { [key: string]: string } = {};
-    if (!formData.name.trim()) tempErrors.name = "Name is required";
+    if (!formData.name.trim()) tempErrors.name = "REQUIRED";
     if (!formData.email.trim()) {
-      tempErrors.email = "Email is required";
+      tempErrors.email = "REQUIRED";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      tempErrors.email = "Please enter a valid email address";
+      tempErrors.email = "INVALID";
     }
-    if (!formData.subject.trim()) tempErrors.subject = "Subject is required";
-    if (!formData.message.trim()) tempErrors.message = "Message is required";
+    if (!formData.subject.trim()) tempErrors.subject = "REQUIRED";
+    if (!formData.message.trim()) tempErrors.message = "REQUIRED";
 
     setErrors(tempErrors);
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setStatus("sending");
-    // Mocking API call
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 1500);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        console.error(result.message);
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
   };
 
   return (
     <section
       id="contact"
-      className="pt-24 pb-20 border-b border-white/5 relative"
-      data-aos="fade-up"
-      data-aos-delay="100"
+      className="pt-32 pb-24 border-b border-border/50 relative bg-background"
       aria-label="Contact Section"
     >
-      <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto max-w-7xl">
-        <h2 className="text-center text-3xl md:text-5xl font-extrabold text-white tracking-tight">
-          Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">Touch</span>
-        </h2>
-        <p className="text-slate-400 text-center mt-4 text-base sm:text-lg max-w-2xl mx-auto mb-16">
-          Feel free to reach out for project inquiries, collaborations, or remote software engineering opportunities.
-        </p>
+      <div className="w-[90%] lg:w-[80%] mx-auto max-w-7xl relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-16 border-b border-border/50 pb-8"
+        >
+          <h2 className="text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
+            Initialize Connection
+          </h2>
+          <p className="font-mono text-sm text-foreground/50 mt-2 tracking-widest uppercase">
+            SYS.LOG // CONTACT
+          </p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Contact info cards */}
-          <div className="lg:col-span-5 space-y-6">
-            <h3 className="text-2xl font-bold text-white tracking-tight mb-4">
-              Contact Information
-            </h3>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
-              If you have any questions or just want to say hi, feel free to contact me through my email, phone, or by filling out the contact form. I will do my best to get back to you as soon as possible.
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          {/* Left Column: Contact info */}
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="lg:col-span-5 space-y-6"
+          >
+            <p className="font-mono text-sm text-foreground/70 uppercase leading-relaxed mb-8">
+              Available for remote software engineering contracts and Web3 architecture consultations. Ping me directly or use the secure form.
             </p>
 
-            {/* Email Card */}
-            <div className="bg-[#14134145] backdrop-blur-sm border border-white/5 p-5 rounded-2xl flex items-center justify-between group hover:border-cyan-500/30 transition-all duration-300">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-900/40 flex items-center justify-center text-cyan-400 flex-shrink-0">
-                  <BiEnvelope className="w-6 h-6" />
-                </div>
-                <div>
-                  <span className="text-slate-500 text-xs font-bold uppercase tracking-wider block">Email</span>
-                  <a
-                    href="mailto:contact.wildansilki@gmail.com"
-                    className="text-white hover:text-cyan-300 transition-colors text-sm sm:text-base font-bold break-all"
-                  >
-                    contact.wildansilki@gmail.com
-                  </a>
-                </div>
+            <div className="border border-border/50 bg-background/50 p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
+              <div>
+                <span className="font-mono text-xs text-foreground/50 uppercase tracking-widest block mb-1">E-Mail</span>
+                <a
+                  href="mailto:contact.wildansilki@gmail.com"
+                  className="font-mono text-sm sm:text-base font-bold text-foreground hover:underline break-all"
+                >
+                  contact.wildansilki@gmail.com
+                </a>
               </div>
               <button
                 onClick={() => handleCopy("contact.wildansilki@gmail.com", "email")}
-                className="p-2 hover:bg-white/5 rounded-lg text-slate-400 hover:text-white transition-colors"
-                title="Copy email to clipboard"
-                aria-label="Copy email address"
+                className="p-2 border border-transparent hover:border-border transition-colors text-foreground focus:outline-none"
+                aria-label="Copy email"
               >
-                {copiedText === "email" ? (
-                  <BiCheck className="w-5 h-5 text-green-400" />
-                ) : (
-                  <BiCopy className="w-5 h-5" />
-                )}
+                {copiedText === "email" ? <BiCheck className="w-5 h-5 text-foreground" /> : <BiCopy className="w-5 h-5" />}
               </button>
             </div>
 
-            {/* Phone Card */}
-            <div className="bg-[#14134145] backdrop-blur-sm border border-white/5 p-5 rounded-2xl flex items-center justify-between group hover:border-cyan-500/30 transition-all duration-300">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-900/40 flex items-center justify-center text-cyan-400 flex-shrink-0">
-                  <BiPhone className="w-6 h-6" />
-                </div>
-                <div>
-                  <span className="text-slate-500 text-xs font-bold uppercase tracking-wider block">Phone</span>
-                  <a
-                    href="tel:+6281232522276"
-                    className="text-white hover:text-cyan-300 transition-colors text-sm sm:text-base font-bold"
-                  >
-                    +62 812-3252-2276
-                  </a>
-                </div>
+            <div className="border border-border/50 bg-background/50 p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
+              <div>
+                <span className="font-mono text-xs text-foreground/50 uppercase tracking-widest block mb-1">Phone</span>
+                <a
+                  href="tel:+6281232522276"
+                  className="font-mono text-sm sm:text-base font-bold text-foreground hover:underline"
+                >
+                  +62 812-3252-2276
+                </a>
               </div>
               <button
                 onClick={() => handleCopy("+6281232522276", "phone")}
-                className="p-2 hover:bg-white/5 rounded-lg text-slate-400 hover:text-white transition-colors"
-                title="Copy phone number to clipboard"
-                aria-label="Copy phone number"
+                className="p-2 border border-transparent hover:border-border transition-colors text-foreground focus:outline-none"
+                aria-label="Copy phone"
               >
-                {copiedText === "phone" ? (
-                  <BiCheck className="w-5 h-5 text-green-400" />
-                ) : (
-                  <BiCopy className="w-5 h-5" />
-                )}
+                {copiedText === "phone" ? <BiCheck className="w-5 h-5 text-foreground" /> : <BiCopy className="w-5 h-5" />}
               </button>
             </div>
 
-            {/* Location Card */}
-            <div className="bg-[#14134145] backdrop-blur-sm border border-white/5 p-5 rounded-2xl flex items-center justify-between group hover:border-cyan-500/30 transition-all duration-300">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-900/40 flex items-center justify-center text-cyan-400 flex-shrink-0">
-                  <BiMap className="w-6 h-6" />
-                </div>
-                <div>
-                  <span className="text-slate-500 text-xs font-bold uppercase tracking-wider block">Location</span>
-                  <span className="text-white text-sm sm:text-base font-bold">
-                    Tulungagung, East Java, Indonesia
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Social Media Links */}
-            <div className="pt-6">
-              <h4 className="text-slate-300 font-bold uppercase text-xs tracking-wider mb-4">
-                Find Me On
+            <div className="pt-8">
+              <h4 className="font-mono text-xs text-foreground/50 uppercase tracking-widest mb-4">
+                Network Links
               </h4>
-              <div className="flex space-x-3">
+              <div className="flex gap-4">
                 <a
-                  href="https://www.instagram.com/wildansilki_/"
+                  href="https://github.com/silkiy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 bg-[#14134145] hover:bg-pink-600 border border-white/5 hover:border-pink-500 hover:scale-105 rounded-xl flex items-center justify-center text-slate-300 hover:text-white transition-all duration-300"
-                  aria-label="Follow me on Instagram"
+                  className="p-4 border border-border/50 hover:bg-foreground hover:text-background transition-colors text-foreground"
                 >
-                  <FaInstagram className="h-5 w-5" />
+                  <FaGithub className="w-5 h-5" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/silki/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 bg-[#14134145] hover:bg-blue-600 border border-white/5 hover:border-blue-500 hover:scale-105 rounded-xl flex items-center justify-center text-slate-300 hover:text-white transition-all duration-300"
-                  aria-label="Connect with me on LinkedIn"
+                  className="p-4 border border-border/50 hover:bg-foreground hover:text-background transition-colors text-foreground"
                 >
-                  <FaLinkedin className="h-5 w-5" />
+                  <FaLinkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://github.com/silkiy"
+                  href="https://www.instagram.com/wildansilki_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 bg-[#14134145] hover:bg-slate-700 border border-white/5 hover:border-slate-500 hover:scale-105 rounded-xl flex items-center justify-center text-slate-300 hover:text-white transition-all duration-300"
-                  aria-label="View my GitHub profile"
+                  className="p-4 border border-border/50 hover:bg-foreground hover:text-background transition-colors text-foreground"
                 >
-                  <FaGithub className="h-5 w-5" />
+                  <FaInstagram className="w-5 h-5" />
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Contact form */}
-          <div className="lg:col-span-7">
-            <div className="bg-[#14134145] backdrop-blur-sm border border-white/5 p-8 rounded-2xl">
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="lg:col-span-7"
+          >
+            <div className="border border-border/50 bg-background/50 p-8">
               {status === "success" ? (
-                <div className="text-center py-10 flex flex-col items-center">
-                  <div className="w-16 h-16 rounded-full bg-green-500/10 border border-green-500 flex items-center justify-center text-green-400 mb-6 animate-bounce">
-                    <BiCheck className="w-10 h-10" />
+                <div className="text-center py-16 flex flex-col items-center">
+                  <div className="w-16 h-16 border border-foreground flex items-center justify-center text-foreground mb-6">
+                    <BiCheck className="w-8 h-8" />
                   </div>
-                  <h4 className="text-2xl font-bold text-white mb-2">Message Sent!</h4>
-                  <p className="text-slate-400 max-w-sm mx-auto text-sm leading-relaxed mb-6 font-medium">
-                    Thank you! Your message has been sent successfully. I will get back to you as soon as possible.
-                  </p>
+                  <h4 className="font-mono text-2xl font-bold text-foreground mb-4 uppercase tracking-widest">TRANSMISSION SECURED</h4>
                   <button
                     onClick={() => setStatus("idle")}
-                    className="px-6 py-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-sm tracking-wide transition-colors"
+                    className="mt-8 px-6 py-3 border border-border/50 bg-transparent hover:bg-foreground hover:text-background text-foreground font-mono text-xs uppercase tracking-widest transition-colors"
                   >
-                    Send another message
+                    SEND ANOTHER PING
+                  </button>
+                </div>
+              ) : status === "error" ? (
+                <div className="text-center py-16 flex flex-col items-center">
+                  <div className="w-16 h-16 border border-destructive flex items-center justify-center text-destructive mb-6">
+                    <span className="font-mono text-2xl font-bold">X</span>
+                  </div>
+                  <h4 className="font-mono text-2xl font-bold text-destructive mb-4 uppercase tracking-widest">TRANSMISSION FAILED</h4>
+                  <p className="font-mono text-sm text-foreground/70 mb-8">Please check your Access Key or network connection.</p>
+                  <button
+                    onClick={() => setStatus("idle")}
+                    className="px-6 py-3 border border-destructive/50 bg-transparent hover:bg-destructive hover:text-white text-destructive font-mono text-xs uppercase tracking-widest transition-colors"
+                  >
+                    RETRY
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <h3 className="text-2xl font-bold text-white tracking-tight mb-2">
-                    Send a Message
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    {/* Name */}
-                    <div className="flex flex-col space-y-1.5">
-                      <label htmlFor="name" className="text-slate-300 text-xs font-bold uppercase tracking-wider">
-                        Your Name
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="flex flex-col space-y-2">
+                      <label htmlFor="contact-name" className="font-mono text-xs text-foreground/50 uppercase tracking-widest flex justify-between">
+                        <span>Name</span>
+                        {errors.name && <span className="text-destructive">{errors.name}</span>}
                       </label>
                       <input
-                        id="name"
+                        id="contact-name"
                         name="name"
                         type="text"
                         value={formData.name}
+                        aria-invalid={!!errors.name}
                         onChange={handleInputChange}
-                        className={`bg-[#0d0d1f]/60 border rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all
-                          ${errors.name ? "border-red-500" : "border-white/10"}`}
-                        placeholder="John Doe"
+                        className={`bg-transparent border-b ${errors.name ? 'border-destructive' : 'border-border/50'} focus:border-foreground py-2 text-foreground font-mono text-sm focus:outline-none transition-colors rounded-none`}
+                        placeholder="IDENTIFIER"
                       />
-                      {errors.name && (
-                        <span className="text-red-400 text-xs mt-0.5">{errors.name}</span>
-                      )}
                     </div>
-
-                    {/* Email */}
-                    <div className="flex flex-col space-y-1.5">
-                      <label htmlFor="email" className="text-slate-300 text-xs font-bold uppercase tracking-wider">
-                        Your Email
+                    <div className="flex flex-col space-y-2">
+                      <label htmlFor="contact-email" className="font-mono text-xs text-foreground/50 uppercase tracking-widest flex justify-between">
+                        <span>Email</span>
+                        {errors.email && <span className="text-destructive">{errors.email}</span>}
                       </label>
                       <input
-                        id="email"
+                        id="contact-email"
                         name="email"
                         type="email"
                         value={formData.email}
+                        aria-invalid={!!errors.email}
                         onChange={handleInputChange}
-                        className={`bg-[#0d0d1f]/60 border rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all
-                          ${errors.email ? "border-red-500" : "border-white/10"}`}
-                        placeholder="john@example.com"
+                        className={`bg-transparent border-b ${errors.email ? 'border-destructive' : 'border-border/50'} focus:border-foreground py-2 text-foreground font-mono text-sm focus:outline-none transition-colors rounded-none`}
+                        placeholder="ADDRESS@DOMAIN"
                       />
-                      {errors.email && (
-                        <span className="text-red-400 text-xs mt-0.5">{errors.email}</span>
-                      )}
                     </div>
                   </div>
 
-                  {/* Subject */}
-                  <div className="flex flex-col space-y-1.5">
-                    <label htmlFor="subject" className="text-slate-300 text-xs font-bold uppercase tracking-wider">
-                      Subject
+                  <div className="flex flex-col space-y-2">
+                    <label htmlFor="contact-subject" className="font-mono text-xs text-foreground/50 uppercase tracking-widest flex justify-between">
+                      <span>Subject</span>
+                      {errors.subject && <span className="text-destructive">{errors.subject}</span>}
                     </label>
                     <input
-                      id="subject"
+                      id="contact-subject"
                       name="subject"
                       type="text"
                       value={formData.subject}
+                      aria-invalid={!!errors.subject}
                       onChange={handleInputChange}
-                      className={`bg-[#0d0d1f]/60 border rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all
-                        ${errors.subject ? "border-red-500" : "border-white/10"}`}
-                      placeholder="Collaborative Project Inquiry"
+                      className={`bg-transparent border-b ${errors.subject ? 'border-destructive' : 'border-border/50'} focus:border-foreground py-2 text-foreground font-mono text-sm focus:outline-none transition-colors rounded-none`}
+                      placeholder="TOPIC"
                     />
-                    {errors.subject && (
-                      <span className="text-red-400 text-xs mt-0.5">{errors.subject}</span>
-                    )}
                   </div>
 
-                  {/* Message */}
-                  <div className="flex flex-col space-y-1.5">
-                    <label htmlFor="message" className="text-slate-300 text-xs font-bold uppercase tracking-wider">
-                      Message
+                  <div className="flex flex-col space-y-2">
+                    <label htmlFor="contact-message" className="font-mono text-xs text-foreground/50 uppercase tracking-widest flex justify-between">
+                      <span>Message</span>
+                      {errors.message && <span className="text-destructive">{errors.message}</span>}
                     </label>
                     <textarea
-                      id="message"
+                      id="contact-message"
                       name="message"
                       rows={5}
                       value={formData.message}
+                      aria-invalid={!!errors.message}
                       onChange={handleInputChange}
-                      className={`bg-[#0d0d1f]/60 border rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all resize-none
-                        ${errors.message ? "border-red-500" : "border-white/10"}`}
-                      placeholder="Write your message details here..."
+                      className={`bg-transparent border ${errors.message ? 'border-destructive' : 'border-border/50'} focus:border-foreground p-4 text-foreground font-mono text-sm focus:outline-none transition-colors resize-none rounded-none`}
+                      placeholder="PAYLOAD..."
                     />
-                    {errors.message && (
-                      <span className="text-red-400 text-xs mt-0.5">{errors.message}</span>
-                    )}
                   </div>
 
-                  {/* Submit Button */}
                   <button
                     type="submit"
                     disabled={status === "sending"}
-                    className="w-full py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-extrabold tracking-wide uppercase transition-all duration-300 cursor-pointer disabled:opacity-50 flex items-center justify-center space-x-2 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0d0d1f] shadow-lg shadow-blue-500/20 hover:shadow-cyan-500/30"
+                    className="w-full py-4 border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground font-mono font-bold tracking-widest uppercase transition-colors duration-300 disabled:opacity-50 cursor-crosshair"
                   >
-                    {status === "sending" ? (
-                      <>
-                        <svg
-                          className="animate-spin h-5 w-5 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z"
-                          ></path>
-                        </svg>
-                        <span>Sending...</span>
-                      </>
-                    ) : (
-                      <span>Send Message</span>
-                    )}
+                    {status === "sending" ? "TRANSMITTING..." : "EXECUTE"}
                   </button>
                 </form>
               )}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -10,19 +10,19 @@ type Props = {
 
 const ResumeCard = ({ role, Icon, date, description }: Props) => {
   return (
-    <article className="bg-[#14134145] backdrop-blur-sm hover:bg-[#1c1b545a] border border-white/5 hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)] transition-all duration-300 p-6 sm:p-8 rounded-2xl h-full flex flex-col items-center text-center group transform hover:-translate-y-1">
-      <div className="w-16 h-16 bg-blue-900/40 group-hover:bg-cyan-900/50 rounded-full flex items-center justify-center mb-5 transition-colors duration-300 flex-shrink-0">
-        <Icon className="w-8 h-8 text-cyan-400 group-hover:text-cyan-200 transition-colors duration-300" />
+    <article className="group border border-border/50 bg-background/20 backdrop-blur-sm hover:bg-foreground hover:z-10 -ml-[1px] -mt-[1px] p-8 flex flex-col items-start text-left transition-all duration-500 relative cursor-crosshair">
+      <div className="w-12 h-12 bg-background border border-border/50 flex items-center justify-center mb-6 transition-colors duration-500 flex-shrink-0 group-hover:border-background">
+        <Icon className="w-5 h-5 text-foreground group-hover:text-background transition-colors duration-500" />
       </div>
       {date && (
-        <span className="mb-4 px-4 py-1.5 rounded-full bg-cyan-950/80 text-cyan-300 text-xs font-semibold border border-cyan-800/40 w-max tracking-wider">
+        <span className="mb-4 px-2 py-1 bg-transparent text-foreground/50 border border-border/50 group-hover:border-background/50 group-hover:text-background/70 text-[10px] font-mono font-bold tracking-widest uppercase transition-colors duration-500">
           {date}
         </span>
       )}
-      <h4 className="text-white text-lg sm:text-xl font-bold mb-3 group-hover:text-cyan-200 transition-colors">
+      <h4 className="text-foreground text-lg font-mono font-bold uppercase tracking-widest mb-4 group-hover:text-background transition-colors duration-500">
         {role}
       </h4>
-      <p className="text-slate-400 text-sm sm:text-base leading-relaxed flex-1">
+      <p className="text-foreground/70 text-xs font-mono leading-relaxed group-hover:text-background/80 transition-colors duration-500">
         {description}
       </p>
     </article>

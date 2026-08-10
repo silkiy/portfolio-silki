@@ -1,170 +1,154 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaVideo } from "react-icons/fa";
 
 const projectList = [
   {
     title: "Blayu Mobile",
-    description: "A mobile application for managing academic data, attendance, and location tracking using Flutter and Firebase.",
+    description: "Academic data & location tracking using Flutter.",
     image: "/images/p1.png",
-    tags: ["Flutter", "Firebase", "Dart", "Geolocation"],
+    tags: ["Flutter", "Firebase"],
     github: "https://github.com/silkiy",
-    demo: null,
   },
   {
-    title: "Absensi RSD Mangusada",
-    description: "A mobile application for attendance management using Flutter featuring facial recognition and location tracking.",
+    title: "Absensi RSD",
+    description: "Face recognition & location tracking.",
     image: "/images/p2.png",
-    tags: ["Flutter", "Face Recognition", "Dart", "Firebase"],
+    tags: ["Flutter", "Face Recognition"],
     github: "https://github.com/silkiy",
-    demo: null,
   },
   {
-    title: "Dashboard Profiling MIT",
-    description: "Responsible for developing scalable backend services using Node.js and Express with TypeScript at PT Merkle Inovasi Teknologi (MIT). Designed and implemented RESTful APIs for multi-role authentication, resume management, and data verification using MongoDB and Mongoose.",
+    title: "MIT Profiling",
+    description: "Scalable backend & RESTful APIs.",
     image: "/images/p3.png",
-    tags: ["Node.js", "Express", "TypeScript", "MongoDB", "Mongoose"],
+    tags: ["Node.js", "Express", "TypeScript"],
     github: "https://github.com/silkiy",
-    demo: null,
   },
   {
-    title: "Event Organizer Bumper",
-    description: "Created a motion graphic bumper for the 31st Anniversary (Dies Natalis) of SMK Telkom Malang, bringing the “Moklet Go Global” theme to life with dynamic visuals in Adobe After Effects.",
-    image: "/images/p4.png",
-    tags: ["After Effects", "Motion Graphics", "Video Design"],
-    github: null,
-    demo: "https://instagram.com/project_silki",
-    video: true,
-  },
-  {
-    title: "Challenge Token Vendor",
-    description: "Developed and deployed a smart contract-based token vendor on the Ethereum blockchain using Solidity and Hardhat, enabling secure token purchases and sales with real-time balance updates.",
+    title: "Token Vendor",
+    description: "Smart contract-based token vendor.",
     image: "/images/p5.png",
-    tags: ["Solidity", "Hardhat", "Ethereum", "Smart Contract", "Ethers.js"],
+    tags: ["Solidity", "Hardhat", "Ethereum"],
     github: "https://github.com/silkiy",
-    demo: null,
   },
   {
-    title: "Challenge Simple NFT",
-    description: "Created and deployed a simple NFT smart contract on the Ethereum blockchain using Solidity and Hardhat, allowing users to mint, transfer, and view unique digital assets securely.",
+    title: "Simple NFT",
+    description: "NFT smart contract on Ethereum.",
     image: "/images/p6.png",
-    tags: ["Solidity", "Hardhat", "ERC-721", "NFT", "Ethereum"],
+    tags: ["Solidity", "ERC-721"],
     github: "https://github.com/silkiy",
-    demo: null,
   },
   {
     title: "MaYPI Platform",
-    description: "A professional platform to simplify meter reading operations, bill management, and accurate data analysis reporting.",
+    description: "Platform for meter reading & analysis.",
     image: "/images/p7.jpeg",
-    tags: ["React.js", "Tailwind CSS", "Data Analysis", "Node.js"],
+    tags: ["React.js", "Node.js"],
     github: "https://github.com/silkiy",
-    demo: null,
+  },
+  {
+    title: "Tani Cerdas",
+    description: "Agricultural platform using Next.js and MongoDB.",
+    image: "/images/p8.png",
+    tags: ["Next.js", "MongoDB"],
+    github: "https://github.com/silkiy",
   },
 ];
 
-const projects = () => {
+const Projects = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <section
       id="projects"
-      className="pt-24 pb-20 border-b border-white/5 relative"
-      data-aos="fade-up"
-      data-aos-delay="100"
+      className="pt-32 pb-24 border-b border-border/50 relative bg-background"
       aria-label="Recent Projects Showcase"
     >
-      <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto max-w-7xl">
-        <h2 className="text-center text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-          A Selection of Recent <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">Projects</span>
-        </h2>
-        <p className="text-slate-400 text-center mt-4 text-base sm:text-lg max-w-2xl mx-auto">
-          Here is a collection of full-stack web applications, mobile apps, decentralized Web3 protocols, and creative animations that I have worked on recently.
-        </p>
+      <div className="w-[90%] lg:w-[80%] mx-auto max-w-7xl relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-16 border-b border-border/50 pb-8"
+        >
+          <h2 className="text-4xl md:text-5xl font-mono font-black text-foreground tracking-tighter uppercase">
+            Projects
+          </h2>
+          <p className="font-mono text-sm text-foreground/50 mt-2 tracking-widest uppercase">
+            SYS.LOG // PROJECTS & PROTOCOLS
+          </p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div className="flex flex-col relative" onMouseLeave={() => setHoveredIndex(null)}>
           {projectList.map((project, idx) => (
-            <article
+            <motion.div
               key={idx}
-              className="bg-[#14134145] backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden hover:border-cyan-500/30 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_15px_30px_-10px_rgba(34,211,238,0.15)] flex flex-col h-full group"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
+              onMouseEnter={() => setHoveredIndex(idx)}
+              className="group border-b border-border/30 hover:border-foreground/50 py-12 transition-colors duration-300 flex flex-col md:flex-row md:items-center justify-between relative cursor-crosshair"
             >
-              {/* Project Image Container */}
-              <div className="relative w-full h-[220px] overflow-hidden bg-slate-900">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} - ${project.description.slice(0, 50)}...`}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d1f] via-transparent to-transparent opacity-60" />
-              </div>
-
-              {/* Project Details */}
-              <div className="p-6 flex-grow flex flex-col justify-between">
-                <div>
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-1.5 mb-4" aria-label="Technologies used">
-                    {project.tags.map((tag, tagIdx) => (
-                      <span
-                        key={tagIdx}
-                        className="px-2.5 py-0.5 rounded-full bg-cyan-950/70 border border-cyan-800/40 text-cyan-300 text-xs font-semibold tracking-wide"
-                      >
+              {/* Text Area */}
+              <div className="z-10 relative pointer-events-none md:pointer-events-auto">
+                <h3 className="text-3xl md:text-5xl lg:text-6xl font-mono font-black tracking-tighter uppercase text-foreground/50 group-hover:text-foreground transition-colors duration-500">
+                  {project.title}
+                </h3>
+                <div className="flex flex-wrap items-center gap-4 mt-2">
+                  <p className="text-sm font-mono text-foreground/70 hidden sm:block">
+                    {project.description}
+                  </p>
+                  <div className="flex gap-2">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="text-xs font-mono border border-border/50 px-2 py-0.5 rounded-none text-foreground/70 uppercase">
                         {tag}
                       </span>
                     ))}
                   </div>
-
-                  {/* Title */}
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-200 transition-colors">
-                    {project.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
-                    {project.description}
-                  </p>
-                </div>
-
-                {/* Actions */}
-                <div className="flex items-center space-x-4 pt-4 border-t border-white/5">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-1.5 text-slate-300 hover:text-white transition-colors text-sm font-semibold focus:outline-none focus:underline"
-                      aria-label={`View GitHub repository for ${project.title}`}
-                    >
-                      <FaGithub className="w-4 h-4" />
-                      <span>Code</span>
-                    </a>
-                  )}
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-1.5 text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-semibold focus:outline-none focus:underline"
-                      aria-label={`View live demo of ${project.title}`}
-                    >
-                      <FaExternalLinkAlt className="w-3.5 h-3.5" />
-                      <span>Live Demo</span>
-                    </a>
-                  )}
-                  {project.video && project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-1.5 text-pink-400 hover:text-pink-300 transition-colors text-sm font-semibold focus:outline-none focus:underline"
-                      aria-label={`Watch presentation video of ${project.title}`}
-                    >
-                      <FaVideo className="w-3.5 h-3.5" />
-                      <span>Watch</span>
-                    </a>
-                  )}
                 </div>
               </div>
-            </article>
+
+              {/* Action Buttons */}
+              <div className="z-10 mt-4 md:mt-0 flex gap-4 md:opacity-0 md:-translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 border border-border/50 bg-background/50 backdrop-blur-sm hover:bg-foreground hover:text-background transition-colors"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                  </a>
+                )}
+              </div>
+
+              {/* Hover Image Reveal */}
+              <AnimatePresence>
+                {hoveredIndex === idx && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
+                    animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                    exit={{ opacity: 0, scale: 0.9, rotate: 2 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    className="absolute right-[20%] top-1/2 -translate-y-1/2 z-0 hidden lg:block pointer-events-none mix-blend-luminosity"
+                  >
+                    <div className="w-[300px] h-[200px] relative border border-border/50 bg-background overflow-hidden">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 300px"
+                        className="object-cover grayscale opacity-80"
+                      />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -172,4 +156,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

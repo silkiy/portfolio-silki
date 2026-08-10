@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const font = Inter({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const font = JetBrains_Mono({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -21,6 +22,10 @@ export const metadata: Metadata = {
   keywords: [
     "Wildan Silki",
     "Wildan Silki Sawabiqil Abroor",
+    "Wildan",
+    "Silki",
+    "Sawabiqil",
+    "Abroor",
     "Remote Software Engineer",
     "Remote Full-Stack Developer Indonesia",
     "Web3 Specialist Remote",
@@ -29,6 +34,14 @@ export const metadata: Metadata = {
     "Available for Remote Work",
     "Professional Developer Portfolio",
     "Software Engineer Indonesia Remote",
+    "Full-Stack Developer Malang",
+    "Quant Trader Indonesia",
+    "Smart Contract Developer",
+    "Web Developer Indonesia",
+    "Frontend Developer",
+    "Backend Developer",
+    "React Developer",
+    "Node.js Developer"
   ],
   authors: [{ name: "Wildan Silki Sawabiqil Abroor", url: "https://wildansilki.xyz" }],
   creator: "Wildan Silki",
@@ -39,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Wildan Silki Portfolio",
     images: [
       {
-        url: "/images/s8.jpg",
+        url: "https://wildansilki.xyz/images/profile.jpeg",
         width: 1200,
         height: 630,
         alt: "Wildan Silki Sawabiqil Abroor - Software Engineer",
@@ -52,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wildan Silki | Full-Stack & Smart Contract Developer",
     description: "Professional portfolio of Wildan Silki, a passionate developer specializing in Next.js, React, Smart Contracts, and Quantitative Trading.",
-    images: ["/images/s8.jpg"],
+    images: ["https://wildansilki.xyz/images/profile.jpeg"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -93,7 +106,7 @@ const jsonLd = [
     "jobTitle": "Professional Software Engineer (Remote-Ready)",
     "description": "Wildan Silki is a highly skilled Software Engineer from Indonesia, currently studying at UISI and specializing in Full-Stack development and Web3 technology. International award winner, available for Remote Work global opportunities.",
     "url": "https://wildansilki.xyz",
-    "image": "https://wildansilki.xyz/images/s8.jpg",
+    "image": "https://wildansilki.xyz/images/profile.jpeg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Malang",
@@ -127,7 +140,12 @@ const jsonLd = [
       "Solidity",
       "React",
       "Algorithmic Trading",
-      "Mobile App Development"
+      "Mobile App Development",
+      "Typescript",
+      "Tailwind CSS",
+      "Frontend Architecture",
+      "Backend API Design",
+      "Web3 Integration"
     ]
   },
   {
@@ -146,20 +164,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${font.className} antialiased bg-[#0d0d1f] text-slate-100 min-h-screen flex flex-col`}>
-        <ResponsiveNav />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-        <ScrollToTop />
+      <body className={`${font.className} antialiased bg-background text-foreground min-h-screen flex flex-col`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ResponsiveNav />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+          <ScrollToTop />
+        </ThemeProvider>
       </body>
     </html>
   );
