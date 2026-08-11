@@ -53,19 +53,16 @@ const Contact = () => {
     setStatus("sending");
 
     try {
+      const submissionData = new FormData();
+      submissionData.append("access_key", "d5c4e6a7-6911-4cec-a134-1a4c2ef4f7f5");
+      submissionData.append("name", formData.name);
+      submissionData.append("email", formData.email);
+      submissionData.append("subject", formData.subject);
+      submissionData.append("message", formData.message);
+
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: "d5c4e6a7-6911-4cec-a134-1a4c2ef4f7f5",
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        }),
+        body: submissionData
       });
 
       const result = await response.json();
