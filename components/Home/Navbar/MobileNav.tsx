@@ -49,12 +49,12 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
                     ?.scrollIntoView({ behavior: "smooth" });
                   closeNav();
                 }}
-                className="group py-4 border-b border-border/30 hover:border-foreground/50 text-foreground/70 hover:text-foreground font-mono font-bold uppercase tracking-widest transition-colors duration-300 flex items-center space-x-4"
+                className="group py-4 border-b border-foreground/50 text-foreground font-mono font-bold uppercase tracking-widest transition-colors duration-300 flex items-center space-x-4"
               >
-                <span className="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs text-foreground/50">
+                <span className="opacity-100 translate-x-0 text-xs text-foreground/50">
                   &gt;
                 </span>
-                <span className="group-hover:translate-x-2 transition-transform duration-300">
+                <span className="translate-x-2">
                   {link.label}
                 </span>
               </a>

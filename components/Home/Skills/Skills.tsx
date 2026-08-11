@@ -130,9 +130,10 @@ const Skills = () => {
             <motion.div 
               variants={itemVariants}
               key={`${skill.name}-${i}`} 
-              className="group border border-border/50 bg-background/20 backdrop-blur-sm -ml-[1px] -mt-[1px] p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center transition-all duration-500 hover:bg-foreground/5 hover:border-foreground hover:z-10 relative cursor-crosshair"
+              tabIndex={0}
+              className="group border border-border/50 bg-background/20 backdrop-blur-sm -ml-[1px] -mt-[1px] p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center transition-all duration-500 hover:bg-foreground/5 focus:bg-foreground/5 focus:outline-none hover:border-foreground focus:border-foreground hover:z-10 focus:z-10 relative cursor-crosshair"
             >
-              <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-4 md:mb-6 grayscale opacity-50 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110">
+              <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-4 md:mb-6 grayscale opacity-50 transition-all duration-500 group-hover:grayscale-0 group-focus:grayscale-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:scale-110 group-focus:scale-110">
                 <Image
                   src={skill.icon}
                   alt={skill.name}
@@ -141,7 +142,7 @@ const Skills = () => {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-[10px] sm:text-xs font-mono font-bold text-foreground/50 tracking-widest uppercase text-center group-hover:text-foreground transition-colors duration-500">
+              <h3 className="text-[10px] sm:text-xs font-mono font-bold text-foreground/50 tracking-widest uppercase text-center group-hover:text-foreground group-focus:text-foreground transition-colors duration-500">
                 {skill.name}
               </h3>
             </motion.div>

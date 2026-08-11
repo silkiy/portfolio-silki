@@ -44,11 +44,13 @@ const Footer: React.FC = () => {
                     href={`#${link.url}`}
                     onClick={(e) => {
                       e.preventDefault();
-                      document.getElementById(link.url)?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById(link.url)
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
+                    className="text-foreground md:text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
                   >
-                    <span className="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
+                    <span className="opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
                       &gt;
                     </span>
                     <span>{link.label}</span>
@@ -69,11 +71,13 @@ const Footer: React.FC = () => {
                     href={`#${link.url}`}
                     onClick={(e) => {
                       e.preventDefault();
-                      document.getElementById(link.url)?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById(link.url)
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
+                    className="text-foreground md:text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
                   >
-                    <span className="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
+                    <span className="opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
                       &gt;
                     </span>
                     <span>{link.label}</span>
@@ -89,9 +93,7 @@ const Footer: React.FC = () => {
           <p className="text-xs text-foreground/50 font-mono tracking-widest uppercase">
             &copy; {year} W.SILKI. ALL RIGHTS RESERVED.
           </p>
-          <p className="text-xs text-foreground/50 font-mono tracking-widest uppercase">
-            Crafted with ❤️ by Wildan Silki Sawabiqil Abroor
-          </p>
+          <p className="text-xs text-foreground/50 font-mono tracking-widest uppercase"></p>
         </div>
       </div>
     </footer>

@@ -117,38 +117,38 @@ const Contact = () => {
               Available for remote software engineering contracts and Web3 architecture consultations. Ping me directly or use the secure form.
             </p>
 
-            <div className="border border-border/50 bg-background/50 p-4 md:p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
+            <div tabIndex={0} className="border border-border/50 bg-background/50 p-4 md:p-6 flex items-center justify-between group transition-colors hover:border-foreground/50 focus:border-foreground/50 focus:outline-none">
               <div className="overflow-hidden mr-4">
                 <span className="font-mono text-[10px] md:text-xs text-foreground/50 uppercase tracking-widest block mb-1">E-Mail</span>
                 <a
                   href="mailto:contact.wildansilki@gmail.com"
-                  className="font-mono text-xs sm:text-sm md:text-base font-bold text-foreground hover:underline break-words"
+                  className="font-mono text-xs sm:text-sm md:text-base font-bold text-foreground hover:underline focus:underline break-words"
                 >
                   contact.wildansilki@gmail.com
                 </a>
               </div>
               <button
                 onClick={() => handleCopy("contact.wildansilki@gmail.com", "email")}
-                className="p-2 border border-transparent hover:border-border transition-colors text-foreground focus:outline-none"
+                className="p-2 border border-transparent hover:border-border focus:border-border transition-colors text-foreground focus:outline-none"
                 aria-label="Copy email"
               >
                 {copiedText === "email" ? <BiCheck className="w-5 h-5 text-foreground" /> : <BiCopy className="w-5 h-5" />}
               </button>
             </div>
 
-            <div className="border border-border/50 bg-background/50 p-4 md:p-6 flex items-center justify-between group transition-colors hover:border-foreground/50">
+            <div tabIndex={0} className="border border-border/50 bg-background/50 p-4 md:p-6 flex items-center justify-between group transition-colors hover:border-foreground/50 focus:border-foreground/50 focus:outline-none">
               <div>
                 <span className="font-mono text-[10px] md:text-xs text-foreground/50 uppercase tracking-widest block mb-1">Phone</span>
                 <a
                   href="tel:+6281232522276"
-                  className="font-mono text-xs sm:text-sm md:text-base font-bold text-foreground hover:underline"
+                  className="font-mono text-xs sm:text-sm md:text-base font-bold text-foreground hover:underline focus:underline"
                 >
                   +62 812-3252-2276
                 </a>
               </div>
               <button
                 onClick={() => handleCopy("+6281232522276", "phone")}
-                className="p-2 border border-transparent hover:border-border transition-colors text-foreground focus:outline-none"
+                className="p-2 border border-transparent hover:border-border focus:border-border transition-colors text-foreground focus:outline-none"
                 aria-label="Copy phone"
               >
                 {copiedText === "phone" ? <BiCheck className="w-5 h-5 text-foreground" /> : <BiCopy className="w-5 h-5" />}

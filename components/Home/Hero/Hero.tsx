@@ -22,7 +22,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative p-1 border border-border/50 bg-background/50 backdrop-blur-sm"
+          tabIndex={0}
+          className="relative p-1 border border-border/50 bg-background/50 backdrop-blur-sm group focus:outline-none"
         >
           <Image
             src="/images/profile.jpeg"
@@ -30,7 +31,7 @@ const Hero = () => {
             width={160}
             height={160}
             priority
-            className="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-cover border border-border/50 grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-cover border border-border/50 grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-700"
           />
         </motion.div>
 

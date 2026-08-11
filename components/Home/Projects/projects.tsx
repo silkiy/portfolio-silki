@@ -91,11 +91,13 @@ const Projects = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
               onMouseEnter={() => setHoveredIndex(idx)}
-              className="group border-b border-border/30 hover:border-foreground/50 py-12 transition-colors duration-300 flex flex-col md:flex-row md:items-center justify-between relative cursor-crosshair"
+              onClick={() => setHoveredIndex(hoveredIndex === idx ? null : idx)}
+              tabIndex={0}
+              className="group border-b border-border/30 hover:border-foreground/50 focus:border-foreground/50 focus:outline-none py-12 transition-colors duration-300 flex flex-col md:flex-row md:items-center justify-between relative cursor-crosshair"
             >
               {/* Text Area */}
               <div className="z-10 relative pointer-events-none md:pointer-events-auto">
-                <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-mono font-black tracking-tighter uppercase text-foreground/50 group-hover:text-foreground transition-colors duration-500">
+                <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-mono font-black tracking-tighter uppercase text-foreground/50 group-hover:text-foreground group-focus:text-foreground transition-colors duration-500">
                   {project.title}
                 </h3>
                 <div className="flex flex-wrap items-center gap-4 mt-2">
@@ -113,7 +115,7 @@ const Projects = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="z-10 mt-4 md:mt-0 flex gap-4 md:opacity-0 md:-translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+              <div className="z-10 mt-4 md:mt-0 flex gap-4 opacity-0 -translate-x-4 group-hover:opacity-100 group-focus:opacity-100 group-hover:translate-x-0 group-focus:translate-x-0 transition-all duration-300">
                 {project.github && (
                   <a
                     href={project.github}
@@ -134,15 +136,15 @@ const Projects = () => {
                     animate={{ opacity: 1, scale: 1, rotate: 0 }}
                     exit={{ opacity: 0, scale: 0.9, rotate: 2 }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
-                    className="absolute right-[20%] top-1/2 -translate-y-1/2 z-0 hidden lg:block pointer-events-none mix-blend-luminosity"
+                    className="absolute right-[5%] md:right-[20%] top-1/2 -translate-y-1/2 z-0 pointer-events-none"
                   >
-                    <div className="w-[300px] h-[200px] relative border border-border/50 bg-background overflow-hidden">
+                    <div className="w-[150px] h-[100px] md:w-[300px] md:h-[200px] relative border border-border/50 bg-background overflow-hidden">
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        sizes="(max-width: 1024px) 100vw, 300px"
-                        className="object-cover grayscale opacity-80"
+                        sizes="(max-width: 1024px) 150px, 300px"
+                        className="object-cover"
                       />
                     </div>
                   </motion.div>

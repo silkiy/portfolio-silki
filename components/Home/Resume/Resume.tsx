@@ -127,15 +127,16 @@ const Resume = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="border border-border/50 bg-background/50 hover:bg-foreground hover:text-background transition-colors duration-500 group flex flex-col"
+              tabIndex={0}
+              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair"
             >
-              <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50">
+              <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
                   src="/images/a1.jpeg"
                   alt="2nd Place International Code Olympiad"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal opacity-70 group-hover:opacity-100"
+                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -153,15 +154,16 @@ const Resume = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="border border-border/50 bg-background/50 hover:bg-foreground hover:text-background transition-colors duration-500 group flex flex-col"
+              tabIndex={0}
+              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair"
             >
-              <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50">
+              <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
                   src="/images/a2.jpg"
                   alt="SMK Telkom Malang Graduate"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal opacity-70 group-hover:opacity-100"
+                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -179,15 +181,16 @@ const Resume = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="border border-border/50 bg-background/50 hover:bg-foreground hover:text-background transition-colors duration-500 group flex flex-col"
+              tabIndex={0}
+              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair"
             >
-              <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50">
+              <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
                   src="/images/r1.jpg"
                   alt="Executive Presentation"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal opacity-70 group-hover:opacity-100"
+                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
                 />
               </div>
               <div className="p-6 flex-1 flex flex-col">
