@@ -36,7 +36,7 @@ const Hero = () => {
             width={160}
             height={160}
             priority
-            className="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-cover border border-border/50 transition-all duration-700"
+            className="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-cover border border-border/50 grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-700"
           />
         </motion.div>
 
