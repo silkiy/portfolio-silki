@@ -60,7 +60,7 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          access_key: "d5c4e6a7-6911-4cec-a134-1a4c2ef4f7f5",
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
