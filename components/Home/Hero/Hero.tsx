@@ -6,7 +6,6 @@ import { BsArrowRight } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
-const SplineBackground = dynamic(() => import("../../3d/SplineBackground"), { ssr: false });
 
 const Hero = () => {
   return (
@@ -15,7 +14,13 @@ const Hero = () => {
       className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden flex-col pt-16 md:pt-20"
       aria-label="Introduction Section"
     >
-      <SplineBackground />
+      <div 
+        className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none z-0" 
+        style={{
+          backgroundImage: `radial-gradient(var(--foreground) 1px, transparent 1px)`,
+          backgroundSize: '40px 40px'
+        }}
+      />
       <div className="relative z-10 flex flex-col items-center max-w-4xl px-4 mt-16 w-full">
         {/* Anti-slop Profile Container: No pulsing borders or colored shadows */}
         <motion.div
@@ -31,7 +36,7 @@ const Hero = () => {
             width={160}
             height={160}
             priority
-            className="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-cover border border-border/50 grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-700"
+            className="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-cover border border-border/50 transition-all duration-700"
           />
         </motion.div>
 
