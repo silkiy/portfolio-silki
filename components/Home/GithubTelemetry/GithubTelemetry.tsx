@@ -60,6 +60,7 @@ const GithubTelemetry = () => {
       case "WatchEvent":
         return <BiStar className="w-4 h-4 text-yellow-400 shrink-0" />;
       case "CreateEvent":
+      case "RepoEvent":
         return <BiFolder className="w-4 h-4 text-emerald-400 shrink-0" />;
       case "ForkEvent":
         return <BiGitRepoForked className="w-4 h-4 text-purple-400 shrink-0" />;
@@ -74,6 +75,8 @@ const GithubTelemetry = () => {
         return "PUSH";
       case "WatchEvent":
         return "STAR";
+      case "RepoEvent":
+        return "REPO";
       case "CreateEvent":
         return "CREATE";
       case "ForkEvent":
@@ -91,7 +94,7 @@ const GithubTelemetry = () => {
     if (filter === "ALL") return true;
     if (filter === "COMMITS") return ev.type === "PushEvent";
     if (filter === "STARS") return ev.type === "WatchEvent";
-    if (filter === "REPOS") return ev.type === "CreateEvent" || ev.type === "ForkEvent";
+    if (filter === "REPOS") return ev.type === "CreateEvent" || ev.type === "RepoEvent" || ev.type === "ForkEvent";
     return true;
   });
 

@@ -33,6 +33,24 @@ export async function GET() {
     if (reposRes.ok) {
       const repos = await reposRes.json();
       if (Array.isArray(repos)) {
+        // Add active repositories to stream so REPOS filter is populated with active projects
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        repos.forEach((repo: any) => {
+          const repoId = `repo-${repo.id}`;
+          if (!seenIds.has(repoId)) {
+            seenIds.add(repoId);
+            combinedEvents.push({
+              id: repoId,
+              type: "RepoEvent",
+              repo: `${username}/${repo.name}`,
+              repoUrl: repo.html_url || `https://github.com/${username}/${repo.name}`,
+              action: `Active Repository [${repo.language || "Source"}]`,
+              detail: repo.description || `Branch [${repo.default_branch || "main"}] • ${repo.stargazers_count || 0} Stars • Updated`,
+              createdAt: repo.pushed_at || repo.updated_at || repo.created_at || new Date().toISOString(),
+            });
+          }
+        });
+
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const commitPromises = repos.slice(0, 3).map(async (repo: any) => {
           try {
