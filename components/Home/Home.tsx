@@ -1,9 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Hero from "./Hero/Hero";
 import Resume from "./Resume/Resume";
 import Projects from "./Projects/projects";
 import Skills from "./Skills/Skills";
+import GithubTelemetry from "./GithubTelemetry/GithubTelemetry";
 import Contact from "./Contact/Contact";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Resume />
       <Projects />
       <Skills />
+      <GithubTelemetry />
       <Contact />
     </div>
   );

@@ -36,6 +36,11 @@ export const NavLink = [
     },
     {
         id: 8,
+        url: "telemetry",
+        label: "Telemetry"
+    },
+    {
+        id: 9,
         url: "contact",
         label: "Contact"
     },
