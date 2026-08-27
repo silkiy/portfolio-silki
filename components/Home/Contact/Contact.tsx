@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { BiCopy, BiCheck } from "react-icons/bi";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -14,8 +14,9 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "success">("idle");
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [lastWaUrl, setLastWaUrl] = useState<string>("");
 
   const handleCopy = (text: string, type: string) => {
     navigator.clipboard.writeText(text);
@@ -46,37 +47,28 @@ const Contact = () => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
 
-    setStatus("sending");
+    const phoneNumber = "6281232522276";
+    const messageLines = [
+      "Halo Wildan,",
+      "",
+      "Saya menghubungi melalui form portofolio Anda:",
+      `• *Nama:* ${formData.name.trim()}`,
+      `• *Email:* ${formData.email.trim()}`,
+      `• *Subjek:* ${formData.subject.trim()}`,
+      "",
+      `*Pesan:*`,
+      formData.message.trim(),
+    ];
 
-    try {
-      const submissionData = new FormData();
-      submissionData.append("access_key", "d5c4e6a7-6911-4cec-a134-1a4c2ef4f7f5");
-      submissionData.append("name", formData.name);
-      submissionData.append("email", formData.email);
-      submissionData.append("subject", formData.subject);
-      submissionData.append("message", formData.message);
+    const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageLines.join("\n"))}`;
+    setLastWaUrl(waUrl);
+    setStatus("success");
 
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: submissionData
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        setStatus("success");
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      } else {
-        console.error(result.message);
-        setStatus("error");
-      }
-    } catch (error) {
-      console.error(error);
-      setStatus("error");
-    }
+    window.open(waUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -135,9 +127,11 @@ const Contact = () => {
 
             <div tabIndex={0} className="border border-border/50 bg-background/50 p-4 md:p-6 flex items-center justify-between group transition-colors hover:border-foreground/50 focus:border-foreground/50 focus:outline-none">
               <div>
-                <span className="font-mono text-[10px] md:text-xs text-foreground/50 uppercase tracking-widest block mb-1">Phone</span>
+                <span className="font-mono text-[10px] md:text-xs text-foreground/50 uppercase tracking-widest block mb-1">WhatsApp / Phone</span>
                 <a
-                  href="tel:+6281232522276"
+                  href="https://wa.me/6281232522276"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-mono text-xs sm:text-sm md:text-base font-bold text-foreground hover:underline focus:underline"
                 >
                   +62 812-3252-2276
@@ -158,9 +152,19 @@ const Contact = () => {
               </h4>
               <div className="flex gap-4">
                 <a
+                  href="https://wa.me/6281232522276"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="p-4 border border-border/50 hover:bg-foreground hover:text-background transition-colors text-foreground"
+                >
+                  <FaWhatsapp className="w-5 h-5" />
+                </a>
+                <a
                   href="https://github.com/silkiy"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="GitHub"
                   className="p-4 border border-border/50 hover:bg-foreground hover:text-background transition-colors text-foreground"
                 >
                   <FaGithub className="w-5 h-5" />
@@ -169,6 +173,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/silki/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                   className="p-4 border border-border/50 hover:bg-foreground hover:text-background transition-colors text-foreground"
                 >
                   <FaLinkedin className="w-5 h-5" />
@@ -177,6 +182,7 @@ const Contact = () => {
                   href="https://www.instagram.com/wildansilki_/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Instagram"
                   className="p-4 border border-border/50 hover:bg-foreground hover:text-background transition-colors text-foreground"
                 >
                   <FaInstagram className="w-5 h-5" />
@@ -199,27 +205,33 @@ const Contact = () => {
                   <div className="w-16 h-16 border border-foreground flex items-center justify-center text-foreground mb-6">
                     <BiCheck className="w-8 h-8" />
                   </div>
-                  <h4 className="font-mono text-2xl font-bold text-foreground mb-4 uppercase tracking-widest">TRANSMISSION SECURED</h4>
-                  <button
-                    onClick={() => setStatus("idle")}
-                    className="mt-8 px-6 py-3 border border-border/50 bg-transparent hover:bg-foreground hover:text-background text-foreground font-mono text-xs uppercase tracking-widest transition-colors"
-                  >
-                    SEND ANOTHER PING
-                  </button>
-                </div>
-              ) : status === "error" ? (
-                <div className="text-center py-16 flex flex-col items-center">
-                  <div className="w-16 h-16 border border-destructive flex items-center justify-center text-destructive mb-6">
-                    <span className="font-mono text-2xl font-bold">X</span>
+                  <h4 className="font-mono text-2xl font-bold text-foreground mb-3 uppercase tracking-widest">
+                    INITIALIZING WHATSAPP
+                  </h4>
+                  <p className="font-mono text-xs md:text-sm text-foreground/70 mb-8 max-w-md uppercase tracking-wide">
+                    Transmission prepared. If WhatsApp didn&apos;t open automatically, use the direct link below.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    {lastWaUrl && (
+                      <a
+                        href={lastWaUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground font-mono text-xs uppercase tracking-widest font-bold transition-colors inline-block text-center"
+                      >
+                        OPEN WHATSAPP
+                      </a>
+                    )}
+                    <button
+                      onClick={() => {
+                        setStatus("idle");
+                        setFormData({ name: "", email: "", subject: "", message: "" });
+                      }}
+                      className="px-6 py-3 border border-border/50 bg-transparent hover:bg-foreground hover:text-background text-foreground font-mono text-xs uppercase tracking-widest transition-colors"
+                    >
+                      RESET FORM
+                    </button>
                   </div>
-                  <h4 className="font-mono text-2xl font-bold text-destructive mb-4 uppercase tracking-widest">TRANSMISSION FAILED</h4>
-                  <p className="font-mono text-sm text-foreground/70 mb-8">Please check your Access Key or network connection.</p>
-                  <button
-                    onClick={() => setStatus("idle")}
-                    className="px-6 py-3 border border-destructive/50 bg-transparent hover:bg-destructive hover:text-white text-destructive font-mono text-xs uppercase tracking-widest transition-colors"
-                  >
-                    RETRY
-                  </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -294,10 +306,9 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    disabled={status === "sending"}
-                    className="w-full py-4 border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground font-mono font-bold tracking-widest uppercase transition-colors duration-300 disabled:opacity-50 cursor-crosshair"
+                    className="w-full py-4 border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground font-mono font-bold tracking-widest uppercase transition-colors duration-300 cursor-crosshair flex items-center justify-center gap-2"
                   >
-                    {status === "sending" ? "TRANSMITTING..." : "EXECUTE"}
+                    <span>EXECUTE // VIA WHATSAPP</span>
                   </button>
                 </form>
               )}
