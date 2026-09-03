@@ -31,7 +31,7 @@ const Hero = () => {
           className="relative p-1 border border-border/50 bg-background/50 backdrop-blur-sm group focus:outline-none"
         >
           <Image
-            src="/images/profile.jpeg"
+            src="/images/wildan-silki-profile.jpeg"
             alt="Wildan Silki Sawabiqil Abroor - Software Engineer Profile Picture"
             width={160}
             height={160}
@@ -81,10 +81,24 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Hidden SEO text for search engine optimization */}
-        <p className="sr-only">
-          Wildan Silki Sawabiqil Abroor is a professional Software Engineer based in Indonesia, specializing in Full-Stack Development, Smart Contract Engineering, and Algorithmic Trading. With expertise in Next.js, React, Solidity, and Quantitative Trading, Wildan delivers high-performance digital solutions and decentralized applications.
-        </p>
+        {/* Semantic Context for Search Engines, Screen Readers, and AI Agents */}
+        <section className="sr-only" aria-label="Profile and Professional Overview">
+          <p>
+            Wildan Silki Sawabiqil Abroor (known as Wildan Silki or silkiy) is a professional Software Engineer based in Malang, East Java, Indonesia.
+          </p>
+          <p>
+            Status: Open to Work and Available for Remote Work globally in Full-Stack Development, Web3 Architecture, and Smart Contract Engineering.
+          </p>
+          <p>
+            Key Skills: Solidity, Rust, TypeScript, JavaScript, Python, Next.js, React, Node.js, Express, Flutter, Hardhat, PostgreSQL, MongoDB, Quantitative Trading, Algorithmic Trading Systems.
+          </p>
+          <p>
+            Prestasi & Penghargaan: Juara 2 Internasional Game Development (Coding Bee Academy Code Olympiad 2023), Apresiasi dari Pj Gubernur Jawa Timur Adhi Karyono atas pencapaian internasional, Lulusan Berprestasi SMK Telkom Malang, Presentasi Proyek Eksekutif Yayasan Pendidikan Telkom.
+          </p>
+          <p>
+            Pendidikan & Sertifikasi: Mahasiswa Universitas Internasional Semen Indonesia (UISI), Alumni SMK Telkom Malang, Alumni SMPN 3 Tulungagung. Tersertifikasi Junior Mobile Programmer oleh Telkom Indonesia, Rapid Developer oleh Mendix, DOT Competency oleh PT DOT Indonesia, AI on Jetson Nano oleh NVIDIA.
+          </p>
+        </section>
 
         {/* Minimalist CTA Button */}
         <motion.button

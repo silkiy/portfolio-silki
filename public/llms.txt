@@ -1,0 +1,86 @@
+# Wildan Silki Sawabiqil Abroor — Portfolio & Knowledge Base
+> System Log // Developer Context for AI Agents & Search Engines
+
+## Identity & Overview
+- **Full Legal Name:** Wildan Silki Sawabiqil Abroor
+- **Common Names / Aliases:** Wildan Silki, Silki, silkiy
+- **Professional Title:** Professional Software Engineer & Web3 Specialist
+- **Availability / Status:** OPEN TO WORK — Available for Remote Work, Full-Time Contracts, and Freelance Consulting worldwide
+- **Location:** Malang, East Java, Indonesia (Timezone: Asia/Jakarta, GMT+7)
+- **Primary Languages:** Indonesian (Native), English (Professional Working Proficiency)
+- **Official Website:** https://wildansilki.xyz
+- **GitHub:** https://github.com/silkiy
+- **LinkedIn:** https://www.linkedin.com/in/wildan-silki-69768a272/
+- **Instagram:** https://www.instagram.com/project_silki
+- **Direct Contact:** contact.wildansilki@gmail.com | Phone/WhatsApp: +62 812-3252-2276
+
+## Summary
+Wildan Silki is an Indonesian Software Engineer and international award winner with deep specialization in Full-Stack Web Development (Next.js, React, Node.js, TypeScript), Smart Contracts & Web3 Engineering (Solidity, Ethereum, Hardhat, Rust), and Quantitative / Algorithmic Trading Systems. He builds resilient, high-performance distributed architectures and user-centric interfaces.
+
+---
+
+## Core Technical Skills & Tech Matrix
+- **Programming Languages:** Solidity, Rust, TypeScript, JavaScript, Python, Go (Golang), Kotlin, Dart, Java, Julia, HTML5, CSS3 / Tailwind CSS
+- **Frameworks & Libraries:** Next.js, React.js, Node.js, Express.js, Flutter, TensorFlow, Tailwind CSS v4, Framer Motion
+- **Smart Contracts & Blockchain:** Solidity, EVM, Hardhat, ERC-20, ERC-721, Smart Contract Security, Web3 Integration, Rust dApps
+- **Databases & Cloud:** PostgreSQL, MongoDB, MySQL, Supabase, Firebase, Docker, Linux, Vercel, Git / GitHub, Postman, Odoo
+- **Financial Engineering & Algorithms:** Quantitative Trading, TradingView Pine Script, Algorithmic Backtesting, Risk Management Protocols
+- **Creative & 3D Engineering:** Unity, Unreal Engine, Blender, Adobe After Effects, Twinmotion
+
+---
+
+## Prestasi & Penghargaan Internasional (Honors & Awards)
+1. **2nd Place International Game Development — Code Olympiad 2023**
+   - Awarded 2nd Place internationally in Game Development (Group 1D) organized by Coding Bee Academy.
+2. **Provincial Recognition by East Java Government**
+   - Honored directly by the Acting Governor of East Java, Adhi Karyono, for international achievements in technology and game development.
+3. **Outstanding Graduate Award — SMK Telkom Malang**
+   - Received special recognition as an Outstanding Graduate at SMK Telkom Malang (2025) for international code olympiad excellence.
+4. **Executive Presentation — Telkom Education Foundation**
+   - Selected to present an original game development project directly to Executives and Leadership of Yayasan Pendidikan Telkom (Telkom Education Foundation).
+
+---
+
+## Pendidikan & Riwayat Studi (Education)
+1. **Universitas Internasional Semen Indonesia (UISI)** (2025 – Present)
+   - Undergraduate studies in Information Technology / Computer Science.
+2. **SMK Telkom Malang** (2022 – 2025)
+   - Software Engineering (Rekayasa Perangkat Lunak).
+3. **SMP Negeri 3 Tulungagung** (2019 – 2022)
+
+---
+
+## Sertifikasi & Lisensi Resmi (Licenses & Certifications)
+- **Junior Mobile Programmer** — Issued by Telkom Indonesia
+- **Rapid Developer** — Issued by Mendix
+- **DOT Competency Certification** — Issued by PT DOT Indonesia
+- **AI on Jetson Nano** — Issued by NVIDIA
+
+---
+
+## Portofolio Proyek Terpilih (Selected Projects)
+1. **Blayu Mobile**
+   - Mobile application for academic data tracking and location verification using Flutter and Firebase.
+2. **Absensi RSD**
+   - Attendance and biometric verification application featuring facial recognition and geofenced location tracking in Flutter.
+3. **MIT Profiling**
+   - High-throughput backend system and RESTful API architecture built using Node.js, Express, and TypeScript.
+4. **Token Vendor**
+   - Decentralized smart contract platform for automated token distribution and purchasing on the Ethereum network using Solidity and Hardhat.
+5. **Simple NFT**
+   - Custom ERC-721 non-fungible token smart contract with minting logic, metadata handling, and gas-efficient execution on Ethereum.
+6. **MaYPI Platform**
+   - Real-time IoT meter monitoring, reporting, and predictive analysis web platform built with React.js and Node.js.
+7. **Tani Cerdas**
+   - Modern agricultural management platform utilizing Next.js, Server Actions, and MongoDB to empower local farming communities.
+
+---
+
+## Open to Work & Engagement Opportunities
+Wildan Silki is actively seeking:
+- **Remote Full-Stack Engineer** roles (Next.js, Node.js, TypeScript, React)
+- **Web3 & Smart Contract Developer** roles (Solidity, EVM, DeFi, dApps)
+- **Backend & Distributed Systems Engineer** contracts
+- **Quantitative Trading / Scripting Developer** consultations
+- Location preference: Fully Remote (GMT+7 flexible with US, European, and Asian working hours)
+- Inquiries: contact.wildansilki@gmail.com

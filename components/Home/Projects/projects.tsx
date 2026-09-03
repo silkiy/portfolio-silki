@@ -9,49 +9,49 @@ const projectList = [
   {
     title: "Blayu Mobile",
     description: "Academic data & location tracking using Flutter.",
-    image: "/images/p1.png",
+    image: "/images/project-blayu-mobile-flutter-tracking.png",
     tags: ["Flutter", "Firebase"],
     github: "https://github.com/silkiy",
   },
   {
     title: "Absensi RSD",
     description: "Face recognition & location tracking.",
-    image: "/images/p2.png",
+    image: "/images/project-absensi-rsd-face-recognition.png",
     tags: ["Flutter", "Face Recognition"],
     github: "https://github.com/silkiy",
   },
   {
     title: "MIT Profiling",
     description: "Scalable backend & RESTful APIs.",
-    image: "/images/p3.png",
+    image: "/images/project-mit-profiling-backend-api.png",
     tags: ["Node.js", "Express", "TypeScript"],
     github: "https://github.com/silkiy",
   },
   {
     title: "Token Vendor",
     description: "Smart contract-based token vendor.",
-    image: "/images/p5.png",
+    image: "/images/project-token-vendor-smart-contract.png",
     tags: ["Solidity", "Hardhat", "Ethereum"],
     github: "https://github.com/silkiy",
   },
   {
     title: "Simple NFT",
     description: "NFT smart contract on Ethereum.",
-    image: "/images/p6.png",
+    image: "/images/project-simple-nft-ethereum-erc721.png",
     tags: ["Solidity", "ERC-721"],
     github: "https://github.com/silkiy",
   },
   {
     title: "MaYPI Platform",
     description: "Platform for meter reading & analysis.",
-    image: "/images/p7.jpeg",
+    image: "/images/project-maypi-platform-meter-analysis.jpeg",
     tags: ["React.js", "Node.js"],
     github: "https://github.com/silkiy",
   },
   {
     title: "Tani Cerdas",
     description: "Agricultural platform using Next.js and MongoDB.",
-    image: "/images/p8.png",
+    image: "/images/project-tani-cerdas-agricultural-nextjs.png",
     tags: ["Next.js", "MongoDB"],
     github: "https://github.com/silkiy",
   },
@@ -141,7 +141,7 @@ const Projects = () => {
                     <div className="w-[150px] h-[100px] md:w-[300px] md:h-[200px] relative border border-border/50 bg-background overflow-hidden">
                       <Image
                         src={project.image}
-                        alt={project.title}
+                        alt={`Wildan Silki Project - ${project.title} (${project.description})`}
                         fill
                         sizes="(max-width: 1024px) 150px, 300px"
                         className="object-cover"

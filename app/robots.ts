@@ -6,16 +6,26 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/api/"],
       },
       {
-        userAgent: "Googlebot",
+        userAgent: [
+          "Googlebot",
+          "Bingbot",
+          "Google-Extended",
+          "GPTBot",
+          "ChatGPT-User",
+          "ClaudeBot",
+          "anthropic-ai",
+          "PerplexityBot",
+          "Applebot-Extended",
+          "cohere-ai",
+        ],
         allow: "/",
-      },
-      {
-        userAgent: "Google-Extended",
-        allow: "/",
+        disallow: ["/api/"],
       },
     ],
     sitemap: "https://wildansilki.xyz/sitemap.xml",
+    host: "https://wildansilki.xyz",
   };
 }

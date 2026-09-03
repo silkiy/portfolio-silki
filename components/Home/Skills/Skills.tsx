@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { motion, Variants } from "framer-motion";
 
 const allSkillsList = [
-  { name: "Solidity", icon: "images/logo/solidity.svg", category: "languages" },
+  { name: "Solidity", icon: "/images/logo/solidity.svg", category: "languages" },
   { name: "Rust", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg", category: "languages" },
   { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", category: "languages" },
   { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", category: "languages" },
@@ -25,7 +25,7 @@ const allSkillsList = [
   { name: "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg", category: "frameworks" },
   { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg", category: "frameworks" },
 
-  { name: "Hardhat", icon: "images/logo/hardhat-logo-dark.svg", category: "tools" },
+  { name: "Hardhat", icon: "/images/logo/hardhat-logo-dark.svg", category: "tools" },
   { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", category: "tools" },
   { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", category: "tools" },
   { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", category: "tools" },
@@ -36,15 +36,15 @@ const allSkillsList = [
   { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg", category: "tools" },
   { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", category: "tools" },
   { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", category: "tools" },
-  { name: "Odoo", icon: "images/logo/odoo.svg", category: "tools" },
+  { name: "Odoo", icon: "/images/logo/odoo.svg", category: "tools" },
   { name: "Open Claw", icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/openclaw.svg", category: "tools" },
 
-  { name: "Trading View", icon: "images/logo/tradingview.svg", category: "creative" },
+  { name: "Trading View", icon: "/images/logo/tradingview.svg", category: "creative" },
   { name: "Unity", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg", category: "creative" },
   { name: "Unreal Engine", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg", category: "creative" },
   { name: "Blender", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg", category: "creative" },
   { name: "After Effects", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg", category: "creative" },
-  { name: "Twinmotion", icon: "images/logo/twinmotion.svg", category: "creative" },
+  { name: "Twinmotion", icon: "/images/logo/twinmotion.svg", category: "creative" },
 ];
 
 const categories = [

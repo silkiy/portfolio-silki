@@ -132,8 +132,8 @@ const Resume = () => {
             >
               <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
-                  src="/images/a1.jpeg"
-                  alt="2nd Place International Code Olympiad"
+                  src="/images/wildan-silki-provincial-award-east-java.jpeg"
+                  alt="Wildan Silki - 2nd Place International Game Development Code Olympiad Award from East Java Governor"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
@@ -159,8 +159,8 @@ const Resume = () => {
             >
               <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
-                  src="/images/a2.jpg"
-                  alt="SMK Telkom Malang Graduate"
+                  src="/images/wildan-silki-smk-telkom-malang-graduate.jpg"
+                  alt="Wildan Silki Sawabiqil Abroor - Outstanding Graduate Recognition at SMK Telkom Malang"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
@@ -186,8 +186,8 @@ const Resume = () => {
             >
               <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
-                  src="/images/r1.jpg"
-                  alt="Executive Presentation"
+                  src="/images/wildan-silki-executive-presentation-telkom.jpg"
+                  alt="Wildan Silki - Executive Presentation to Telkom Education Foundation"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
