@@ -50,11 +50,34 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 
 ---
 
+---
+
+## Pengalaman Kerja Industri (Work Experience)
+- **Backend Engineer (Internship)** — **PT Merkle Inovasi Teknologi** (May 2025)
+  - Location: Jakarta Office (SOHO Capital at Podomoro City, 30th Fl, Jakarta Barat)
+  - Responsibilities: Architected scalable backend data models, built high-throughput RESTful API endpoints, and optimized server infrastructure for enterprise solutions (including the MIT Profiling system).
+
+---
+
 ## Sertifikasi & Lisensi Resmi (Licenses & Certifications)
-- **Junior Mobile Programmer** — Issued by Telkom Indonesia
-- **Rapid Developer** — Issued by Mendix
-- **DOT Competency Certification** — Issued by PT DOT Indonesia
-- **AI on Jetson Nano** — Issued by NVIDIA
+1. **Certification: Blockchain Basics** — Issued by Cyfrin Updraft (Sep 2025, Credential ID: `BBCC-HZNRP 1N3ASIQ`)
+2. **Learn OpenUSD: Understanding Model Kinds** — Issued by NVIDIA (Aug 2025, Credential ID: `V6pNHAdeTbOWM5YRxSE0Gg`)
+3. **Getting Started with AI on Jetson Nano** — Issued by NVIDIA (Aug 2025, Credential ID: `_SMMCkJuTvGTGRZ4HPswog`)
+4. **Seleksi Kompetensi Dasar (SKD) – Sekolah Kedinasan** — Issued by Badan Kepegawaian Negara (Aug 2025, Credential ID: `4FE0C82626C781FFD56A8F54EE8D0BFF`)
+5. **DOT Certificate of Competency** — Issued by PT DOT Indonesia (May 2025)
+6. **Sertifikat Uji Kompetensi Keahlian (UKK) – Fullstack Developer** — Issued by SMK Telkom Malang (Mar 2025)
+7. **Rapid Developer Certification** — Issued by Mendix (Dec 2024, Credential ID: `85382`)
+8. **2nd Place – Code Olympiad 2023, Game Development Group 1D** — Issued by Coding Bee Academy (Jan 2023)
+9. **Junior Mobile Programmer** — Issued by Telkom Indonesia (BNSP)
+
+---
+
+## Pelatihan Teknis, Workshop & Kompetisi (Training, Workshops & Activities)
+1. **Pelatihan Cyber Security Awareness** — Telkom Indonesia, Yayasan Pendidikan Telkom & Telkom Schools (Jun 2024, Malang)
+2. **Indie Game Ignite @ COMPFEST 15** — COMPFEST Universitas Indonesia & Agate (Oct 2023)
+3. **MANIAC XII Competition Participant** — Universitas Surabaya (UBAYA), Informatics Engineering (Aug 2023)
+4. **Workshop Game Concept Design & Game Asset Design** — MANIAC XII by Universitas Surabaya (UBAYA) (Aug 2023)
+5. **The Power of Modular Design in Low-Code Development** — Merkle Academy & Mendix (Oct 2025)
 
 ---
 
