@@ -69,7 +69,7 @@ const Hero = () => {
         >
           <div className="border border-border/50 bg-background/30 backdrop-blur-md p-4 flex flex-col justify-center">
             <span className="text-foreground/50 mb-1">Status</span>
-            <span className="text-foreground font-semibold">Available for Remote</span>
+            <span className="text-foreground font-semibold">Available for Projects</span>
           </div>
           <div className="border border-border/50 bg-background/30 backdrop-blur-md p-4 flex flex-col justify-center">
             <span className="text-foreground/50 mb-1">Focus</span>
@@ -87,7 +87,7 @@ const Hero = () => {
             Wildan Silki Sawabiqil Abroor (known as Wildan Silki or silkiy) is a professional Software Engineer based in Malang, East Java, Indonesia.
           </p>
           <p>
-            Status: Open to Work and Available for Remote Work globally in Full-Stack Development, Web3 Architecture, and Smart Contract Engineering.
+            Status: Available for projects, remote contracts, and Web3 architecture collaboration.
           </p>
           <p>
             Key Skills: Solidity, Rust, TypeScript, JavaScript, Python, Next.js, React, Node.js, Express, Flutter, Hardhat, PostgreSQL, MongoDB, Quantitative Trading, Algorithmic Trading Systems.

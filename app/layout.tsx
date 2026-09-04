@@ -25,11 +25,11 @@ const siteUrl = "https://wildansilki.xyz";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Wildan Silki | Software Engineer & Web3 Specialist (Open to Work)",
+    default: "Wildan Silki | Software Engineer & Web3 Specialist",
     template: "%s | Wildan Silki",
   },
   description:
-    "Official portfolio of Wildan Silki Sawabiqil Abroor — Professional Software Engineer from Indonesia specializing in Full-Stack development (Next.js, Node.js), Smart Contracts (Solidity, Rust), and algorithmic trading. International award winner, open to work and available for remote roles globally.",
+    "Official portfolio of Wildan Silki Sawabiqil Abroor — Professional Software Engineer from Indonesia specializing in Full-Stack development (Next.js, Node.js), Smart Contracts (Solidity, Rust), and algorithmic trading. International award winner, available for projects, consulting, and remote engineering worldwide.",
   keywords: [
     "Wildan Silki",
     "Wildan Silki Sawabiqil Abroor",
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     "Wildan Silki Code Olympiad",
     "Wildan Silki SMK Telkom Malang",
     "Wildan Silki UISI",
-    "Software Engineer Open to Work",
-    "Available for Remote Work",
+    "Software Engineer Portfolio",
+    "Remote Software Projects",
     "Remote Software Engineer Indonesia",
     "Full-Stack Developer Indonesia",
     "Web3 Specialist Indonesia",
@@ -68,9 +68,9 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Wildan Silki | Software Engineer & Web3 Specialist (Open to Work)",
+    title: "Wildan Silki | Software Engineer & Web3 Specialist",
     description:
-      "Portfolio of Wildan Silki Sawabiqil Abroor — Full-Stack Developer & Smart Contract Engineer. International award winner, available for remote work worldwide.",
+      "Portfolio of Wildan Silki Sawabiqil Abroor — Full-Stack Developer & Smart Contract Engineer. International award winner, available for projects and remote collaboration worldwide.",
     url: siteUrl,
     siteName: "Wildan Silki Portfolio",
     locale: "en_US",
@@ -90,9 +90,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wildan Silki | Software Engineer & Web3 Specialist (Open to Work)",
+    title: "Wildan Silki | Software Engineer & Web3 Specialist",
     description:
-      "Portfolio of Wildan Silki Sawabiqil Abroor — Full-Stack Developer & Smart Contract Engineer. International award winner, available for remote work worldwide.",
+      "Portfolio of Wildan Silki Sawabiqil Abroor — Full-Stack Developer & Smart Contract Engineer. International award winner, available for projects and remote collaboration worldwide.",
     images: ["/images/wildan-silki-profile.jpeg"],
   },
   icons: {
@@ -140,7 +140,7 @@ const jsonLd = {
       "@id": "https://wildansilki.xyz/#profilepage",
       "url": "https://wildansilki.xyz",
       "name": "Wildan Silki | Software Engineer & Web3 Specialist Portfolio",
-      "headline": "Wildan Silki Sawabiqil Abroor — Professional Software Engineer & Web3 Specialist (Open to Work)",
+      "headline": "Wildan Silki Sawabiqil Abroor — Professional Software Engineer & Web3 Specialist",
       "isPartOf": {
         "@id": "https://wildansilki.xyz/#website",
       },
@@ -163,7 +163,7 @@ const jsonLd = {
         "Quantitative Trader",
       ],
       "description":
-        "Wildan Silki is a Software Engineer from Indonesia specializing in Full-Stack development (Next.js, Node.js), Smart Contracts (Solidity, Rust), and algorithmic trading systems. International award winner, open to work and available for remote opportunities worldwide.",
+        "Wildan Silki is a Software Engineer from Indonesia specializing in Full-Stack development (Next.js, Node.js), Smart Contracts (Solidity, Rust), and algorithmic trading systems. International award winner, available for projects, consulting, and remote engineering worldwide.",
       "gender": "https://schema.org/Male",
       "nationality": {
         "@type": "Country",
@@ -372,15 +372,15 @@ const jsonLd = {
       "seeks": [
         {
           "@type": "Demand",
-          "name": "Remote Software Engineer",
+          "name": "Software Engineering Projects & Consulting",
           "description":
-            "Open to work for remote software engineering contracts, full-time positions, and consulting worldwide.",
+            "Available for software engineering projects, freelance consulting, and remote collaborations worldwide.",
         },
         {
           "@type": "Demand",
-          "name": "Web3 & Smart Contract Developer",
+          "name": "Web3 & Smart Contract Architecture",
           "description":
-            "Available for Solidity, Rust, DeFi, and blockchain architecture development.",
+            "Available for Solidity, Rust, DeFi, and blockchain architecture project consulting.",
         },
       ],
       "hasOccupation": {

@@ -56,7 +56,7 @@ export default async function Image() {
                 textTransform: "uppercase",
               }}
             >
-              AVAILABLE FOR REMOTE WORK
+              AVAILABLE FOR PROJECTS
             </span>
           </div>
           <span
