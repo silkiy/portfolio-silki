@@ -52,9 +52,21 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 
 ---
 
-## Pengalaman Kerja Industri (Work Experience)
-- **Backend Engineer (Internship)** — **PT Merkle Inovasi Teknologi** (May 2025)
-  - Location: Jakarta Office (SOHO Capital at Podomoro City, 30th Fl, Jakarta Barat)
+## Pengalaman Kerja Industri & Riset (Work Experience — Internships)
+- **Researcher (Internship)** — **Galeri Investasi BEI UISI** (Nov 2025 – Sep 2026 · 11 mos)
+  - Location: Gresik, East Java, Indonesia
+  - Employment Type: Internship (Completed)
+  - Skills / Focus: Educational Research, Capital Market Analysis, Financial Literacy & Investment Education
+  - Responsibilities: Conducted comprehensive educational research on capital market instruments and investment literacy, analyzing market data and formulating data-driven educational curricula for academic and public communities.
+- **Software Engineer — Engineering & Research Staff (Ristek)** — **Himpunan Mahasiswa Sistem Informasi (HMSI) UISI** (Feb 2026 – Sep 2026 · 8 mos)
+  - Location: Gresik, East Java, Indonesia
+  - Employment Type: Internship (Completed)
+  - Skills / Focus: Software Engineering, IT Trend Research, Internal Platform Development
+  - Responsibilities: Actively contributed within the Research & Technology (Ristek) division to explore cutting-edge IT trends, evaluate digital solutions, and engineer internal software architectures and departmental platforms.
+- **Backend Engineer (Internship)** — **Merkle Innovation (PT Merkle Inovasi Teknologi)** (Nov 2024 – Aug 2025 · 10 mos)
+  - Location: Hybrid (Jakarta Office / Remote)
+  - Employment Type: Internship (Completed)
+  - Skills / Focus: RESTful API Design, Backend Architecture, Database Optimization, Enterprise Systems
   - Responsibilities: Architected scalable backend data models, built high-throughput RESTful API endpoints, and optimized server infrastructure for enterprise solutions (including the MIT Profiling system).
 
 ---

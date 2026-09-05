@@ -157,6 +157,7 @@ const jsonLd = {
       "image": "https://wildansilki.xyz/images/wildan-silki-profile.jpeg",
       "jobTitle": [
         "Software Engineer",
+        "Researcher",
         "Full-Stack Developer",
         "Smart Contract Developer",
         "Web3 Specialist",
@@ -219,6 +220,9 @@ const jsonLd = {
         "PostgreSQL",
         "MongoDB",
         "Database Architecture",
+        "Educational Research",
+        "Capital Market Analysis",
+        "IT Trend Research",
       ],
       "hasCredential": [
         {
@@ -359,16 +363,41 @@ const jsonLd = {
         "Outstanding Graduate Award at SMK Telkom Malang",
         "Selected for Executive Presentation to Telkom Education Foundation Leadership",
       ],
-      "worksFor": {
-        "@type": "EmployeeRole",
-        "roleName": "Backend Engineer (Internship)",
-        "startDate": "2025-05-19",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "PT. Merkle Inovasi Teknologi",
-          "address": "SOHO Capital at Podomoro City, 30th Fl, Jakarta Barat",
+      "worksFor": [
+        {
+          "@type": "EmployeeRole",
+          "roleName": "Researcher (Internship)",
+          "startDate": "2025-11",
+          "endDate": "2026-09",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Galeri Investasi BEI UISI",
+            "address": "Gresik, East Java, Indonesia",
+          },
         },
-      },
+        {
+          "@type": "EmployeeRole",
+          "roleName": "Software Engineer & Research Staff (Internship)",
+          "startDate": "2026-02",
+          "endDate": "2026-09",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Divisi Riset dan Teknologi, HMSI UISI",
+            "address": "Gresik, East Java, Indonesia",
+          },
+        },
+        {
+          "@type": "EmployeeRole",
+          "roleName": "Backend Engineer (Internship)",
+          "startDate": "2024-11",
+          "endDate": "2025-08",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Merkle Innovation (PT Merkle Inovasi Teknologi)",
+            "address": "Jakarta (Hybrid)",
+          },
+        },
+      ],
       "seeks": [
         {
           "@type": "Demand",
@@ -391,9 +420,11 @@ const jsonLd = {
           "name": "Remote Worldwide",
         },
         "skills":
-          "Next.js, React, Node.js, TypeScript, Solidity, Rust, Python, Smart Contracts, Ethereum, Algorithmic Trading, Flutter",
+          "Next.js, React, Node.js, TypeScript, Solidity, Rust, Python, Smart Contracts, Ethereum, Algorithmic Trading, Educational Research, Flutter",
         "responsibilities": [
           "Full-Stack web application architecture and development",
+          "Educational research and capital market analysis at Galeri Investasi BEI UISI",
+          "Technology research, IT trend exploration, and internal software development at HMSI UISI",
           "Backend engineering and RESTful API design at PT Merkle Inovasi Teknologi",
           "Smart contract development and blockchain security",
           "Algorithmic trading bot engineering and quantitative analysis",

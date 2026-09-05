@@ -99,7 +99,7 @@ const Hero = () => {
             Pendidikan & Sertifikasi: Mahasiswa Universitas Internasional Semen Indonesia (UISI), Alumni SMK Telkom Malang, Alumni SMPN 3 Tulungagung. Tersertifikasi Blockchain Basics (Cyfrin Updraft), Learn OpenUSD (NVIDIA), AI on Jetson Nano (NVIDIA), SKD Sekolah Kedinasan (BKN), DOT Competency (PT DOT Indonesia), UKK Fullstack Developer (SMK Telkom Malang), Rapid Developer (Mendix), Code Olympiad 2nd Place (Coding Bee Academy), dan Junior Mobile Programmer (Telkom Indonesia BNSP).
           </p>
           <p>
-            Pengalaman Industri & Magang: Backend Engineer (Internship) di PT Merkle Inovasi Teknologi (Jakarta Office), merancang RESTful API dan arsitektur database untuk sistem enterprise (MIT Profiling).
+            Pengalaman Industri, Riset &amp; Magang (Internship): Researcher (Internship) di Galeri Investasi BEI UISI (Educational Research &amp; Pasar Modal), Software Engineer (Internship) di Divisi Riset dan Teknologi (Ristek) HMSI UISI (Eksplorasi Solusi Teknologi &amp; Platform Internal), serta Backend Engineer (Internship) di Merkle Innovation (Hybrid).
           </p>
           <p>
             Pelatihan & Kompetisi: Pelatihan Cyber Security Awareness (Telkom Indonesia & Telkom Schools), Indie Game Ignite di COMPFEST 15 (Universitas Indonesia & Agate), Kompetisi & Workshop Game Design di MANIAC XII (Universitas Surabaya - UBAYA), serta Modular Low-Code Design (Merkle Academy & Mendix).

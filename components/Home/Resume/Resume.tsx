@@ -47,7 +47,7 @@ const Resume = () => {
           className="mb-16 md:mb-20 border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground" 
         >
           <p className="text-base md:text-lg lg:text-xl text-foreground/70 leading-relaxed font-mono">
-            &ldquo;A highly motivated <strong className="text-foreground font-semibold uppercase">Software Engineer</strong> with a strong foundation in <strong className="text-foreground font-semibold uppercase">Full-Stack Development</strong>, specializing in <strong className="text-foreground font-semibold uppercase">Next.js, React, and Node.js</strong>. With proven industry experience as an <strong className="text-foreground font-semibold uppercase">Internship Backend Engineer at PT Merkle Inovasi Teknologi</strong>, a track record of <strong className="text-foreground font-semibold uppercase">International Achievements</strong> in Game Development, and a passion for <strong className="text-foreground font-semibold uppercase">Blockchain technology</strong>, I am dedicated to building high-performance, scalable digital solutions.&rdquo;
+            &ldquo;A highly motivated <strong className="text-foreground font-semibold uppercase">Software Engineer &amp; Researcher</strong> with a strong foundation in <strong className="text-foreground font-semibold uppercase">Full-Stack Development</strong>, specializing in <strong className="text-foreground font-semibold uppercase">Next.js, React, and Node.js</strong>. With proven experience across completed internships in <strong className="text-foreground font-semibold uppercase">Educational Research at Galeri Investasi BEI UISI</strong>, <strong className="text-foreground font-semibold uppercase">Software Engineering at HMSI UISI (Ristek)</strong>, and <strong className="text-foreground font-semibold uppercase">Backend Engineering at Merkle Innovation</strong>, alongside a track record of <strong className="text-foreground font-semibold uppercase">International Achievements</strong> in Game Development and passion for <strong className="text-foreground font-semibold uppercase">Blockchain technology</strong>, I am dedicated to building high-performance, scalable digital solutions.&rdquo;
           </p>
         </motion.div>
 
@@ -58,45 +58,189 @@ const Resume = () => {
               [01] Professional Experience
             </h3>
             <p className="font-mono text-xs text-foreground/50 mt-1 uppercase tracking-wider">
-              Industry Experience & Core Engineering Disciplines
+              Industry Experience, Technology Research &amp; Core Disciplines
             </p>
           </div>
 
-          {/* Official Internship Highlight Card */}
-          <motion.article
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-10 border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground group transition-colors hover:border-foreground/50"
-          >
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-              <div>
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 bg-foreground text-background uppercase tracking-widest font-semibold">
-                    Work Experience // Internship
-                  </span>
-                  <span className="text-xs font-mono text-foreground/50 border border-border/30 px-2 py-0.5">
-                    May 2025
-                  </span>
+          {/* Experience Timeline Cards */}
+          <div className="space-y-6 mb-12">
+            {/* Galeri Investasi BEI UISI */}
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground group transition-colors hover:border-foreground/50"
+            >
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 border border-border/50 bg-background flex items-center justify-center shrink-0">
+                    <FaChartBar className="w-5 h-5 text-foreground" />
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 bg-foreground text-background uppercase tracking-widest font-semibold">
+                        Internship
+                      </span>
+                      <span className="text-xs font-mono text-foreground/80 border border-border/30 px-2 py-0.5 font-bold">
+                        Nov 2025 - Sep 2026 · 11 mos
+                      </span>
+                      <span className="text-xs font-mono text-foreground/50 border border-border/30 px-2 py-0.5">
+                        Gresik, East Java, Indonesia
+                      </span>
+                    </div>
+                    <h4 className="text-xl md:text-2xl font-mono font-black tracking-tight text-foreground uppercase">
+                      Researcher
+                    </h4>
+                    <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
+                      Galeri Investasi BEI UISI
+                    </p>
+                  </div>
                 </div>
-                <h4 className="text-xl md:text-2xl font-mono font-black tracking-tight text-foreground uppercase">
-                  Backend Engineer (Internship)
-                </h4>
-                <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
-                  PT. Merkle Inovasi Teknologi — Jakarta Office (SOHO Capital Podomoro City)
-                </p>
+
+                <div className="flex items-center gap-2 text-xs font-mono border border-border/50 px-3 py-1.5 uppercase tracking-wider text-foreground/70 bg-background/30 self-start md:self-auto shrink-0">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span>Completed Internship</span>
+                </div>
               </div>
 
-              <div className="flex items-center gap-2 text-xs font-mono border border-border/50 px-3 py-1.5 uppercase tracking-wider text-foreground/70 bg-background/30 self-start md:self-auto shrink-0">
-                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                <span>Verified Experience</span>
-              </div>
-            </div>
+              <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
+                Conducted comprehensive educational research at Galeri Investasi BEI UISI focused on capital market mechanisms and investment literacy, developing data-driven educational curricula and analyzing financial market instruments for academic and community enrichment.
+              </p>
 
-            <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl">
-              Served as an active Backend Engineer at PT Merkle Inovasi Teknologi, architecting robust data models, designing secure and scalable RESTful API endpoints, and implementing server-side optimization for enterprise applications including the MIT Profiling system.
-            </p>
-          </motion.article>
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-border/30">
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Educational Research
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Capital Markets
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Financial Literacy
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Data &amp; Market Analysis
+                </span>
+              </div>
+            </motion.article>
+
+            {/* HMSI UISI - Ristek */}
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground group transition-colors hover:border-foreground/50"
+            >
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 border border-border/50 bg-background flex items-center justify-center shrink-0">
+                    <FaCodepen className="w-5 h-5 text-foreground" />
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 bg-foreground text-background uppercase tracking-widest font-semibold">
+                        Internship
+                      </span>
+                      <span className="text-xs font-mono text-foreground/80 border border-border/30 px-2 py-0.5 font-bold">
+                        Feb 2026 - Sep 2026 · 8 mos
+                      </span>
+                      <span className="text-xs font-mono text-foreground/50 border border-border/30 px-2 py-0.5">
+                        Gresik, East Java, Indonesia
+                      </span>
+                    </div>
+                    <h4 className="text-xl md:text-2xl font-mono font-black tracking-tight text-foreground uppercase">
+                      Software Engineer — Engineering &amp; Research Staff (Ristek)
+                    </h4>
+                    <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
+                      Himpunan Mahasiswa Sistem Informasi (HMSI) UISI
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 text-xs font-mono border border-border/50 px-3 py-1.5 uppercase tracking-wider text-foreground/70 bg-background/30 self-start md:self-auto shrink-0">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span>Completed Internship</span>
+                </div>
+              </div>
+
+              <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
+                Actively contributed within the Research &amp; Technology (Ristek) division, exploring innovative emerging technologies, analyzing modern IT industry trends, and engineering internal software architectures and platforms to power departmental digitalization.
+              </p>
+
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-border/30">
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Software Engineering
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # IT Trend Research
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Internal Platform Development
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Tech Exploration
+                </span>
+              </div>
+            </motion.article>
+
+            {/* Merkle Innovation */}
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground group transition-colors hover:border-foreground/50"
+            >
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 border border-border/50 bg-background flex items-center justify-center shrink-0">
+                    <BsDatabase className="w-5 h-5 text-foreground" />
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 bg-foreground text-background uppercase tracking-widest font-semibold">
+                        Internship
+                      </span>
+                      <span className="text-xs font-mono text-foreground/80 border border-border/30 px-2 py-0.5 font-bold">
+                        Nov 2024 - Aug 2025 · 10 mos
+                      </span>
+                      <span className="text-xs font-mono text-foreground/50 border border-border/30 px-2 py-0.5">
+                        Hybrid
+                      </span>
+                    </div>
+                    <h4 className="text-xl md:text-2xl font-mono font-black tracking-tight text-foreground uppercase">
+                      Backend Engineer
+                    </h4>
+                    <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
+                      Merkle Innovation (PT Merkle Inovasi Teknologi)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 text-xs font-mono border border-border/50 px-3 py-1.5 uppercase tracking-wider text-foreground/70 bg-background/30 self-start md:self-auto shrink-0">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span>Completed Internship</span>
+                </div>
+              </div>
+
+              <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
+                Served as an active Backend Engineer at Merkle Innovation in a hybrid arrangement, architecting robust data models, designing secure and scalable RESTful API endpoints, and implementing server-side optimization for enterprise applications including the MIT Profiling system.
+              </p>
+
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-border/30">
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # RESTful API Design
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Backend Architecture
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Database Optimization
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                  # Enterprise Systems
+                </span>
+              </div>
+            </motion.article>
+          </div>
 
           {/* Competency Roles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
