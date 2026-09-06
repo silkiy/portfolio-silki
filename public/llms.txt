@@ -46,6 +46,7 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 - [Algorithmic Risk Management: The Math Behind Capital Preservation](https://wildansilki.xyz/blog/algorithmic-trading-risk-management): How quantitative risk rules, dynamic position sizing, and volatility-adjusted stops prevent ruin in algorithmic execution engines.
 - [On-Device Biometric Verification in Flutter: High Accuracy at 60 FPS](https://wildansilki.xyz/blog/flutter-biometric-face-recognition): Engineering lessons from building Absensi RSD: running TensorFlow Lite facial embeddings on background Dart isolates without freezing UI threads.
 - [Hyper-Gemma AI Trader: Autonomous Bitget Futures Execution with Trinity v2 Quant Engine](https://wildansilki.xyz/blog/hyper-gemma-ai-trader): Architecture deep dive into Hyper-Gemma AI Trader (Trinity v2): engineering a Pure Quant Tactical Engine (Z-Score, Hurst Exponent, VWAP, Kalman Filter) with passive Gemma 4 AI for zero-latency, hallucination-free cryptocurrency futures execution.
+- [Quantitative Strategy Research on TradingView: Prototyping Trinity with Pine Script v5](https://wildansilki.xyz/blog/tradingview-pine-script-quant-research): How we prototyped and backtested the Trinity Quant Engine on TradingView using Pine Script v5: implementing rolling Z-Score mean reversion, Hurst fractal regime filters, and dynamic ATR risk budgeting before deploying to TypeScript production.
 
 ---
 
