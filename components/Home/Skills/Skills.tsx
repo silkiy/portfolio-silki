@@ -136,7 +136,7 @@ const Skills = () => {
               <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-4 md:mb-6 grayscale opacity-50 transition-all duration-500 group-hover:grayscale-0 group-focus:grayscale-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:scale-110 group-focus:scale-110">
                 <Image
                   src={skill.icon}
-                  alt={skill.name}
+                  alt={`Wildan Silki Tech Stack - ${skill.name}`}
                   fill
                   unoptimized
                   className="object-contain"

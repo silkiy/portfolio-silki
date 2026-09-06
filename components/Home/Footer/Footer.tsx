@@ -99,7 +99,36 @@ const Footer: React.FC = () => {
           <p className="text-xs text-foreground/50 font-mono tracking-widest uppercase">
             &copy; {year} W.SILKI. ALL RIGHTS RESERVED.
           </p>
-          <p className="text-xs text-foreground/50 font-mono tracking-widest uppercase"></p>
+          <div className="flex items-center gap-4 text-xs text-foreground/50 font-mono tracking-wider uppercase">
+            <a
+              href="/llms.txt"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-foreground transition-colors"
+              title="Structured Context for LLMs & AI Agents"
+            >
+              llms.txt
+            </a>
+            <span>/</span>
+            <a
+              href="/llms-full.txt"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-foreground transition-colors"
+              title="Full Unabridged Knowledge Base"
+            >
+              llms-full.txt
+            </a>
+            <span>/</span>
+            <a
+              href="/sitemap.xml"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              sitemap
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -101,7 +101,14 @@ export const metadata: Metadata = {
         width: 730,
         height: 973,
         type: "image/jpeg",
-        alt: "Wildan Silki Sawabiqil Abroor - Software Engineer Profile Picture",
+        alt: "Wildan Silki Sawabiqil Abroor - Professional Software Engineer Profile Picture",
+      },
+      {
+        url: "/logo/wildan-silki-software-engineer-logo.png",
+        width: 512,
+        height: 512,
+        type: "image/png",
+        alt: "Wildan Silki Official Engineering Logo",
       },
     ],
   },
@@ -128,7 +135,9 @@ export const metadata: Metadata = {
   },
   other: {
     "llms-txt": "https://wildansilki.xyz/llms.txt",
-    "ai-intent": "portfolio, resume, biography, projects, software engineering skills",
+    "llms-full-txt": "https://wildansilki.xyz/llms-full.txt",
+    "ai-intent": "portfolio, resume, biography, projects, software engineering skills, research",
+    "ai-agent-ready": "true",
   },
 };
 
@@ -487,6 +496,55 @@ const jsonLd = {
     },
     {
       "@type": "ItemList",
+      "@id": "https://wildansilki.xyz/#sitenav",
+      "name": "Site Navigation",
+      "itemListElement": [
+        {
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "Projects",
+          "description": "Featured software engineering case studies, full-stack applications, and blockchain solutions.",
+          "url": "https://wildansilki.xyz/#projects",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 2,
+          "name": "Technical Blog",
+          "description": "In-depth engineering journals, smart contract security patterns, and quantitative systems engineering.",
+          "url": "https://wildansilki.xyz/blog",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 3,
+          "name": "Experience",
+          "description": "Professional engineering background, capital market research at Galeri Investasi BEI UISI, and software roles.",
+          "url": "https://wildansilki.xyz/#experience",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 4,
+          "name": "Achievements",
+          "description": "International code olympiad awards, provincial honors by East Java Governor, and recognized credentials.",
+          "url": "https://wildansilki.xyz/#achievements",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 5,
+          "name": "Resume & Education",
+          "description": "Academic background, certified technical competencies, and full-stack skill matrix.",
+          "url": "https://wildansilki.xyz/#resume",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 6,
+          "name": "Contact",
+          "description": "Contact Wildan Silki for project collaborations, software consulting, and remote engineering worldwide.",
+          "url": "https://wildansilki.xyz/#contact",
+        },
+      ],
+    },
+    {
+      "@type": "ItemList",
       "@id": "https://wildansilki.xyz/#projects",
       "name": "Wildan Silki Software Engineering Portfolio Projects",
       "itemListElement": [
@@ -496,7 +554,8 @@ const jsonLd = {
           "item": {
             "@type": "SoftwareApplication",
             "name": "Blayu Mobile",
-            "description": "Academic data & location tracking using Flutter and Firebase.",
+            "url": "https://wildansilki.xyz/projects/blayu-mobile",
+            "description": "Football academy management & player performance tracking mobile application built with Flutter and Firebase.",
             "applicationCategory": "MobileApplication",
             "operatingSystem": "Android, iOS",
             "author": { "@id": "https://wildansilki.xyz/#person" },
@@ -507,8 +566,9 @@ const jsonLd = {
           "position": 2,
           "item": {
             "@type": "SoftwareApplication",
-            "name": "Absensi RSD",
-            "description": "Face recognition & geofenced location tracking mobile application with Flutter.",
+            "name": "Absensi RSUD Mangusada Bali",
+            "url": "https://wildansilki.xyz/projects/absensi-rsd",
+            "description": "High-security automated hospital attendance mobile application with live biometric face recognition and GPS geofencing.",
             "applicationCategory": "MobileApplication",
             "operatingSystem": "Android, iOS",
             "author": { "@id": "https://wildansilki.xyz/#person" },
@@ -520,7 +580,8 @@ const jsonLd = {
           "item": {
             "@type": "SoftwareApplication",
             "name": "MIT Profiling",
-            "description": "Scalable backend & RESTful APIs built with Node.js, Express, and TypeScript.",
+            "url": "https://wildansilki.xyz/projects/mit-profiling",
+            "description": "Enterprise LinkedIn-style talent profiling and portfolio platform built with Node.js, Express, and TypeScript.",
             "applicationCategory": "WebApplication",
             "author": { "@id": "https://wildansilki.xyz/#person" },
           },
@@ -531,7 +592,8 @@ const jsonLd = {
           "item": {
             "@type": "SoftwareApplication",
             "name": "Token Vendor",
-            "description": "Decentralized smart contract-based token vendor on Ethereum using Solidity and Hardhat.",
+            "url": "https://wildansilki.xyz/projects/token-vendor",
+            "description": "Decentralized automated token vendor and smart contract on Ethereum using Solidity and Hardhat.",
             "applicationCategory": "BlockchainApplication",
             "author": { "@id": "https://wildansilki.xyz/#person" },
           },
@@ -542,7 +604,8 @@ const jsonLd = {
           "item": {
             "@type": "SoftwareApplication",
             "name": "Simple NFT",
-            "description": "NFT smart contract on Ethereum adhering to the ERC-721 standard.",
+            "url": "https://wildansilki.xyz/projects/simple-nft",
+            "description": "Decentralized NFT minting system and smart contract on Ethereum adhering to the ERC-721 standard.",
             "applicationCategory": "BlockchainApplication",
             "author": { "@id": "https://wildansilki.xyz/#person" },
           },
@@ -553,7 +616,8 @@ const jsonLd = {
           "item": {
             "@type": "SoftwareApplication",
             "name": "MaYPI Platform",
-            "description": "Platform for IoT meter reading & real-time analytics using React.js and Node.js.",
+            "url": "https://wildansilki.xyz/projects/maypi-platform",
+            "description": "Cloud-based digital utility water meter reading and telemetry tracking platform using React.js and Node.js.",
             "applicationCategory": "WebApplication",
             "author": { "@id": "https://wildansilki.xyz/#person" },
           },
@@ -564,7 +628,8 @@ const jsonLd = {
           "item": {
             "@type": "SoftwareApplication",
             "name": "Tani Cerdas",
-            "description": "Agricultural management platform using Next.js and MongoDB.",
+            "url": "https://wildansilki.xyz/projects/tani-cerdas",
+            "description": "Digital agriculture data and cooperative management platform built with Next.js and MongoDB to empower farmers.",
             "applicationCategory": "WebApplication",
             "author": { "@id": "https://wildansilki.xyz/#person" },
           },
@@ -588,6 +653,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://github-readme-stats-fast.vercel.app" />
         <link rel="help" type="text/plain" href="/llms.txt" title="LLM & AI Agent Context" />
         <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM & AI Agent Context (Markdown)" />
+        <link rel="help" type="text/plain" href="/llms-full.txt" title="Full LLM & AI Agent Knowledge Base" />
+        <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full LLM & AI Agent Knowledge Base (Markdown)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

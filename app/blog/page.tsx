@@ -16,14 +16,75 @@ export const metadata: Metadata = {
       "Technical writings, architecture blueprints, smart contract security patterns, and quantitative systems engineering by Wildan Silki.",
     url: "https://wildansilki.xyz/blog",
     type: "website",
+    images: [
+      {
+        url: "https://wildansilki.xyz/logo/wildan-silki-software-engineer-logo.png",
+        width: 512,
+        height: 512,
+        alt: "Wildan Silki Engineering Journal",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engineering Journal & Technical Articles — Wildan Silki",
+    description:
+      "Technical writings, architecture blueprints, smart contract security patterns, and quantitative systems engineering by Wildan Silki.",
+    images: ["https://wildansilki.xyz/logo/wildan-silki-software-engineer-logo.png"],
   },
 };
 
 export default function BlogIndexPage() {
   const posts = Object.values(blogData);
+  const siteUrl = "https://wildansilki.xyz";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteUrl,
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Engineering Journal",
+            "item": `${siteUrl}/blog`,
+          },
+        ],
+      },
+      {
+        "@type": "Blog",
+        "name": "Wildan Silki Engineering Journal",
+        "description": "Technical writings, architecture blueprints, smart contract security patterns, and quantitative systems engineering.",
+        "url": `${siteUrl}/blog`,
+        "author": {
+          "@type": "Person",
+          "name": "Wildan Silki Sawabiqil Abroor",
+          "url": siteUrl,
+        },
+        "blogPost": posts.map((post) => ({
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "description": post.summary,
+          "datePublished": post.date,
+          "url": `${siteUrl}/blog/${post.slug}`,
+        })),
+      },
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-mono pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto">
         {/* Navigation Breadcrumb */}
         <Link

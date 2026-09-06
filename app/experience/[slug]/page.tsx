@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = exp.summary.slice(0, 160);
   const siteUrl = "https://wildansilki.xyz";
   const url = `${siteUrl}/experience/${slug}`;
+  const ogImage = `${siteUrl}/images/wildan-silki-profile.jpeg`;
 
   return {
     title,
@@ -33,11 +34,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url,
       type: "article",
+      images: [
+        {
+          url: ogImage,
+          width: 730,
+          height: 973,
+          alt: `${exp.role} at ${exp.company} — Wildan Silki`,
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [ogImage],
     },
   };
 }

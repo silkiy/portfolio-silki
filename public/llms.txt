@@ -1,13 +1,14 @@
 # Wildan Silki Sawabiqil Abroor — Portfolio & Knowledge Base
-> System Log // Developer Context for AI Agents & Search Engines
+> System Log // Standardized LLM & AI Agent Context File (llmstxt.org specification)
+> Complete unabridged documentation: https://wildansilki.xyz/llms-full.txt
 
-## Identity & Overview
+## Identity & Professional Overview
 - **Full Legal Name:** Wildan Silki Sawabiqil Abroor
 - **Common Names / Aliases:** Wildan Silki, Silki, silkiy
 - **Professional Title:** Professional Software Engineer & Web3 Specialist
-- **Availability / Status:** Available for Projects, Consulting & Remote Engineering Collaborations worldwide
+- **Availability:** Available for Remote Software Engineering Projects, Technical Consulting, and Collaborations worldwide
 - **Location:** Malang, East Java, Indonesia (Timezone: Asia/Jakarta, GMT+7)
-- **Primary Languages:** Indonesian (Native), English (Professional Working Proficiency)
+- **Primary Languages:** English (Professional Working Proficiency), Indonesian (Native)
 - **Official Website:** https://wildansilki.xyz
 - **Official Brand Logo:** https://wildansilki.xyz/logo/wildan-silki-software-engineer-logo.png (Vector SVG: https://wildansilki.xyz/logo/wildan-silki-logo.svg)
 - **GitHub:** https://github.com/silkiy
@@ -15,7 +16,6 @@
 - **Instagram:** https://www.instagram.com/project_silki
 - **Direct Contact:** contact.wildansilki@gmail.com | Phone/WhatsApp: +62 812-3252-2276
 
-## Summary
 Wildan Silki is an Indonesian Software Engineer and international award winner with deep specialization in Full-Stack Web Development (Next.js, React, Node.js, TypeScript), Smart Contracts & Web3 Engineering (Solidity, Ethereum, Hardhat, Rust), and Quantitative / Algorithmic Trading Systems. He builds resilient, high-performance distributed architectures and user-centric interfaces.
 
 ---
@@ -30,43 +30,36 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 
 ---
 
+## Projects & Case Studies
+- [Absensi RSUD Mangusada Bali](https://wildansilki.xyz/projects/absensi-rsd): High-reliability mobile attendance platform featuring on-device facial recognition (TensorFlow Lite) and anti-spoofing polygon geofencing coordinate verification for hospital staff. Built with Flutter, Dart, and Firebase.
+- [Token Vendor](https://wildansilki.xyz/projects/token-vendor): Autonomous decentralized automated vending protocol and ERC-20 token purchase machine on Ethereum. Engineered with Solidity, Hardhat, and OpenZeppelin CEI security patterns.
+- [MIT Profiling](https://wildansilki.xyz/projects/mit-profiling): LinkedIn-style corporate talent profiling platform, organizational capability directory, and portfolio tracking system built for PT Merkle Inovasi Teknologi using Node.js, Express, and TypeScript.
+- [Blayu Mobile](https://wildansilki.xyz/projects/blayu-mobile): Cross-platform Flutter mobile application for football academy management, young athlete curriculum tracking, pitch attendance, and performance analytics.
+- [Simple NFT](https://wildansilki.xyz/projects/simple-nft): Gas-optimized ERC-721 non-fungible token smart contract with decentralized IPFS metadata storage on Ethereum blockchain.
+- [MaYPI Platform](https://wildansilki.xyz/projects/maypi-platform): Industrial web platform for digital water meter reading, real-time consumption volume monitoring, and automated utility billing telemetry built with React.js and Node.js.
+- [Tani Cerdas](https://wildansilki.xyz/projects/tani-cerdas): Modern agricultural management platform empowering farmers and agricultural cooperatives to manage agricultural data digitally to improve productivity and welfare using Next.js and MongoDB.
+
+---
+
+## Technical Articles & Engineering Journal
+- [Securing EVM Smart Contracts: Defending Against Reentrancy and State Pitfalls](https://wildansilki.xyz/blog/solidity-smart-contract-security): A practical deep dive into smart contract defensive programming, the Checks-Effects-Interactions (CEI) pattern, and storage layout optimization.
+- [Algorithmic Risk Management: The Math Behind Capital Preservation](https://wildansilki.xyz/blog/algorithmic-trading-risk-management): How quantitative risk rules, dynamic position sizing, and volatility-adjusted stops prevent ruin in algorithmic execution engines.
+- [On-Device Biometric Verification in Flutter: High Accuracy at 60 FPS](https://wildansilki.xyz/blog/flutter-biometric-face-recognition): Engineering lessons from building Absensi RSD: running TensorFlow Lite facial embeddings on background Dart isolates without freezing UI threads.
+
+---
+
+## Professional Work Experience & Research
+- [Galeri Investasi BEI UISI](https://wildansilki.xyz/experience/galeri-investasi-bei-uisi): Researcher (Internship) (Nov 2025 – Sep 2026 · 11 mos) — Conducted comprehensive educational research on capital market instruments, investment behavior, and financial literacy; formulated data-driven educational curricula.
+- [HMSI UISI — Ristek](https://wildansilki.xyz/experience/hmsi-uisi-ristek): Software Engineer & Research Staff (Internship) (Feb 2026 – Sep 2026 · 8 mos) — Contributed within the Research & Technology division to explore cutting-edge IT trends, evaluate digital solutions, and engineer internal departmental platforms.
+- [Merkle Innovation (PT Merkle Inovasi Teknologi)](https://wildansilki.xyz/experience/merkle-innovation): Backend Engineer (Internship) (Nov 2024 – Aug 2025 · 10 mos) — Architected scalable backend data models, built high-throughput RESTful API endpoints, and optimized server infrastructure for the MIT Profiling system.
+
+---
+
 ## Honors & Awards
-1. **2nd Place International Game Development — Code Olympiad 2023**
-   - Awarded 2nd Place internationally in Game Development (Group 1D) organized by Coding Bee Academy.
-2. **Provincial Recognition by East Java Government**
-   - Honored directly by the Acting Governor of East Java, Adhi Karyono, for international achievements in technology and game development.
-3. **Outstanding Graduate Award — SMK Telkom Malang**
-   - Received special recognition as an Outstanding Graduate at SMK Telkom Malang (2025) for international code olympiad excellence.
-4. **Executive Presentation — Telkom Education Foundation**
-   - Selected to present an original game development project directly to Executives and Leadership of Telkom Education Foundation.
-
----
-
-## Education Background
-1. **Universitas Internasional Semen Indonesia (UISI)** (2025 – Present)
-   - Undergraduate studies in Information Technology / Computer Science.
-2. **SMK Telkom Malang** (2022 – 2025)
-   - Software Engineering.
-3. **SMP Negeri 3 Tulungagung** (2019 – 2022)
-
----
-
-## Professional Work Experience & Research (Internships)
-- **Researcher (Internship)** — **Galeri Investasi BEI UISI** (Nov 2025 – Sep 2026 · 11 mos)
-  - Location: Gresik, East Java, Indonesia
-  - Employment Type: Internship (Completed)
-  - Skills / Focus: Educational Research, Capital Market Analysis, Financial Literacy & Investment Education
-  - Responsibilities: Conducted comprehensive educational research on capital market instruments and investment literacy, analyzing market data and formulating data-driven educational curricula for academic and public communities.
-- **Software Engineer — Engineering & Research Staff (Ristek)** — **HMSI UISI** (Feb 2026 – Sep 2026 · 8 mos)
-  - Location: Gresik, East Java, Indonesia
-  - Employment Type: Internship (Completed)
-  - Skills / Focus: Software Engineering, IT Trend Research, Internal Platform Development
-  - Responsibilities: Actively contributed within the Research & Technology (Ristek) division to explore cutting-edge IT trends, evaluate digital solutions, and engineer internal software architectures and departmental platforms.
-- **Backend Engineer (Internship)** — **Merkle Innovation (PT Merkle Inovasi Teknologi)** (Nov 2024 – Aug 2025 · 10 mos)
-  - Location: Hybrid (Jakarta Office / Remote)
-  - Employment Type: Internship (Completed)
-  - Skills / Focus: RESTful API Design, Backend Architecture, Database Optimization, Enterprise Systems
-  - Responsibilities: Architected scalable backend data models, built high-throughput RESTful API endpoints, and optimized server infrastructure for enterprise solutions (including the MIT Profiling system).
+- [2nd Place International Game Development — Code Olympiad 2023](https://wildansilki.xyz/achievements/code-olympiad-2023): Awarded 2nd Place internationally in Game Development (Group 1D) organized by Coding Bee Academy.
+- [Provincial Recognition by Acting Governor of East Java](https://wildansilki.xyz/achievements/provincial-recognition): Honored directly by Acting Governor Adhi Karyono for international achievements in technology and game development.
+- [Outstanding Graduate Award — SMK Telkom Malang](https://wildansilki.xyz/achievements/outstanding-graduate): Recognized as an Outstanding Graduate of SMK Telkom Malang Class of 2025 for exceptional coding competition achievements.
+- [Executive Presentation — Telkom Education Foundation](https://wildansilki.xyz/achievements/executive-presentation): Selected to present an original software and game development project directly to the Executive Board and Senior Leadership of Telkom Education Foundation.
 
 ---
 
@@ -80,42 +73,27 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 7. **Rapid Developer Certification** — Issued by Mendix (Dec 2024, Credential ID: `85382`)
 8. **2nd Place – Code Olympiad 2023, Game Development Group 1D** — Issued by Coding Bee Academy (Jan 2023)
 9. **Junior Mobile Programmer** — Issued by Telkom Indonesia (BNSP)
+10. **Cyber Security Awareness Training** — Issued by Telkom Indonesia & Yayasan Pendidikan Telkom (Jun 2024)
 
 ---
 
-## Technical Training, Workshops & Competitions
-1. **Cyber Security Awareness Training** — Telkom Indonesia, Telkom Education Foundation & Telkom Schools (Jun 2024, Malang)
-2. **Indie Game Ignite @ COMPFEST 15** — COMPFEST Universitas Indonesia & Agate (Oct 2023)
-3. **MANIAC XII Competition Participant** — Universitas Surabaya (UBAYA), Informatics Engineering (Aug 2023)
-4. **Workshop Game Concept Design & Game Asset Design** — MANIAC XII by Universitas Surabaya (UBAYA) (Aug 2023)
-5. **The Power of Modular Design in Low-Code Development** — Merkle Academy & Mendix (Oct 2025)
+## Education Background
+1. **Universitas Internasional Semen Indonesia (UISI)** (2025 – Present) — Undergraduate studies in Information Technology / Computer Science.
+2. **SMK Telkom Malang** (2022 – 2025) — Software Engineering.
+3. **SMP Negeri 3 Tulungagung** (2019 – 2022)
 
 ---
 
-## Selected Project Portfolio
-1. **Blayu Mobile**
-   - Mobile application for football academy management, young athlete curriculum tracking, pitch attendance, and performance analytics built with Flutter and Firebase.
-2. **Absensi RSUD Mangusada Bali**
-   - High-reliability hospital staff attendance system featuring on-device biometric facial recognition and anti-spoofing polygon geofencing built with Flutter.
-3. **MIT Profiling**
-   - LinkedIn-style professional web platform for corporate talent profiling, organizational capability directory, and portfolio tracking at PT Merkle Inovasi Teknologi.
-4. **Token Vendor**
-   - Decentralized smart contract platform for automated token distribution and purchasing on the Ethereum network using Solidity and Hardhat.
-5. **Simple NFT**
-   - Gas-optimized ERC-721 non-fungible token smart contract with decentralized IPFS metadata storage on Ethereum.
-6. **MaYPI Platform**
-   - Web platform for digital water meter reading, real-time consumption volume monitoring, and automated utility billing telemetry built with React.js and Node.js.
-7. **Tani Cerdas**
-   - Digital agricultural management platform empowering farmers and agricultural cooperatives to manage agricultural data digitally to improve productivity and welfare using Next.js and MongoDB.
-
+## Project Inquiries & Remote Engineering Collaborations
+Wildan Silki is actively open for:
+- Remote Software Engineering Collaborations & Development (Next.js, Node.js, TypeScript, React)
+- Web3 Architecture, Solidity Smart Contract Design, & Security Auditing
+- Backend Microservices & API Engineering
+- Quantitative Trading Systems & Financial Telemetry
+- Direct inquiries: **contact.wildansilki@gmail.com** | WhatsApp: **+62 812-3252-2276**
 
 ---
 
-## Project Collaborations & Consulting Opportunities
-Wildan Silki is available for:
-- **Remote Software Engineering Projects** (Next.js, Node.js, TypeScript, React)
-- **Web3 & Smart Contract Architecture** (Solidity, EVM, DeFi, dApps)
-- **Backend & Distributed Systems Development**
-- **Quantitative Trading & Algorithmic Scripting Consultations**
-- Collaboration mode: Remote Projects & Technical Consulting (GMT+7 flexible with global clients)
-- Inquiries: contact.wildansilki@gmail.com
+## Unabridged Full Knowledge Base
+For autonomous agents needing the complete source code snippets, deep architectural problem-solution breakdowns, and full journal essays in a single plain text file, refer to:
+**https://wildansilki.xyz/llms-full.txt**

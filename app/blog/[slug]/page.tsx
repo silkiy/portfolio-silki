@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = post.summary;
   const siteUrl = "https://wildansilki.xyz";
   const url = `${siteUrl}/blog/${slug}`;
+  const ogImage = `${siteUrl}/logo/wildan-silki-software-engineer-logo.png`;
 
   return {
     title,
@@ -36,11 +37,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       authors: ["Wildan Silki Sawabiqil Abroor"],
       tags: post.tags,
+      images: [
+        {
+          url: ogImage,
+          width: 512,
+          height: 512,
+          alt: `${post.title} — Wildan Silki`,
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [ogImage],
     },
   };
 }
@@ -51,6 +61,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound();
 
+  const siteUrl = "https://wildansilki.xyz";
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -61,19 +72,19 @@ export default async function BlogPostPage({ params }: Props) {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://wildansilki.xyz",
+            "item": siteUrl,
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Blog",
-            "item": "https://wildansilki.xyz/blog",
+            "name": "Engineering Journal",
+            "item": `${siteUrl}/blog`,
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": post.title,
-            "item": `https://wildansilki.xyz/blog/${slug}`,
+            "item": `${siteUrl}/blog/${slug}`,
           },
         ],
       },
@@ -81,16 +92,23 @@ export default async function BlogPostPage({ params }: Props) {
         "@type": "BlogPosting",
         "headline": post.title,
         "description": post.summary,
+        "image": `${siteUrl}/logo/wildan-silki-software-engineer-logo.png`,
         "datePublished": post.date,
+        "dateModified": post.date,
+        "mainEntityOfPage": `${siteUrl}/blog/${slug}`,
         "author": {
           "@type": "Person",
           "name": "Wildan Silki Sawabiqil Abroor",
-          "url": "https://wildansilki.xyz",
+          "url": siteUrl,
         },
         "publisher": {
           "@type": "Person",
           "name": "Wildan Silki",
-          "url": "https://wildansilki.xyz",
+          "url": siteUrl,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/logo/wildan-silki-software-engineer-logo.png`,
+          },
         },
         "keywords": post.tags.join(", "),
       },

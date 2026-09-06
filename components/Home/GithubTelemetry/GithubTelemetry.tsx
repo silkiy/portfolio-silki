@@ -161,7 +161,7 @@ const GithubTelemetry = () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://github-readme-stats-fast.vercel.app/api?username=silkiy&show_icons=true&bg_color=0a0a0f&title_color=89dceb&icon_color=cdd6f4&text_color=a6adc8&border_color=313244"
-                alt="Wildan's GitHub Stats"
+                alt="Wildan Silki GitHub Software Engineering Statistics and Commit Telemetry"
                 className="w-full h-auto max-w-[495px]"
                 loading="lazy"
               />
@@ -178,7 +178,7 @@ const GithubTelemetry = () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=silkiy&layout=compact&card_width=467&langs_count=8&bg_color=0a0a0f&title_color=89dceb&text_color=a6adc8&border_color=313244"
-                alt="Top Languages"
+                alt="Wildan Silki Top Programming Languages and Code Distribution Telemetry"
                 className="w-full h-auto max-w-[495px]"
                 loading="lazy"
               />
