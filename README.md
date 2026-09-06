@@ -63,8 +63,9 @@ Architected with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and *
   - `tani-cerdas`: Modern digital agriculture cooperative platform (Next.js, MongoDB).
 - **Engineering Journal (`/blog` & `/blog/[slug]`)**: Technical essays complete with syntax-highlighted code implementations:
   - *Securing EVM Smart Contracts: Defending Against Reentrancy and State Pitfalls* (Solidity CEI pattern, ReentrancyGuard).
-  - *Algorithmic Risk Management: The Math Behind Capital Preservation* (Expectancy formulas, Fractional Kelly, dynamic ATR stops in Python).
+  - *Algorithmic Risk Management: The Math Behind Capital Preservation* (Expectancy formulas, Fractional Kelly, dynamic ATR stops, and Trinity v2 Pure Math Quant Engine in TypeScript).
   - *On-Device Biometric Verification in Flutter: High Accuracy at 60 FPS* (Dart Isolates producer-consumer pipeline).
+  - *Hyper-Gemma AI Trader: Autonomous Bitget Futures Execution with Trinity v2 Quant Engine* (Pure Quant Tactical architecture, Quant Trinity Z-Score/Hurst/VWAP/Kalman Filter, passive Gemma 4 AI via Ollama).
 - **Professional Experience & Research (`/experience/[slug]`)**:
   - Educational researcher at **Galeri Investasi BEI UISI** (Capital market telemetry and investment literacy).
   - Software engineer & research staff at **HMSI UISI (Ristek)** (IT trends, internal platform development).
@@ -269,8 +270,9 @@ Dibangun menggunakan **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, d
   - `tani-cerdas`: Platform manajemen data pertanian dan koperasi tani digital (Next.js, MongoDB).
 - **Jurnal Rekayasa Teknis / Blog (`/blog` & `/blog/[slug]`)**: Artikel teknis mendalam lengkap dengan potongan kode:
   - *Securing EVM Smart Contracts: Defending Against Reentrancy and State Pitfalls* (Pola CEI Solidity & ReentrancyGuard).
-  - *Algorithmic Risk Management: The Math Behind Capital Preservation* (Formula nilai harapan, Fractional Kelly, dan stop dinamis ATR Python).
+  - *Algorithmic Risk Management: The Math Behind Capital Preservation* (Formula nilai harapan, Fractional Kelly, stop dinamis ATR, dan Pure Math Quant Engine Trinity v2 TypeScript).
   - *On-Device Biometric Verification in Flutter: High Accuracy at 60 FPS* (Pemrosesan pipeline Dart Isolates tanpa memblokir UI thread).
+  - *Hyper-Gemma AI Trader: Autonomous Bitget Futures Execution with Trinity v2 Quant Engine* (Arsitektur Pure Quant Tactical, Quant Trinity Z-Score/Hurst/VWAP/Kalman Filter, dan mode pasif Gemma 4 AI via Ollama).
 - **Riwayat Pengalaman Kerja & Riset (`/experience/[slug]`)**:
   - Peneliti (Magang) di **Galeri Investasi BEI UISI** (Riset instrumen pasar modal dan literasi investasi edukatif).
   - Software Engineer & Staf Ristek di **HMSI UISI** (Eksplorasi tren teknologi dan arsitektur platform internal).

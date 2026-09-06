@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { blogData } from "@/data/blogData";
-import { FaArrowLeft, FaCalendarAlt, FaClock, FaTag } from "react-icons/fa";
+import { FaArrowLeft, FaCalendarAlt, FaClock, FaTag, FaExternalLinkAlt } from "react-icons/fa";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -53,6 +53,55 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [ogImage],
     },
   };
+}
+
+function renderFormattedParagraph(text: string) {
+  const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)|(https?:\/\/[^\s]+)/g;
+  const elements: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      elements.push(text.substring(lastIndex, match.index));
+    }
+
+    if (match[1] && match[2]) {
+      elements.push(
+        <a
+          key={match.index}
+          href={match[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground font-semibold underline underline-offset-4 decoration-border hover:decoration-green-400 hover:text-green-400 inline-flex items-center gap-1.5 transition-colors"
+        >
+          <span>{match[1]}</span>
+          <FaExternalLinkAlt className="w-2.5 h-2.5 opacity-70" />
+        </a>
+      );
+    } else if (match[3]) {
+      elements.push(
+        <a
+          key={match.index}
+          href={match[3]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground font-semibold underline underline-offset-4 decoration-border hover:decoration-green-400 hover:text-green-400 inline-flex items-center gap-1.5 transition-colors"
+        >
+          <span>{match[3]}</span>
+          <FaExternalLinkAlt className="w-2.5 h-2.5 opacity-70" />
+        </a>
+      );
+    }
+
+    lastIndex = linkRegex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    elements.push(text.substring(lastIndex));
+  }
+
+  return elements.length > 0 ? elements : text;
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -172,7 +221,7 @@ export default async function BlogPostPage({ params }: Props) {
               </h2>
               {section.body.map((paragraph, pIdx) => (
                 <p key={pIdx} className="text-sm sm:text-base leading-relaxed text-foreground/85">
-                  {paragraph}
+                  {renderFormattedParagraph(paragraph)}
                 </p>
               ))}
 

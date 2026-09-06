@@ -45,6 +45,7 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 - [Securing EVM Smart Contracts: Defending Against Reentrancy and State Pitfalls](https://wildansilki.xyz/blog/solidity-smart-contract-security): A practical deep dive into smart contract defensive programming, the Checks-Effects-Interactions (CEI) pattern, and storage layout optimization.
 - [Algorithmic Risk Management: The Math Behind Capital Preservation](https://wildansilki.xyz/blog/algorithmic-trading-risk-management): How quantitative risk rules, dynamic position sizing, and volatility-adjusted stops prevent ruin in algorithmic execution engines.
 - [On-Device Biometric Verification in Flutter: High Accuracy at 60 FPS](https://wildansilki.xyz/blog/flutter-biometric-face-recognition): Engineering lessons from building Absensi RSD: running TensorFlow Lite facial embeddings on background Dart isolates without freezing UI threads.
+- [Hyper-Gemma AI Trader: Autonomous Bitget Futures Execution with Trinity v2 Quant Engine](https://wildansilki.xyz/blog/hyper-gemma-ai-trader): Architecture deep dive into Hyper-Gemma AI Trader (Trinity v2): engineering a Pure Quant Tactical Engine (Z-Score, Hurst Exponent, VWAP, Kalman Filter) with passive Gemma 4 AI for zero-latency, hallucination-free cryptocurrency futures execution.
 
 ---
 
