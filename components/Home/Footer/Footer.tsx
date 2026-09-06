@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { NavLink } from "@/constant/constant";
 
 const Footer: React.FC = () => {
@@ -44,25 +45,30 @@ const Footer: React.FC = () => {
               NAVIGATION
             </h4>
             <ul className="space-y-2.5">
-              {NavLink.slice(0, 4).map((link) => (
-                <li key={link.id}>
-                  <a
-                    href={`#${link.url}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById(link.url)
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="text-foreground md:text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
-                  >
-                    <span className="opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
-                      &gt;
-                    </span>
-                    <span>{link.label}</span>
-                  </a>
-                </li>
-              ))}
+              {NavLink.slice(0, 4).map((link) => {
+                const href = link.path || `/#${link.url}`;
+                return (
+                  <li key={link.id}>
+                    <Link
+                      href={href}
+                      onClick={(e) => {
+                        if (!link.path && typeof window !== "undefined" && window.location.pathname === "/") {
+                          e.preventDefault();
+                          document
+                            .getElementById(link.url)
+                            ?.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                      className="text-foreground md:text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
+                    >
+                      <span className="opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
+                        &gt;
+                      </span>
+                      <span>{link.label}</span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -71,25 +77,30 @@ const Footer: React.FC = () => {
               MORE INFO
             </h4>
             <ul className="space-y-2.5">
-              {NavLink.slice(4).map((link) => (
-                <li key={link.id}>
-                  <a
-                    href={`#${link.url}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById(link.url)
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="text-foreground md:text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
-                  >
-                    <span className="opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
-                      &gt;
-                    </span>
-                    <span>{link.label}</span>
-                  </a>
-                </li>
-              ))}
+              {NavLink.slice(4).map((link) => {
+                const href = link.path || `/#${link.url}`;
+                return (
+                  <li key={link.id}>
+                    <Link
+                      href={href}
+                      onClick={(e) => {
+                        if (!link.path && typeof window !== "undefined" && window.location.pathname === "/") {
+                          e.preventDefault();
+                          document
+                            .getElementById(link.url)
+                            ?.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                      className="text-foreground md:text-foreground/50 hover:text-foreground transition-colors text-sm font-mono focus:outline-none uppercase tracking-wide flex items-center space-x-2 group"
+                    >
+                      <span className="opacity-100 translate-x-0 md:opacity-0 md:-translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-xs">
+                        &gt;
+                      </span>
+                      <span>{link.label}</span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
