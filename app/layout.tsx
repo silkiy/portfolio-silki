@@ -82,9 +82,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/wildan-silki-profile.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Wildan Silki Sawabiqil Abroor - Software Engineer Portfolio",
+        width: 730,
+        height: 973,
+        type: "image/jpeg",
+        alt: "Wildan Silki Sawabiqil Abroor - Software Engineer Profile Picture",
       },
     ],
   },
@@ -94,11 +95,6 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Wildan Silki Sawabiqil Abroor — Full-Stack Developer & Smart Contract Engineer. International award winner, available for projects and remote collaboration worldwide.",
     images: ["/images/wildan-silki-profile.jpeg"],
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
   },
   robots: {
     index: true,
@@ -144,6 +140,16 @@ const jsonLd = {
       "isPartOf": {
         "@id": "https://wildansilki.xyz/#website",
       },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://wildansilki.xyz/#profileimage",
+        "url": "https://wildansilki.xyz/images/wildan-silki-profile.jpeg",
+        "contentUrl": "https://wildansilki.xyz/images/wildan-silki-profile.jpeg",
+        "caption": "Wildan Silki Sawabiqil Abroor",
+        "width": 730,
+        "height": 973,
+      },
+      "image": "https://wildansilki.xyz/images/wildan-silki-profile.jpeg",
       "mainEntity": {
         "@id": "https://wildansilki.xyz/#person",
       },
@@ -154,7 +160,14 @@ const jsonLd = {
       "name": "Wildan Silki Sawabiqil Abroor",
       "alternateName": ["Wildan Silki", "Silki", "silkiy", "Sawabiqil Abroor"],
       "url": "https://wildansilki.xyz",
-      "image": "https://wildansilki.xyz/images/wildan-silki-profile.jpeg",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://wildansilki.xyz/#profileimage",
+        "url": "https://wildansilki.xyz/images/wildan-silki-profile.jpeg",
+        "caption": "Wildan Silki Sawabiqil Abroor",
+        "width": 730,
+        "height": 973,
+      },
       "jobTitle": [
         "Software Engineer",
         "Researcher",
