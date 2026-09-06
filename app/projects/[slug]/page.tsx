@@ -87,7 +87,13 @@ export default async function ProjectDetailPage({ params }: Props) {
         "name": project.title,
         "description": project.overview,
         "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "All",
+        "operatingSystem": "Web Browser, Cross-Platform",
+        "image": `https://wildansilki.xyz${project.heroImage}`,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+        },
         "author": {
           "@type": "Person",
           "name": "Wildan Silki Sawabiqil Abroor",
