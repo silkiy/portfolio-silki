@@ -56,7 +56,7 @@ Architected with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and *
 - **Projects Showcase (`/projects/[slug]`)**: In-depth software engineering case studies featuring architectural blueprints, technical challenges, solutions, and measurable business/technical outcomes:
   - `absensi-rsd`: Biometric face recognition attendance system (Flutter, TensorFlow Lite, Polygon Geofencing) for RSUD Mangusada Bali.
   - `token-vendor`: Decentralized autonomous token vending smart contract (Solidity, Ethereum, Hardhat).
-  - `mit-profiling`: Enterprise talent directory and capability profiling platform (Node.js, Express, TypeScript, PostgreSQL).
+  - `mit-profiling`: Enterprise talent directory and capability profiling platform (Node.js, Express, TypeScript, PostgreSQL) for PT Merkle Inovasi Teknologi.
   - `blayu-mobile`: Football academy curriculum management mobile application (Flutter, Firebase).
   - `simple-nft`: Gas-optimized ERC-721 smart contract suite with IPFS decentralized storage.
   - `maypi-platform`: Industrial utility water meter telemetry and analytics dashboard (React.js, Node.js).
@@ -74,12 +74,60 @@ Architected with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and *
   - Formal Provincial Recognition from the Acting Governor of East Java (Adhi Karyono).
   - Outstanding Graduate Award at SMK Telkom Malang.
   - Executive project presentation to Telkom Education Foundation leadership.
+- **Custom Cyberpunk 404 Route (`/_not-found`)**: Dedicated terminal error boundary offering graceful error recovery with single-click navigation back to the primary matrix.
 
-### 2. Interactive Terminal UI & Engineering Capabilities
-- **Terminal Brutalism & Monospace Aesthetic**: Clean JetBrains Mono typography, custom grid matrices, and subtle glassmorphic surfaces.
-- **GitHub Telemetry Engine (`/api/github-events`)**: Edge-cached endpoint fetching live public GitHub events, commit history, and activity timestamps directly from GitHub REST API with 5-minute CDN stale-while-revalidate caching.
-- **Dual-Language Resume Engine**: Interactive modal supporting both Indonesian (`CV_Wildan_Silki_Bahasa_Indonesia.pdf`) and English (`CV_Wildan_Silki_English.pdf`) professional resumes.
-- **Accessible Multi-Channel Contact**: Responsive contact terminal powered by Web3Forms, fortified with hidden honeypot anti-spam fields, CORS isolation, and strict email format validation.
+### 2. Comprehensive Data Streams & Credentials Archive (`#resume`)
+- **Professional Summary**: Monospace engineering manifesto summarizing multi-disciplinary competencies across high-throughput distributed systems, Web3 protocols, and quantitative modeling.
+- **Completed Internships**: Detailed role cards for Galeri Investasi BEI UISI, HMSI UISI (Ristek), and PT Merkle Inovasi Teknologi with direct subpage routing.
+- **Competency Roles Grid**: 6 dedicated role profiles detailing architectural ownership:
+  - *Full-Stack Developer*: End-to-end system design from reactive clients to cloud persistence layers.
+  - *Front-End Developer*: Accessible, fluid user interfaces with micro-interactions and strict WCAG adherence.
+  - *Backend Developer*: High-throughput RESTful services, database indexing, caching, and cryptographic verification.
+  - *Blockchain Developer*: Trustless EVM smart contract engineering, gas optimization, and protocol security.
+  - *Mobile Apps Developer*: High-performance native & Flutter mobile architectures with native OS bridge integrations.
+  - *Quant Trader*: Algorithmic market models, statistical telemetry, position sizing, and automated risk systems.
+- **Academic Foundation (`#education`)**: Verified education milestones:
+  - *Universitas Internasional Semen Indonesia (UISI)* — Information Technology (2025 – Present).
+  - *SMK Telkom Malang* — Software Engineering / RPL (2022 – 2025).
+  - *SMPN 3 Tulungagung* — Junior High Education (2019 – 2022).
+- **Accredited Licenses & Certifications (`#licenses`)**: 9 verified credentials:
+  - *Blockchain Basics* — Cyfrin Updraft (Sep 2025).
+  - *Learn OpenUSD: Model Kinds* — NVIDIA (Aug 2025).
+  - *AI on Jetson Nano* — NVIDIA (Aug 2025).
+  - *SKD (Sekolah Kedinasan)* — Badan Kepegawaian Negara / BKN (Aug 2025).
+  - *DOT Competency* — PT DOT Indonesia (May 2025).
+  - *UKK Fullstack Developer* — SMK Telkom Malang (Mar 2025).
+  - *Rapid Developer* — Mendix (Dec 2024).
+  - *Code Olympiad (2nd Place)* — Coding Bee Academy (Jan 2023).
+  - *Junior Mobile Programmer* — Telkom Indonesia / BNSP (Certified).
+- **Specialized Training, Workshops & Hackathons (`#activities`)**:
+  - *Cyber Security Awareness* — Telkom Indonesia & Telkom Schools (Jun 2024).
+  - *Indie Game Ignite* — COMPFEST 15 by Universitas Indonesia & Agate (Oct 2023).
+  - *MANIAC XII Competition* — Universitas Surabaya / UBAYA (Aug 2023).
+  - *Game Concept & Asset Design* — Workshop MANIAC XII UBAYA (Aug 2023).
+  - *Modular Low-Code Design* — Merkle Academy & Mendix (Oct 2025).
+- **Achievements & Honors Dossier (`#achievements`)**: 3 visual dossier cards featuring authentic event photography, credential descriptions, and links to detailed story pages.
+
+### 3. Interactive Skills Matrix (`#skills`)
+- **Categorized Multi-Technology Matrix**: 35+ technology stack competencies categorized with interactive filtering tabs:
+  - `INDEX`: Complete global technology inventory.
+  - `LANG`: Solidity, Rust, TypeScript, JavaScript, Golang, Kotlin, Dart, Java, Python, Julia, HTML5, CSS3.
+  - `FRAMEWORKS`: Next.js, React, Node.js, Express, Flutter, TensorFlow.
+  - `SYS_TOOLS`: Hardhat, PostgreSQL, MongoDB, MySQL, Supabase, Firebase, Docker, Git, Linux, Postman, Vercel, Odoo, OpenClaw.
+  - `CREATIVE`: TradingView, Unity, Unreal Engine, Blender, After Effects, Twinmotion.
+- **High-Fidelity Visuals**: Clean vector SVG icons and smooth Framer Motion stagger animations.
+
+### 4. Interactive Terminal UI & Engineering Capabilities
+- **Terminal Brutalism & Monospace Aesthetic**: Clean JetBrains Mono typography, custom grid matrices, sharp edges, and subtle glassmorphic surfaces.
+- **Live GitHub Telemetry Engine (`#telemetry` & `/api/github-events`)**: Edge-cached endpoint fetching live public GitHub events, commit history, and activity timestamps directly from GitHub REST API for user `silkiy`, featuring live event categorization (PUSH, STAR, REPO, FORK, PR) and relative time calculation.
+- **Multi-Language Resume Engine**: Interactive navbar dropdown enabling instantaneous direct cloud download of official Indonesian (`CV_Wildan_Silki_Bahasa_Indonesia.pdf`) and English (`CV_Wildan_Silki_English.pdf`) resumes hosted on Google Drive.
+- **Multi-Channel Contact Terminal (`#contact`)**:
+  - 1-click clipboard copy for official email (`contact.wildansilki@gmail.com`) and phone/WhatsApp (`+62 812-3252-2276`) with instant visual checkmark feedback.
+  - Direct network link hubs (WhatsApp, GitHub, LinkedIn, Instagram).
+  - Client-side validated contact form that programmatically generates and launches an end-to-end encrypted, structured WhatsApp message URL directly to Wildan Silki's WhatsApp.
+- **Persistent Theme Engine**: Smooth, layout-shift-free switching between Dark, Light, and System modes powered by `next-themes`.
+- **Intelligent Navigation & Scroll Handling**: Fixed header with backdrop blur, responsive mobile drawer menu, smooth anchor scrolling for home sections, and seamless cross-page navigation back to specific home sections from sub-pages.
+- **Scroll-To-Top Engine**: Floating action button that automatically surfaces during long scrolls to facilitate frictionless return to the viewport apex.
 
 ---
 
@@ -232,12 +280,60 @@ Dibangun menggunakan **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, d
   - Penghargaan Pemerintah Provinsi Jawa Timur langsung oleh Pj. Gubernur Jawa Timur (Adhi Karyono).
   - Lulusan Berprestasi (Outstanding Graduate) SMK Telkom Malang Angkatan 2025.
   - Terpilih presentasi software langsung kepada Pimpinan Yayasan Pendidikan Telkom.
+- **Rute Kustom 404 Cyberpunk (`/_not-found`)**: Penanganan rute tidak ditemukan dengan antarmuka terminal dan tombol kembali ke matriks utama.
 
-### 2. Antarmuka Terminal & Interaktivitas Pengguna
-- **Estetika Terminal Cyberpunk**: Tipografi monospasi JetBrains Mono, grid garis halus, dan aksen brutalist industrial.
-- **Telemetri GitHub Real-Time (`/api/github-events`)**: Endpoint internal yang mengambil data commit dan aktivitas GitHub publik akun `silkiy` dengan caching CDN Vercel Edge selama 5 menit.
-- **Pengunduhan CV Dua Bahasa**: Modal pilihan unduh resume resmi versi Bahasa Indonesia dan Bahasa Inggris.
-- **Formulir Kontak Aman**: Integrasi Web3Forms dengan proteksi honeypot anti-bot dan validasi format ketat.
+### 2. Arsip Kredensial, Pengalaman & Rekam Jejak Akademik (`#resume`)
+- **Ringkasan Profesional**: Manifesto teknis yang merangkum kompetensi lintas bidang mencakup arsitektur sistem terdistribusi, protokol Web3, dan pemodelan pasar kuantitatif.
+- **Pengalaman Magang Selesai**: Kartu riwayat kerja terperinci untuk Galeri Investasi BEI UISI, HMSI UISI (Ristek), dan PT Merkle Inovasi Teknologi dengan tautan langsung ke sub-halaman.
+- **Grid 6 Peran Kompetensi**: Pemetaan arsitektural dan tanggung jawab rekayasa:
+  - *Full-Stack Developer*: Perancangan sistem menyeluruh dari antarmuka pengguna hingga lapisan persistensi data cloud.
+  - *Front-End Developer*: Antarmuka pengguna responsif, ramah aksesibilitas (WCAG), dan berkinerja tinggi.
+  - *Backend Developer*: Layanan API RESTful berkecepatan tinggi, optimasi indeks basis data relasional, dan verifikasi kriptografis.
+  - *Blockchain Developer*: Rekayasa smart contract EVM aman, optimasi konsumsi gas, dan arsitektur dApp.
+  - *Mobile Apps Developer*: Aplikasi mobile Flutter berkinerja tinggi dengan integrasi bridge native OS.
+  - *Quant Trader*: Pengembangan sistem perdagangan algoritmik, telemetri statistik pasar modal, dan manajemen risiko presisi.
+- **Fondasi Pendidikan Akademis (`#education`)**: Riwayat pendidikan formal terverifikasi:
+  - *Universitas Internasional Semen Indonesia (UISI)* — S1 Teknologi Informasi (2025 – Sekarang).
+  - *SMK Telkom Malang* — Rekayasa Perangkat Lunak / RPL (2022 – 2025).
+  - *SMPN 3 Tulungagung* — Pendidikan Menengah Pertama (2019 – 2022).
+- **Lisensi & Sertifikasi Terakreditasi (`#licenses`)**: 9 kredensial profesional resmi:
+  - *Blockchain Basics* — Cyfrin Updraft (Sep 2025).
+  - *Learn OpenUSD: Model Kinds* — NVIDIA (Agu 2025).
+  - *AI on Jetson Nano* — NVIDIA (Agu 2025).
+  - *SKD (Sekolah Kedinasan)* — Badan Kepegawaian Negara / BKN (Agu 2025).
+  - *DOT Competency* — PT DOT Indonesia (Mei 2025).
+  - *UKK Fullstack Developer* — SMK Telkom Malang (Mar 2025).
+  - *Rapid Developer* — Mendix (Des 2024).
+  - *Code Olympiad (Juara 2)* — Coding Bee Academy (Jan 2023).
+  - *Junior Mobile Programmer* — Telkom Indonesia / BNSP (Tersertifikasi).
+- **Pelatihan Khusus, Workshop & Hackathon (`#activities`)**:
+  - *Cyber Security Awareness* — Telkom Indonesia & Telkom Schools (Jun 2024).
+  - *Indie Game Ignite* — COMPFEST 15 oleh Universitas Indonesia & Agate (Okt 2023).
+  - *MANIAC XII Competition* — Universitas Surabaya / UBAYA (Agu 2023).
+  - *Game Concept & Asset Design* — Workshop MANIAC XII UBAYA (Agu 2023).
+  - *Modular Low-Code Design* — Merkle Academy & Mendix (Okt 2025).
+- **Dossier Prestasi & Penghargaan (`#achievements`)**: 3 kartu sorotan prestasi dengan foto dokumentasi asli dan tautan ulasan lengkap.
+
+### 3. Matriks Keahlian Interaktif (`#skills`)
+- **Inventaris Multi-Kategori**: 35+ teknologi terbagi dalam 5 kategori tab filter:
+  - `INDEX`: Menampilkan seluruh teknologi yang dikuasai.
+  - `LANG`: Solidity, Rust, TypeScript, JavaScript, Golang, Kotlin, Dart, Java, Python, Julia, HTML5, CSS3.
+  - `FRAMEWORKS`: Next.js, React, Node.js, Express, Flutter, TensorFlow.
+  - `SYS_TOOLS`: Hardhat, PostgreSQL, MongoDB, MySQL, Supabase, Firebase, Docker, Git, Linux, Postman, Vercel, Odoo, OpenClaw.
+  - `CREATIVE`: TradingView, Unity, Unreal Engine, Blender, After Effects, Twinmotion.
+- **Visual Vektor Berkualitas Tinggi**: Ikon SVG resmi dengan animasi transisi Framer Motion.
+
+### 4. Antarmuka Terminal & Interaktivitas Pengguna
+- **Estetika Terminal Cyberpunk**: Tipografi monospasi JetBrains Mono, grid garis halus, aksen brutalist industrial, dan permukaan glassmorphic.
+- **Telemetri GitHub Real-Time (`#telemetry` & `/api/github-events`)**: Endpoint internal yang mengambil data commit dan aktivitas GitHub publik akun `silkiy` dengan filter (PUSH, STAR, REPO, FORK, PR) dan kalkulasi waktu relatif.
+- **Pengunduhan CV Dua Bahasa**: Dropdown menu pada navbar untuk pengunduhan langsung berkas resume resmi versi Bahasa Indonesia dan Bahasa Inggris dari Google Drive.
+- **Terminal Kontak Multi-Kanal (`#contact`)**:
+  - Tombol 1-klik salin ke clipboard untuk email (`contact.wildansilki@gmail.com`) dan telepon/WhatsApp (`+62 812-3252-2276`) dengan umpan balik centang visual.
+  - Tautan jejaring sosial (WhatsApp, GitHub, LinkedIn, Instagram).
+  - Formulir kontak tervalidasi yang otomatis memformat dan meluncurkan tautan transmisi WhatsApp resmi terenkripsi langsung ke nomor Wildan Silki.
+- **Mesin Tema Persisten**: Penggantian tema Gelap (Dark), Terang (Light), dan Sistem tanpa pergeseran tata letak menggunakan `next-themes`.
+- **Navigasi Pintar & Penanganan Gulir**: Bilah navigasi tetap dengan efek blur, menu drawer mobile, scroll halus antar-seksi beranda, dan navigasi lintas halaman kembali ke beranda.
+- **Tombol Kembali ke Atas (Scroll-To-Top)**: Tombol melayang otomatis saat halaman digulir ke bawah untuk kembali ke puncak halaman dengan satu klik.
 
 ---
 
