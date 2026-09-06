@@ -11,21 +11,27 @@ export default function AppleIcon() {
     (
       <div
         style={{
-          fontSize: 90,
-          background: "#09090b",
+          background: "#0A0A0A",
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "#ffffff",
-          fontWeight: 800,
-          fontFamily: "monospace",
           borderRadius: "36px",
-          border: "6px solid #3f3f46",
+          border: "2px solid #27272a",
         }}
       >
-        WS
+        <svg
+          viewBox="0 0 512 512"
+          width="128"
+          height="128"
+        >
+          <g transform="translate(256, 256)">
+            <path d="M -90 -120 L 90 -120 L 90 -76 L -42 -76 L -90 -120 Z" fill="#FFFFFF" />
+            <polygon points="-70,-60 90,80 40,80 -90,-40" fill="#FFFFFF" />
+            <path d="M -90 76 L 42 76 L 90 120 L -90 120 Z" fill="#FFFFFF" />
+          </g>
+        </svg>
       </div>
     ),
     {

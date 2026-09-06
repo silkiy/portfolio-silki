@@ -41,7 +41,13 @@ export const NavLink = [
     },
     {
         id: 9,
+        url: "blog",
+        label: "Blog",
+        path: "/blog"
+    },
+    {
+        id: 10,
         url: "contact",
         label: "Contact"
     },
-]
+];

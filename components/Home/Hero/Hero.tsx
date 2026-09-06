@@ -93,16 +93,16 @@ const Hero = () => {
             Key Skills: Solidity, Rust, TypeScript, JavaScript, Python, Next.js, React, Node.js, Express, Flutter, Hardhat, PostgreSQL, MongoDB, Quantitative Trading, Algorithmic Trading Systems.
           </p>
           <p>
-            Prestasi & Penghargaan: Juara 2 Internasional Game Development (Coding Bee Academy Code Olympiad 2023), Apresiasi dari Pj Gubernur Jawa Timur Adhi Karyono atas pencapaian internasional, Lulusan Berprestasi SMK Telkom Malang, Presentasi Proyek Eksekutif Yayasan Pendidikan Telkom.
+            Honors &amp; Awards: 2nd Place International in Game Development (Coding Bee Academy Code Olympiad 2023), Provincial Recognition from the Acting Governor of East Java Adhi Karyono for international technology achievement, Outstanding Graduate Award at SMK Telkom Malang, and Executive Project Presentation to Telkom Education Foundation.
           </p>
           <p>
-            Pendidikan & Sertifikasi: Mahasiswa Universitas Internasional Semen Indonesia (UISI), Alumni SMK Telkom Malang, Alumni SMPN 3 Tulungagung. Tersertifikasi Blockchain Basics (Cyfrin Updraft), Learn OpenUSD (NVIDIA), AI on Jetson Nano (NVIDIA), SKD Sekolah Kedinasan (BKN), DOT Competency (PT DOT Indonesia), UKK Fullstack Developer (SMK Telkom Malang), Rapid Developer (Mendix), Code Olympiad 2nd Place (Coding Bee Academy), dan Junior Mobile Programmer (Telkom Indonesia BNSP).
+            Education &amp; Certifications: Undergraduate at Universitas Internasional Semen Indonesia (UISI), Alumni of SMK Telkom Malang, Alumni of SMPN 3 Tulungagung. Certified in Blockchain Basics (Cyfrin Updraft), Learn OpenUSD (NVIDIA), AI on Jetson Nano (NVIDIA), SKD Civil Service Assessment (BKN), DOT Competency (PT DOT Indonesia), UKK Fullstack Developer (SMK Telkom Malang), Rapid Developer (Mendix), Code Olympiad 2nd Place (Coding Bee Academy), and Junior Mobile Programmer (Telkom Indonesia BNSP).
           </p>
           <p>
-            Pengalaman Industri, Riset &amp; Magang (Internship): Researcher (Internship) di Galeri Investasi BEI UISI (Educational Research &amp; Pasar Modal), Software Engineer (Internship) di Divisi Riset dan Teknologi (Ristek) HMSI UISI (Eksplorasi Solusi Teknologi &amp; Platform Internal), serta Backend Engineer (Internship) di Merkle Innovation (Hybrid).
+            Professional Experience &amp; Research: Researcher (Internship) at Galeri Investasi BEI UISI (Educational Research &amp; Capital Markets), Software Engineer (Internship) at the Research and Technology (Ristek) Division of HMSI UISI (Internal Systems &amp; Technology Exploration), and Backend Engineer (Internship) at Merkle Innovation.
           </p>
           <p>
-            Pelatihan & Kompetisi: Pelatihan Cyber Security Awareness (Telkom Indonesia & Telkom Schools), Indie Game Ignite di COMPFEST 15 (Universitas Indonesia & Agate), Kompetisi & Workshop Game Design di MANIAC XII (Universitas Surabaya - UBAYA), serta Modular Low-Code Design (Merkle Academy & Mendix).
+            Training &amp; Competitions: Cyber Security Awareness Training (Telkom Indonesia &amp; Telkom Schools), Indie Game Ignite at COMPFEST 15 (Universitas Indonesia &amp; Agate), MANIAC XII Game Design Competition &amp; Workshop (Universitas Surabaya - UBAYA), and Modular Low-Code Design (Merkle Academy &amp; Mendix).
           </p>
         </section>
 

@@ -53,14 +53,14 @@ const Contact = () => {
 
     const phoneNumber = "6281232522276";
     const messageLines = [
-      "Halo Wildan,",
+      "Hello Wildan,",
       "",
-      "Saya menghubungi melalui form portofolio Anda:",
-      `• *Nama:* ${formData.name.trim()}`,
+      "I am contacting you via your portfolio website form:",
+      `• *Name:* ${formData.name.trim()}`,
       `• *Email:* ${formData.email.trim()}`,
-      `• *Subjek:* ${formData.subject.trim()}`,
+      `• *Subject:* ${formData.subject.trim()}`,
       "",
-      `*Pesan:*`,
+      `*Message:*`,
       formData.message.trim(),
     ];
 

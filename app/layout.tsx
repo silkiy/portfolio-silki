@@ -59,11 +59,27 @@ export const metadata: Metadata = {
     "Full-Stack Developer Malang",
     "React Developer",
     "TypeScript Developer",
+    "Wildan Silki Logo",
+    "Wildan Silki Software Engineer Logo",
+    "Wildan Silki Official Logo",
+    "Silki Logo",
   ],
   authors: [{ name: "Wildan Silki Sawabiqil Abroor", url: siteUrl }],
   creator: "Wildan Silki",
   publisher: "Wildan Silki",
   category: "technology",
+  icons: {
+    icon: [
+      { url: "/logo/wildan-silki-logo.svg", type: "image/svg+xml" },
+      { url: "/logo/wildan-silki-logo.png", sizes: "512x512", type: "image/png" },
+      { url: "/icon", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/logo/wildan-silki-logo.png", sizes: "512x512", type: "image/png" },
+      { url: "/apple-icon", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/logo/wildan-silki-logo.svg",
+  },
   alternates: {
     canonical: siteUrl,
   },
@@ -127,9 +143,26 @@ const jsonLd = {
       "description":
         "The official portfolio website of Wildan Silki Sawabiqil Abroor, Software Engineer & Web3 Specialist.",
       "publisher": {
+        "@type": "Person",
         "@id": "https://wildansilki.xyz/#person",
+        "name": "Wildan Silki Sawabiqil Abroor",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wildansilki.xyz/logo/wildan-silki-software-engineer-logo.png",
+          "caption": "Wildan Silki Official Brand Logo",
+          "width": 512,
+          "height": 512
+        }
       },
       "inLanguage": "en",
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://wildansilki.xyz/#brand",
+      "name": "Silki",
+      "alternateName": "Wildan Silki",
+      "url": "https://wildansilki.xyz",
+      "logo": "https://wildansilki.xyz/logo/wildan-silki-software-engineer-logo.png"
     },
     {
       "@type": "ProfilePage",
@@ -167,6 +200,13 @@ const jsonLd = {
         "caption": "Wildan Silki Sawabiqil Abroor",
         "width": 730,
         "height": 973,
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wildansilki.xyz/logo/wildan-silki-software-engineer-logo.png",
+        "caption": "Wildan Silki Official Brand Logo",
+        "width": 512,
+        "height": 512
       },
       "jobTitle": [
         "Software Engineer",

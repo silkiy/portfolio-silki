@@ -9,6 +9,7 @@
 - **Location:** Malang, East Java, Indonesia (Timezone: Asia/Jakarta, GMT+7)
 - **Primary Languages:** Indonesian (Native), English (Professional Working Proficiency)
 - **Official Website:** https://wildansilki.xyz
+- **Official Brand Logo:** https://wildansilki.xyz/logo/wildan-silki-software-engineer-logo.png (Vector SVG: https://wildansilki.xyz/logo/wildan-silki-logo.svg)
 - **GitHub:** https://github.com/silkiy
 - **LinkedIn:** https://www.linkedin.com/in/wildan-silki-69768a272/
 - **Instagram:** https://www.instagram.com/project_silki
@@ -29,7 +30,7 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 
 ---
 
-## Prestasi & Penghargaan Internasional (Honors & Awards)
+## Honors & Awards
 1. **2nd Place International Game Development — Code Olympiad 2023**
    - Awarded 2nd Place internationally in Game Development (Group 1D) organized by Coding Bee Academy.
 2. **Provincial Recognition by East Java Government**
@@ -37,28 +38,26 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 3. **Outstanding Graduate Award — SMK Telkom Malang**
    - Received special recognition as an Outstanding Graduate at SMK Telkom Malang (2025) for international code olympiad excellence.
 4. **Executive Presentation — Telkom Education Foundation**
-   - Selected to present an original game development project directly to Executives and Leadership of Yayasan Pendidikan Telkom (Telkom Education Foundation).
+   - Selected to present an original game development project directly to Executives and Leadership of Telkom Education Foundation.
 
 ---
 
-## Pendidikan & Riwayat Studi (Education)
+## Education Background
 1. **Universitas Internasional Semen Indonesia (UISI)** (2025 – Present)
    - Undergraduate studies in Information Technology / Computer Science.
 2. **SMK Telkom Malang** (2022 – 2025)
-   - Software Engineering (Rekayasa Perangkat Lunak).
+   - Software Engineering.
 3. **SMP Negeri 3 Tulungagung** (2019 – 2022)
 
 ---
 
----
-
-## Pengalaman Kerja Industri & Riset (Work Experience — Internships)
+## Professional Work Experience & Research (Internships)
 - **Researcher (Internship)** — **Galeri Investasi BEI UISI** (Nov 2025 – Sep 2026 · 11 mos)
   - Location: Gresik, East Java, Indonesia
   - Employment Type: Internship (Completed)
   - Skills / Focus: Educational Research, Capital Market Analysis, Financial Literacy & Investment Education
   - Responsibilities: Conducted comprehensive educational research on capital market instruments and investment literacy, analyzing market data and formulating data-driven educational curricula for academic and public communities.
-- **Software Engineer — Engineering & Research Staff (Ristek)** — **Himpunan Mahasiswa Sistem Informasi (HMSI) UISI** (Feb 2026 – Sep 2026 · 8 mos)
+- **Software Engineer — Engineering & Research Staff (Ristek)** — **HMSI UISI** (Feb 2026 – Sep 2026 · 8 mos)
   - Location: Gresik, East Java, Indonesia
   - Employment Type: Internship (Completed)
   - Skills / Focus: Software Engineering, IT Trend Research, Internal Platform Development
@@ -71,21 +70,21 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 
 ---
 
-## Sertifikasi & Lisensi Resmi (Licenses & Certifications)
+## Accredited Licenses & Certifications
 1. **Certification: Blockchain Basics** — Issued by Cyfrin Updraft (Sep 2025, Credential ID: `BBCC-HZNRP 1N3ASIQ`)
 2. **Learn OpenUSD: Understanding Model Kinds** — Issued by NVIDIA (Aug 2025, Credential ID: `V6pNHAdeTbOWM5YRxSE0Gg`)
 3. **Getting Started with AI on Jetson Nano** — Issued by NVIDIA (Aug 2025, Credential ID: `_SMMCkJuTvGTGRZ4HPswog`)
-4. **Seleksi Kompetensi Dasar (SKD) – Sekolah Kedinasan** — Issued by Badan Kepegawaian Negara (Aug 2025, Credential ID: `4FE0C82626C781FFD56A8F54EE8D0BFF`)
+4. **Basic Competency Selection (SKD) – Official Service School** — Issued by National Civil Service Agency / BKN (Aug 2025, Credential ID: `4FE0C82626C781FFD56A8F54EE8D0BFF`)
 5. **DOT Certificate of Competency** — Issued by PT DOT Indonesia (May 2025)
-6. **Sertifikat Uji Kompetensi Keahlian (UKK) – Fullstack Developer** — Issued by SMK Telkom Malang (Mar 2025)
+6. **Vocational Competency Certification (UKK) – Fullstack Developer** — Issued by SMK Telkom Malang (Mar 2025)
 7. **Rapid Developer Certification** — Issued by Mendix (Dec 2024, Credential ID: `85382`)
 8. **2nd Place – Code Olympiad 2023, Game Development Group 1D** — Issued by Coding Bee Academy (Jan 2023)
 9. **Junior Mobile Programmer** — Issued by Telkom Indonesia (BNSP)
 
 ---
 
-## Pelatihan Teknis, Workshop & Kompetisi (Training, Workshops & Activities)
-1. **Pelatihan Cyber Security Awareness** — Telkom Indonesia, Yayasan Pendidikan Telkom & Telkom Schools (Jun 2024, Malang)
+## Technical Training, Workshops & Competitions
+1. **Cyber Security Awareness Training** — Telkom Indonesia, Telkom Education Foundation & Telkom Schools (Jun 2024, Malang)
 2. **Indie Game Ignite @ COMPFEST 15** — COMPFEST Universitas Indonesia & Agate (Oct 2023)
 3. **MANIAC XII Competition Participant** — Universitas Surabaya (UBAYA), Informatics Engineering (Aug 2023)
 4. **Workshop Game Concept Design & Game Asset Design** — MANIAC XII by Universitas Surabaya (UBAYA) (Aug 2023)
@@ -93,21 +92,22 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 
 ---
 
-## Portofolio Proyek Terpilih (Selected Projects)
+## Selected Project Portfolio
 1. **Blayu Mobile**
-   - Mobile application for academic data tracking and location verification using Flutter and Firebase.
-2. **Absensi RSD**
-   - Attendance and biometric verification application featuring facial recognition and geofenced location tracking in Flutter.
+   - Mobile application for football academy management, young athlete curriculum tracking, pitch attendance, and performance analytics built with Flutter and Firebase.
+2. **Absensi RSUD Mangusada Bali**
+   - High-reliability hospital staff attendance system featuring on-device biometric facial recognition and anti-spoofing polygon geofencing built with Flutter.
 3. **MIT Profiling**
-   - High-throughput backend system and RESTful API architecture built using Node.js, Express, and TypeScript.
+   - LinkedIn-style professional web platform for corporate talent profiling, organizational capability directory, and portfolio tracking at PT Merkle Inovasi Teknologi.
 4. **Token Vendor**
    - Decentralized smart contract platform for automated token distribution and purchasing on the Ethereum network using Solidity and Hardhat.
 5. **Simple NFT**
-   - Custom ERC-721 non-fungible token smart contract with minting logic, metadata handling, and gas-efficient execution on Ethereum.
+   - Gas-optimized ERC-721 non-fungible token smart contract with decentralized IPFS metadata storage on Ethereum.
 6. **MaYPI Platform**
-   - Real-time IoT meter monitoring, reporting, and predictive analysis web platform built with React.js and Node.js.
+   - Web platform for digital water meter reading, real-time consumption volume monitoring, and automated utility billing telemetry built with React.js and Node.js.
 7. **Tani Cerdas**
-   - Modern agricultural management platform utilizing Next.js, Server Actions, and MongoDB to empower local farming communities.
+   - Digital agricultural management platform empowering farmers and agricultural cooperatives to manage agricultural data digitally to improve productivity and welfare using Next.js and MongoDB.
+
 
 ---
 

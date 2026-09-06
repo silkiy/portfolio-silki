@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { NavLink } from "@/constant/constant";
-import { FaCode } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const [year, setYear] = useState<number>(new Date().getFullYear());
@@ -18,8 +18,14 @@ const Footer: React.FC = () => {
           {/* Logo & Description */}
           <div className="md:col-span-6 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-foreground text-background flex items-center justify-center">
-                <FaCode className="w-5 h-5" />
+              <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-border/60 bg-[#0A0A0A] flex-shrink-0">
+                <Image
+                  src="/logo/wildan-silki-logo.svg"
+                  alt="Wildan Silki Official Logo - Software Engineer & Web3 Specialist"
+                  fill
+                  sizes="40px"
+                  className="object-cover p-0.5"
+                />
               </div>
               <span className="text-xl text-foreground font-mono font-bold tracking-tighter uppercase">
                 SILKI

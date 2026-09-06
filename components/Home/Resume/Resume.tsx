@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import ResumeCard from "./ResumeCard";
 import BadgeCard from "./BadgeCard";
@@ -10,6 +11,7 @@ import {
   FaMobile,
   FaReact,
   FaChartBar,
+  FaArrowRight,
 } from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
 import { HiAcademicCap, HiOutlineBadgeCheck } from "react-icons/hi";
@@ -107,19 +109,24 @@ const Resume = () => {
                 Conducted comprehensive educational research at Galeri Investasi BEI UISI focused on capital market mechanisms and investment literacy, developing data-driven educational curricula and analyzing financial market instruments for academic and community enrichment.
               </p>
 
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-border/30">
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Educational Research
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Capital Markets
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Financial Literacy
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Data &amp; Market Analysis
-                </span>
+              <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Educational Research
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Capital Markets
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Financial Literacy
+                  </span>
+                </div>
+                <Link
+                  href="/experience/galeri-investasi-bei-uisi"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                >
+                  View Details <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
               </div>
             </motion.article>
 
@@ -166,19 +173,24 @@ const Resume = () => {
                 Actively contributed within the Research &amp; Technology (Ristek) division, exploring innovative emerging technologies, analyzing modern IT industry trends, and engineering internal software architectures and platforms to power departmental digitalization.
               </p>
 
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-border/30">
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Software Engineering
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # IT Trend Research
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Internal Platform Development
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Tech Exploration
-                </span>
+              <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Software Engineering
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # IT Trend Research
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Internal Platform
+                  </span>
+                </div>
+                <Link
+                  href="/experience/hmsi-uisi-ristek"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                >
+                  View Details <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
               </div>
             </motion.article>
 
@@ -225,19 +237,24 @@ const Resume = () => {
                 Served as an active Backend Engineer at Merkle Innovation in a hybrid arrangement, architecting robust data models, designing secure and scalable RESTful API endpoints, and implementing server-side optimization for enterprise applications including the MIT Profiling system.
               </p>
 
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-border/30">
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # RESTful API Design
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Backend Architecture
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Database Optimization
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
-                  # Enterprise Systems
-                </span>
+              <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # RESTful API Design
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Backend Architecture
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Enterprise Systems
+                  </span>
+                </div>
+                <Link
+                  href="/experience/merkle-innovation"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                >
+                  View Details <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
               </div>
             </motion.article>
           </div>
@@ -432,7 +449,7 @@ const Resume = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               tabIndex={0}
-              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair"
+              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair overflow-hidden"
             >
               <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
@@ -443,13 +460,24 @@ const Resume = () => {
                   className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
                 />
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h4 className="font-mono font-bold uppercase tracking-widest mb-3">
-                  Provincial Recognition
-                </h4>
-                <p className="font-mono text-xs opacity-70 leading-relaxed flex-1">
-                  Honored by the Acting Governor of East Java, Adhi Karyono, for achieving 2nd Place International in Game Development (Group 1D) by Coding Bee Academy.
-                </p>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 group-hover:border-background/50 group-focus:border-background/50 text-foreground/60 group-hover:text-background/70 uppercase tracking-wider font-semibold inline-block mb-2">
+                    East Java Provincial Government
+                  </span>
+                  <h4 className="font-mono font-bold uppercase tracking-widest mb-3">
+                    Provincial Recognition
+                  </h4>
+                  <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
+                    Honored by the Acting Governor of East Java, Adhi Karyono, for achieving 2nd Place International in Game Development (Group 1D) by Coding Bee Academy.
+                  </p>
+                </div>
+                <Link
+                  href="/achievements/provincial-recognition"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                >
+                  Read Story <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
               </div>
             </motion.article>
             
@@ -459,7 +487,7 @@ const Resume = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
               tabIndex={0}
-              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair"
+              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair overflow-hidden"
             >
               <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
@@ -470,13 +498,24 @@ const Resume = () => {
                   className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
                 />
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h4 className="font-mono font-bold uppercase tracking-widest mb-3">
-                  Outstanding Graduate
-                </h4>
-                <p className="font-mono text-xs opacity-70 leading-relaxed flex-1">
-                  Received special recognition during graduation at SMK Telkom Malang for achieving 2nd Place International in the Code Olympiad 2023.
-                </p>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 group-hover:border-background/50 group-focus:border-background/50 text-foreground/60 group-hover:text-background/70 uppercase tracking-wider font-semibold inline-block mb-2">
+                    SMK Telkom Malang
+                  </span>
+                  <h4 className="font-mono font-bold uppercase tracking-widest mb-3">
+                    Outstanding Graduate
+                  </h4>
+                  <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
+                    Received special recognition during graduation at SMK Telkom Malang for achieving 2nd Place International in the Code Olympiad 2023.
+                  </p>
+                </div>
+                <Link
+                  href="/achievements/outstanding-graduate"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                >
+                  Read Story <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
               </div>
             </motion.article>
 
@@ -486,7 +525,7 @@ const Resume = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               tabIndex={0}
-              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair"
+              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair overflow-hidden"
             >
               <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
                 <Image
@@ -497,13 +536,24 @@ const Resume = () => {
                   className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
                 />
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h4 className="font-mono font-bold uppercase tracking-widest mb-3">
-                  Executive Presentation
-                </h4>
-                <p className="font-mono text-xs opacity-70 leading-relaxed flex-1">
-                  Selected to present an original game development project directly to the Executives of the Telkom Education Foundation during my time at SMK Telkom Malang.
-                </p>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 group-hover:border-background/50 group-focus:border-background/50 text-foreground/60 group-hover:text-background/70 uppercase tracking-wider font-semibold inline-block mb-2">
+                    Telkom Education Foundation
+                  </span>
+                  <h4 className="font-mono font-bold uppercase tracking-widest mb-3">
+                    Executive Presentation
+                  </h4>
+                  <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
+                    Selected to present an original game development project directly to the Executives of the Telkom Education Foundation during my time at SMK Telkom Malang.
+                  </p>
+                </div>
+                <Link
+                  href="/achievements/executive-presentation"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                >
+                  Read Story <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
               </div>
             </motion.article>
           </div>
