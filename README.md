@@ -72,6 +72,7 @@ Architected with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and *
   - Software engineer & research staff at **HMSI UISI (Ristek)** (IT trends, internal platform development).
   - Backend engineer at **Merkle Innovation (PT Merkle Inovasi Teknologi)** (RESTful APIs, PostgreSQL indexing).
 - **Honors & Awards Dossier (`/achievements/[slug]`)**:
+  - Virtual Trading Competition 2026 Participant — Indonesia Stock Exchange & Pasar Modal Indonesia (OJK, IDX, IDClear, KSEI).
   - 2nd Place International Game Development — Code Olympiad 2023.
   - Formal Provincial Recognition from the Acting Governor of East Java (Adhi Karyono).
   - Outstanding Graduate Award at SMK Telkom Malang.
@@ -103,12 +104,13 @@ Architected with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and *
   - *Code Olympiad (2nd Place)* — Coding Bee Academy (Jan 2023).
   - *Junior Mobile Programmer* — Telkom Indonesia / BNSP (Certified).
 - **Specialized Training, Workshops & Hackathons (`#activities`)**:
+  - *Virtual Trading Competition 2026* — Indonesia Stock Exchange (IDX) & IDX Mobile (Sep 2026).
   - *Cyber Security Awareness* — Telkom Indonesia & Telkom Schools (Jun 2024).
   - *Indie Game Ignite* — COMPFEST 15 by Universitas Indonesia & Agate (Oct 2023).
   - *MANIAC XII Competition* — Universitas Surabaya / UBAYA (Aug 2023).
   - *Game Concept & Asset Design* — Workshop MANIAC XII UBAYA (Aug 2023).
   - *Modular Low-Code Design* — Merkle Academy & Mendix (Oct 2025).
-- **Achievements & Honors Dossier (`#achievements`)**: 3 visual dossier cards featuring authentic event photography, credential descriptions, and links to detailed story pages.
+- **Achievements & Honors Dossier (`#achievements`)**: 4 visual dossier cards featuring authentic event photography and credentials, detailed descriptions, and links to dedicated story pages.
 
 ### 3. Interactive Skills Matrix (`#skills`)
 - **Categorized Multi-Technology Matrix**: 35+ technology stack competencies categorized with interactive filtering tabs:
@@ -280,6 +282,7 @@ Dibangun menggunakan **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, d
   - Software Engineer & Staf Ristek di **HMSI UISI** (Eksplorasi tren teknologi dan arsitektur platform internal).
   - Backend Engineer (Magang) di **Merkle Innovation (PT Merkle Inovasi Teknologi)** (Optimalisasi kueri relasional dan API RESTful).
 - **Rekam Jejak Prestasi & Penghargaan (`/achievements/[slug]`)**:
+  - Peserta Virtual Trading Competition 2026 — Bursa Efek Indonesia & Pasar Modal Indonesia (OJK, IDX, IDClear, KSEI).
   - Juara 2 Internasional Game Development — Code Olympiad 2023 (Coding Bee Academy).
   - Penghargaan Pemerintah Provinsi Jawa Timur langsung oleh Pj. Gubernur Jawa Timur (Adhi Karyono).
   - Lulusan Berprestasi (Outstanding Graduate) SMK Telkom Malang Angkatan 2025.
@@ -311,12 +314,13 @@ Dibangun menggunakan **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, d
   - *Code Olympiad (Juara 2)* — Coding Bee Academy (Jan 2023).
   - *Junior Mobile Programmer* — Telkom Indonesia / BNSP (Tersertifikasi).
 - **Pelatihan Khusus, Workshop & Hackathon (`#activities`)**:
+  - *Virtual Trading Competition 2026* — Bursa Efek Indonesia (IDX) & IDX Mobile (Sep 2026).
   - *Cyber Security Awareness* — Telkom Indonesia & Telkom Schools (Jun 2024).
   - *Indie Game Ignite* — COMPFEST 15 oleh Universitas Indonesia & Agate (Okt 2023).
   - *MANIAC XII Competition* — Universitas Surabaya / UBAYA (Agu 2023).
   - *Game Concept & Asset Design* — Workshop MANIAC XII UBAYA (Agu 2023).
   - *Modular Low-Code Design* — Merkle Academy & Mendix (Okt 2025).
-- **Dossier Prestasi & Penghargaan (`#achievements`)**: 3 kartu sorotan prestasi dengan foto dokumentasi asli dan tautan ulasan lengkap.
+- **Dossier Prestasi & Penghargaan (`#achievements`)**: 4 kartu sorotan prestasi dengan foto dokumentasi asli dan tautan ulasan lengkap.
 
 ### 3. Matriks Keahlian Interaktif (`#skills`)
 - **Inventaris Multi-Kategori**: 35+ teknologi terbagi dalam 5 kategori tab filter:

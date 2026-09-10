@@ -26,14 +26,16 @@ export const experienceData: Record<string, ExperienceDetail> = {
       "Conducted analytical research on domestic capital market instruments (IDX/BEI equities, mutual funds, and structured warrants).",
       "Formulated educational modules and quantitative market study presentations for undergraduate students and public investors.",
       "Tracked financial market telemetry, macro indicators, and sector trends to support data-informed research initiatives.",
+      "Participated as an institutional delegate representing Galeri Investasi UISI in the national Virtual Trading Competition 2026 powered by IDX Mobile (OJK, IDX, IDClear, KSEI).",
       "Collaborated with faculty mentors and financial experts to organize investment seminars and academic workshops."
     ],
     achievements: [
+      "Represented Galeri Investasi UISI and earned official Certificate of Appreciation in the national Virtual Trading Competition 2026 organized by Pasar Modal Indonesia.",
       "Successfully authored and delivered multiple educational research reports on capital market dynamics.",
       "Enhanced investment literacy metrics across student participant cohorts through structured curriculum delivery.",
       "Bridged theoretical academic finance concepts with real-time exchange order book data and quantitative metrics."
     ],
-    techStack: ["Capital Market Analysis", "Educational Research", "Financial Literacy", "Data Analysis", "Market Telemetry"],
+    techStack: ["Capital Market Analysis", "Virtual Trading (IDX Mobile)", "Educational Research", "Financial Literacy", "Data Analysis", "Market Telemetry"],
   },
   "hmsi-uisi-ristek": {
     slug: "hmsi-uisi-ristek",

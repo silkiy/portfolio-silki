@@ -51,13 +51,14 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 ---
 
 ## Professional Work Experience & Research
-- [Galeri Investasi BEI UISI](https://wildansilki.xyz/experience/galeri-investasi-bei-uisi): Researcher (Internship) (Nov 2025 – Sep 2026 · 11 mos) — Conducted comprehensive educational research on capital market instruments, investment behavior, and financial literacy; formulated data-driven educational curricula.
+- [Galeri Investasi BEI UISI](https://wildansilki.xyz/experience/galeri-investasi-bei-uisi): Researcher (Internship) (Nov 2025 – Sep 2026 · 11 mos) — Conducted comprehensive educational research on capital market instruments, investment behavior, and financial literacy; represented the institution in the national Virtual Trading Competition 2026 (IDX Mobile).
 - [HMSI UISI — Ristek](https://wildansilki.xyz/experience/hmsi-uisi-ristek): Software Engineer & Research Staff (Internship) (Feb 2026 – Sep 2026 · 8 mos) — Contributed within the Research & Technology division to explore cutting-edge IT trends, evaluate digital solutions, and engineer internal departmental platforms.
 - [Merkle Innovation (PT Merkle Inovasi Teknologi)](https://wildansilki.xyz/experience/merkle-innovation): Backend Engineer (Internship) (Nov 2024 – Aug 2025 · 10 mos) — Architected scalable backend data models, built high-throughput RESTful API endpoints, and optimized server infrastructure for the MIT Profiling system.
 
 ---
 
 ## Honors & Awards
+- [Virtual Trading Competition 2026 — Indonesia Stock Exchange](https://wildansilki.xyz/achievements/virtual-trading-competition-2026): Certificate of Appreciation as Participant representing Galeri Investasi UISI in the national competition powered by IDX Mobile (OJK, IDX, IDClear, KSEI).
 - [2nd Place International Game Development — Code Olympiad 2023](https://wildansilki.xyz/achievements/code-olympiad-2023): Awarded 2nd Place internationally in Game Development (Group 1D) organized by Coding Bee Academy.
 - [Provincial Recognition by Acting Governor of East Java](https://wildansilki.xyz/achievements/provincial-recognition): Honored directly by Acting Governor Adhi Karyono for international achievements in technology and game development.
 - [Outstanding Graduate Award — SMK Telkom Malang](https://wildansilki.xyz/achievements/outstanding-graduate): Recognized as an Outstanding Graduate of SMK Telkom Malang Class of 2025 for exceptional coding competition achievements.
@@ -76,6 +77,7 @@ Wildan Silki is an Indonesian Software Engineer and international award winner w
 8. **2nd Place – Code Olympiad 2023, Game Development Group 1D** — Issued by Coding Bee Academy (Jan 2023)
 9. **Junior Mobile Programmer** — Issued by Telkom Indonesia (BNSP)
 10. **Cyber Security Awareness Training** — Issued by Telkom Indonesia & Yayasan Pendidikan Telkom (Jun 2024)
+11. **Certificate of Appreciation: Virtual Trading Competition 2026** — Issued by Pasar Modal Indonesia / OJK, IDX, IDClear, KSEI (Sep 2026)
 
 ---
 

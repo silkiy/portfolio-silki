@@ -188,6 +188,23 @@ export default async function AchievementDetailPage({ params }: Props) {
               </span>
             </div>
           </div>
+
+          {item.credentialPdf && (
+            <div className="p-4 sm:p-5 border-t border-border/40 bg-foreground/5 flex flex-wrap items-center justify-between gap-3">
+              <span className="text-xs font-mono text-foreground/80 uppercase">
+                DOCUMENT ARCHIVE // AUTHENTIC ISSUANCE PDF
+              </span>
+              <a
+                href={item.credentialPdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-1.5 border border-border/60 bg-foreground text-background text-xs uppercase font-bold hover:bg-background hover:text-foreground transition-colors inline-flex items-center gap-2"
+              >
+                <span>View Original PDF</span>
+                <span className="text-[10px]">↗</span>
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Body Content */}

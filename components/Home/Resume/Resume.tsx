@@ -106,7 +106,7 @@ const Resume = () => {
               </div>
 
               <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
-                Conducted comprehensive educational research at Galeri Investasi BEI UISI focused on capital market mechanisms and investment literacy, developing data-driven educational curricula and analyzing financial market instruments for academic and community enrichment.
+                Conducted comprehensive educational research at Galeri Investasi BEI UISI focused on capital market mechanisms and investment literacy, analyzing financial market instruments, and representing the institution in the national Virtual Trading Competition 2026 (IDX Mobile).
               </p>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
@@ -116,6 +116,9 @@ const Resume = () => {
                   </span>
                   <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
                     # Capital Markets
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Virtual Trading (IDX)
                   </span>
                   <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
                     # Financial Literacy
@@ -431,6 +434,12 @@ const Resume = () => {
             />
             <BadgeCard
               Icon={HiOutlineBadgeCheck}
+              title="Virtual Trading Competition 2026"
+              subtitle="Indonesia Stock Exchange (IDX) & IDX Mobile"
+              date="Sep 2026"
+            />
+            <BadgeCard
+              Icon={HiOutlineBadgeCheck}
               title="Modular Low-Code Design"
               subtitle="Merkle Academy & Mendix"
               date="Oct 2025"
@@ -443,7 +452,7 @@ const Resume = () => {
           <h3 className="font-mono text-xl sm:text-2xl font-black text-foreground mb-8 md:mb-12 tracking-widest uppercase border-b border-border/50 pb-4">
             [05] Achievements & Honors
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.article 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -524,6 +533,44 @@ const Resume = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
+              tabIndex={0}
+              className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair overflow-hidden"
+            >
+              <div className="overflow-hidden w-full h-[220px] relative border-b border-border/50 group-hover:border-background/50 group-focus:border-background/50">
+                <Image
+                  src="/images/wildan-silki-virtual-trading-competition-2026.webp"
+                  alt="Wildan Silki Sawabiqil Abroor - Virtual Trading Competition 2026 Certificate - Indonesia Stock Exchange"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-focus:grayscale-0 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal group-focus:mix-blend-normal opacity-70 group-hover:opacity-100 group-focus:opacity-100"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 group-hover:border-background/50 group-focus:border-background/50 text-foreground/60 group-hover:text-background/70 uppercase tracking-wider font-semibold inline-block mb-2">
+                    Pasar Modal Indonesia (OJK, IDX, IDClear, KSEI)
+                  </span>
+                  <h4 className="font-mono font-bold uppercase tracking-widest mb-3">
+                    Virtual Trading Competition 2026
+                  </h4>
+                  <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
+                    Awarded Certificate of Appreciation as Participant representing Galeri Investasi UISI in the national competition powered by IDX Mobile.
+                  </p>
+                </div>
+                <Link
+                  href="/achievements/virtual-trading-competition-2026"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                >
+                  Read Story <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
+              </div>
+            </motion.article>
+
+            <motion.article 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
               tabIndex={0}
               className="border border-border/50 bg-background/50 hover:bg-foreground focus:bg-foreground focus:outline-none hover:text-background focus:text-background transition-colors duration-500 group flex flex-col cursor-crosshair overflow-hidden"
             >

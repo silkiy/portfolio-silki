@@ -8,6 +8,7 @@ export interface AchievementDetail {
   summary: string;
   significance: string;
   highlights: string[];
+  credentialPdf?: string;
 }
 
 export const achievementsData: Record<string, AchievementDetail> = {
@@ -70,5 +71,22 @@ export const achievementsData: Record<string, AchievementDetail> = {
       "Fielded strategic technical questions from senior educational and corporate directors.",
       "Received commendations for technical maturity, presentation poise, and software craftsmanship."
     ],
+  },
+  "virtual-trading-competition-2026": {
+    slug: "virtual-trading-competition-2026",
+    title: "Virtual Trading Competition 2026 — Indonesia Stock Exchange",
+    issuer: "Pasar Modal Indonesia (OJK, IDX, IDClear, KSEI)",
+    category: "National Financial Competition",
+    date: "September 2026",
+    image: "/images/wildan-silki-virtual-trading-competition-2026.webp",
+    summary: "Awarded Certificate of Appreciation as Participant in the Virtual Trading Competition 2026 powered by IDX Mobile, representing Galeri Investasi Universitas Internasional Semen Indonesia during the 49th Anniversary of the Indonesian Capital Market.",
+    significance: "Demonstrated real-time equity execution, algorithmic discipline, and capital market trading strategies under competitive exchange simulation supervised by Indonesian financial authorities (OJK, BEI/IDX, KPEI/IDClear, and KSEI).",
+    highlights: [
+      "Represented Galeri Investasi Universitas Internasional Semen Indonesia (GI BEI UISI) on a national stage.",
+      "Executed real-time virtual market orders using the official IDX Mobile trading platform.",
+      "Applied portfolio allocation, risk management parameters, and macroeconomic market analysis throughout the tournament.",
+      "Conferred official Certificate of Appreciation on September 4, 2026 in Jakarta by market leaders."
+    ],
+    credentialPdf: "/certificates/virtual-trading-competition-2026.pdf",
   },
 };

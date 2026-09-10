@@ -551,12 +551,14 @@ Canonical URL: https://wildansilki.xyz/experience/galeri-investasi-bei-uisi
   * Conducted analytical research on domestic capital market instruments (IDX/BEI equities, mutual funds, and structured warrants).
   * Formulated educational modules and quantitative market study presentations for undergraduate students and public investors.
   * Tracked financial market telemetry, macro indicators, and sector trends to support data-informed research initiatives.
+  * Participated as an institutional delegate representing Galeri Investasi UISI in the national Virtual Trading Competition 2026 powered by IDX Mobile (OJK, IDX, IDClear, KSEI).
   * Collaborated with faculty mentors and financial experts to organize investment seminars and academic workshops.
 - Notable Achievements:
+  * Represented Galeri Investasi UISI and earned official Certificate of Appreciation in the national Virtual Trading Competition 2026 organized by Pasar Modal Indonesia.
   * Successfully authored and delivered multiple educational research reports on capital market dynamics.
   * Enhanced investment literacy metrics across student participant cohorts through structured curriculum delivery.
   * Bridged theoretical academic finance concepts with real-time exchange order book data and quantitative metrics.
-- Core Skills: Capital Market Analysis, Educational Research, Financial Literacy, Data Analysis, Market Telemetry.
+- Core Skills: Capital Market Analysis, Virtual Trading (IDX Mobile), Educational Research, Financial Literacy, Data Analysis, Market Telemetry.
 
 --------------------------------------------------------------------------------
 Role 2: Software Engineer — Engineering & Research Staff (Ristek)
@@ -634,6 +636,13 @@ SECTION 6: HONORS, AWARDS & RECOGNITION
    - Canonical URL: https://wildansilki.xyz/achievements/executive-presentation
    - Description: Selected to present an original software and game development project directly to the Executive Board and Senior Leadership of the Telkom Education Foundation.
 
+5. Virtual Trading Competition 2026 — Indonesia Stock Exchange
+   - Issuer: Pasar Modal Indonesia (OJK, IDX, IDClear, KSEI)
+   - Date: September 2026
+   - Category: National Financial Competition
+   - Canonical URL: https://wildansilki.xyz/achievements/virtual-trading-competition-2026
+   - Description: Awarded Certificate of Appreciation as Participant in the Virtual Trading Competition 2026 powered by IDX Mobile, representing Galeri Investasi Universitas Internasional Semen Indonesia during the 49th Anniversary of the Indonesian Capital Market.
+
 
 ================================================================================
 SECTION 7: ACCREDITED CREDENTIALS & CERTIFICATIONS
@@ -673,6 +682,9 @@ SECTION 7: ACCREDITED CREDENTIALS & CERTIFICATIONS
 10. Cyber Security Awareness Training
     - Organization: Telkom Indonesia & Yayasan Pendidikan Telkom
     - Date: June 2024
+11. Certificate of Appreciation: Virtual Trading Competition 2026
+    - Organization: Pasar Modal Indonesia / OJK, IDX, IDClear, KSEI
+    - Date: September 2026
 
 
 ================================================================================
