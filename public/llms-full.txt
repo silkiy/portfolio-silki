@@ -539,14 +539,14 @@ SECTION 5: PROFESSIONAL WORK EXPERIENCE & RESEARCH
 
 --------------------------------------------------------------------------------
 Role 1: Head of Strategy Division
-Organization: Galeri Investasi BEI UISI (GIBEI)
+Organization: Galeri Investasi BEI UISI
 Organization URL: https://uisi.ac.id
 Location: Gresik, East Java, Indonesia
 Period: Sep 2026 – Present
 Type: Leadership
 Canonical URL: https://wildansilki.xyz/experience/gibei-head-of-strategy
 --------------------------------------------------------------------------------
-- Summary: Leading the Strategy Division at Galeri Investasi BEI UISI (GIBEI). Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.
+- Summary: Leading the Strategy Division at Galeri Investasi BEI UISI. Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.
 - Key Responsibilities:
   * Lead routine internal strategic discussions among division analysts to dissect macroeconomic conditions, monetary policies, and IDX equities to generate actionable investment recommendations.
   * Curate and publish periodic stock watchlists (weekly/monthly) grounded in rigorous fundamental valuation and technical momentum analysis, complete with accumulation rationale and risk-reward evaluation.

@@ -40,17 +40,50 @@ const Resume = () => {
             SYS.LOG // ARCHIVE & CREDENTIALS
           </p>
         </motion.div>
-        
+
         {/* Professional Summary */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mb-16 md:mb-20 border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground" 
+          className="mb-16 md:mb-20 border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground"
         >
           <p className="text-base md:text-lg lg:text-xl text-foreground/70 leading-relaxed font-mono">
-            &ldquo;A highly motivated <strong className="text-foreground font-semibold uppercase">Software Engineer &amp; Researcher</strong> with a strong foundation in <strong className="text-foreground font-semibold uppercase">Full-Stack Development</strong>, specializing in <strong className="text-foreground font-semibold uppercase">Next.js, React, and Node.js</strong>. With proven experience across completed internships in <strong className="text-foreground font-semibold uppercase">Educational Research at Galeri Investasi BEI UISI</strong>, <strong className="text-foreground font-semibold uppercase">Software Engineering at HMSI UISI (Ristek)</strong>, and <strong className="text-foreground font-semibold uppercase">Backend Engineering at Merkle Innovation</strong>, alongside a track record of <strong className="text-foreground font-semibold uppercase">International Achievements</strong> in Game Development and passion for <strong className="text-foreground font-semibold uppercase">Blockchain technology</strong>, I am dedicated to building high-performance, scalable digital solutions.&rdquo;
+            &ldquo;A highly motivated{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Software Engineer &amp; Researcher
+            </strong>{" "}
+            with a strong foundation in{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Full-Stack Development
+            </strong>
+            , specializing in{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Next.js, React, and Node.js
+            </strong>
+            . With proven experience across completed internships in{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Educational Research at Galeri Investasi BEI UISI
+            </strong>
+            ,{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Software Engineering at HMSI UISI (Ristek)
+            </strong>
+            , and{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Backend Engineering at Merkle Innovation
+            </strong>
+            , alongside a track record of{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              International Achievements
+            </strong>{" "}
+            in Game Development and passion for{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Blockchain technology
+            </strong>
+            , I am dedicated to building high-performance, scalable digital
+            solutions.&rdquo;
           </p>
         </motion.div>
 
@@ -95,7 +128,7 @@ const Resume = () => {
                       Head of Strategy Division
                     </h4>
                     <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
-                      Galeri Investasi BEI UISI (GIBEI)
+                      Galeri Investasi BEI UISI
                     </p>
                   </div>
                 </div>
@@ -107,7 +140,7 @@ const Resume = () => {
               </div>
 
               <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
-                Directing the Strategy Division at Galeri Investasi BEI UISI (GIBEI) — leading routine internal macroeconomic discussions, publishing curated fundamental/technical stock watchlists, and conducting university-wide investment classes to develop capital market competencies.
+                Directing the Strategy Division at Galeri Investasi BEI UISI — leading routine internal macroeconomic discussions, publishing curated fundamental/technical stock watchlists, and conducting university-wide investment classes to develop capital market competencies.
               </p>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
@@ -162,7 +195,7 @@ const Resume = () => {
                       Researcher
                     </h4>
                     <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
-                      Galeri Investasi BEI UISI
+                      Galeri Investasi BEI UISI (GIBEI)
                     </p>
                   </div>
                 </div>
@@ -174,7 +207,11 @@ const Resume = () => {
               </div>
 
               <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
-                Conducted comprehensive educational research at Galeri Investasi BEI UISI focused on capital market mechanisms and investment literacy, analyzing financial market instruments, and representing the institution in the national Virtual Trading Competition 2026 (IDX Mobile).
+                Conducted comprehensive educational research at Galeri Investasi
+                BEI UISI focused on capital market mechanisms and investment
+                literacy, analyzing financial market instruments, and
+                representing the institution in the national Virtual Trading
+                Competition 2026 (IDX Mobile).
               </p>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
@@ -226,7 +263,8 @@ const Resume = () => {
                       </span>
                     </div>
                     <h4 className="text-xl md:text-2xl font-mono font-black tracking-tight text-foreground uppercase">
-                      Software Engineer — Engineering &amp; Research Staff (Ristek)
+                      Software Engineer — Engineering &amp; Research Staff
+                      (Ristek)
                     </h4>
                     <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
                       Himpunan Mahasiswa Sistem Informasi (HMSI) UISI
@@ -241,7 +279,11 @@ const Resume = () => {
               </div>
 
               <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
-                Actively contributed within the Research &amp; Technology (Ristek) division, exploring innovative emerging technologies, analyzing modern IT industry trends, and engineering internal software architectures and platforms to power departmental digitalization.
+                Actively contributed within the Research &amp; Technology
+                (Ristek) division, exploring innovative emerging technologies,
+                analyzing modern IT industry trends, and engineering internal
+                software architectures and platforms to power departmental
+                digitalization.
               </p>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
@@ -305,7 +347,11 @@ const Resume = () => {
               </div>
 
               <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
-                Served as an active Backend Engineer at Merkle Innovation in a hybrid arrangement, architecting robust data models, designing secure and scalable RESTful API endpoints, and implementing server-side optimization for enterprise applications including the MIT Profiling system.
+                Served as an active Backend Engineer at Merkle Innovation in a
+                hybrid arrangement, architecting robust data models, designing
+                secure and scalable RESTful API endpoints, and implementing
+                server-side optimization for enterprise applications including
+                the MIT Profiling system.
               </p>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
@@ -521,7 +567,7 @@ const Resume = () => {
             [05] Achievements & Honors
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.article 
+            <motion.article
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -546,7 +592,9 @@ const Resume = () => {
                     Provincial Recognition
                   </h4>
                   <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
-                    Honored by the Acting Governor of East Java, Adhi Karyono, for achieving 2nd Place International in Game Development (Group 1D) by Coding Bee Academy.
+                    Honored by the Acting Governor of East Java, Adhi Karyono,
+                    for achieving 2nd Place International in Game Development
+                    (Group 1D) by Coding Bee Academy.
                   </p>
                 </div>
                 <Link
@@ -557,8 +605,8 @@ const Resume = () => {
                 </Link>
               </div>
             </motion.article>
-            
-            <motion.article 
+
+            <motion.article
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -584,7 +632,9 @@ const Resume = () => {
                     Outstanding Graduate
                   </h4>
                   <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
-                    Received special recognition during graduation at SMK Telkom Malang for achieving 2nd Place International in the Code Olympiad 2023.
+                    Received special recognition during graduation at SMK Telkom
+                    Malang for achieving 2nd Place International in the Code
+                    Olympiad 2023.
                   </p>
                 </div>
                 <Link
@@ -596,7 +646,7 @@ const Resume = () => {
               </div>
             </motion.article>
 
-            <motion.article 
+            <motion.article
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -622,7 +672,9 @@ const Resume = () => {
                     Virtual Trading Competition 2026
                   </h4>
                   <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
-                    Awarded Certificate of Appreciation as Participant representing Galeri Investasi UISI in the national competition powered by IDX Mobile.
+                    Awarded Certificate of Appreciation as Participant
+                    representing Galeri Investasi UISI in the national
+                    competition powered by IDX Mobile.
                   </p>
                 </div>
                 <Link
@@ -634,7 +686,7 @@ const Resume = () => {
               </div>
             </motion.article>
 
-            <motion.article 
+            <motion.article
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -660,7 +712,9 @@ const Resume = () => {
                     Executive Presentation
                   </h4>
                   <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
-                    Selected to present an original game development project directly to the Executives of the Telkom Education Foundation during my time at SMK Telkom Malang.
+                    Selected to present an original game development project
+                    directly to the Executives of the Telkom Education
+                    Foundation during my time at SMK Telkom Malang.
                   </p>
                 </div>
                 <Link

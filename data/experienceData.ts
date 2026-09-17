@@ -16,12 +16,12 @@ export const experienceData: Record<string, ExperienceDetail> = {
   "gibei-head-of-strategy": {
     slug: "gibei-head-of-strategy",
     role: "Head of Strategy Division",
-    company: "Galeri Investasi BEI UISI (GIBEI)",
+    company: "Galeri Investasi BEI UISI",
     companyUrl: "https://uisi.ac.id",
     location: "Gresik, East Java, Indonesia",
     period: "Sep 2026 – Present",
     type: "Leadership",
-    summary: "Leading the Strategy Division at Galeri Investasi BEI UISI (GIBEI). Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.",
+    summary: "Leading the Strategy Division at Galeri Investasi BEI UISI. Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.",
     responsibilities: [
       "Lead routine internal strategic discussions among division analysts to dissect macroeconomic conditions, monetary policies, and IDX equities to generate actionable investment recommendations.",
       "Curate and publish periodic stock watchlists (weekly/monthly) grounded in rigorous fundamental valuation and technical momentum analysis, complete with accumulation rationale and risk-reward evaluation.",
