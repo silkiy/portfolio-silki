@@ -538,7 +538,30 @@ SECTION 5: PROFESSIONAL WORK EXPERIENCE & RESEARCH
 ================================================================================
 
 --------------------------------------------------------------------------------
-Role 1: Researcher (Internship)
+Role 1: Head of Strategy Division
+Organization: Galeri Investasi BEI UISI (GIBEI)
+Organization URL: https://uisi.ac.id
+Location: Gresik, East Java, Indonesia
+Period: Sep 2026 – Present
+Type: Leadership
+Canonical URL: https://wildansilki.xyz/experience/gibei-head-of-strategy
+--------------------------------------------------------------------------------
+- Summary: Leading the Strategy Division at Galeri Investasi BEI UISI (GIBEI). Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.
+- Key Responsibilities:
+  * Lead routine internal strategic discussions among division analysts to dissect macroeconomic conditions, monetary policies, and IDX equities to generate actionable investment recommendations.
+  * Curate and publish periodic stock watchlists (weekly/monthly) grounded in rigorous fundamental valuation and technical momentum analysis, complete with accumulation rationale and risk-reward evaluation.
+  * Design and deliver educational Investment Classes for university students and internal members, teaching investment strategies, market-reading techniques, and quantitative research findings.
+  * Establish standardized screening frameworks and research methodologies to streamline investment evaluation and maintain analytical discipline across the division.
+  * Mentor and coordinate division analysts in executing equity valuation models, sector-specific market teardowns, and educational workshop presentations.
+- Notable Achievements:
+  * Pioneered a systematic, recurring market discussion pipeline translating macroeconomic shifts and IDX corporate actions into concrete investment insights.
+  * Standardized the publication of curated periodic stock watchlists, significantly enhancing data-informed equity evaluation across the student investment community.
+  * Led high-impact Investment Class workshops, elevating capital market literacy and practical analysis skill sets across the university.
+  * Cultivated an analytical, high-conviction research culture within the Strategy Division, bridging fundamental valuation with active exchange dynamics.
+- Core Skills: Investment Strategy, Equity Research, Fundamental Analysis, Technical Analysis, Macroeconomic Analysis, Capital Markets (IDX), Portfolio Strategy, Educational Leadership.
+
+--------------------------------------------------------------------------------
+Role 2: Researcher (Internship)
 Organization: Galeri Investasi BEI UISI
 Organization URL: https://uisi.ac.id
 Location: Gresik, East Java, Indonesia
@@ -561,7 +584,7 @@ Canonical URL: https://wildansilki.xyz/experience/galeri-investasi-bei-uisi
 - Core Skills: Capital Market Analysis, Virtual Trading (IDX Mobile), Educational Research, Financial Literacy, Data Analysis, Market Telemetry.
 
 --------------------------------------------------------------------------------
-Role 2: Software Engineer — Engineering & Research Staff (Ristek)
+Role 3: Software Engineer — Engineering & Research Staff (Ristek)
 Organization: HMSI UISI (Himpunan Mahasiswa Sistem Informasi)
 Organization URL: https://uisi.ac.id
 Location: Gresik, East Java, Indonesia
@@ -582,7 +605,7 @@ Canonical URL: https://wildansilki.xyz/experience/hmsi-uisi-ristek
 - Core Skills: Next.js, TypeScript, React, Node.js, Software Architecture, IT Trend Research.
 
 --------------------------------------------------------------------------------
-Role 3: Backend Engineer (Internship)
+Role 4: Backend Engineer (Internship)
 Organization: Merkle Innovation (PT Merkle Inovasi Teknologi)
 Organization URL: https://merkleinnovation.com
 Location: Jakarta Office / Remote (Hybrid)

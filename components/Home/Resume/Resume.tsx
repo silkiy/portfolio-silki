@@ -11,6 +11,7 @@ import {
   FaMobile,
   FaReact,
   FaChartBar,
+  FaChartLine,
   FaArrowRight,
 } from "react-icons/fa";
 import { BsDatabase } from "react-icons/bs";
@@ -66,6 +67,73 @@ const Resume = () => {
 
           {/* Experience Timeline Cards */}
           <div className="space-y-6 mb-12">
+            {/* Galeri Investasi BEI UISI - Head of Strategy Division */}
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="border border-border/50 bg-background/50 p-6 md:p-8 border-l-4 border-l-foreground group transition-colors hover:border-foreground/50"
+            >
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 border border-border/50 bg-background flex items-center justify-center shrink-0">
+                    <FaChartLine className="w-5 h-5 text-foreground" />
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="text-[10px] font-mono px-2 py-0.5 border border-border/50 bg-foreground text-background uppercase tracking-widest font-semibold">
+                        Leadership
+                      </span>
+                      <span className="text-xs font-mono text-foreground/80 border border-border/30 px-2 py-0.5 font-bold">
+                        Sep 2026 - Present
+                      </span>
+                      <span className="text-xs font-mono text-foreground/50 border border-border/30 px-2 py-0.5">
+                        Gresik, East Java, Indonesia
+                      </span>
+                    </div>
+                    <h4 className="text-xl md:text-2xl font-mono font-black tracking-tight text-foreground uppercase">
+                      Head of Strategy Division
+                    </h4>
+                    <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
+                      Galeri Investasi BEI UISI (GIBEI)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 text-xs font-mono border border-border/50 px-3 py-1.5 uppercase tracking-wider text-foreground/70 bg-background/30 self-start md:self-auto shrink-0">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span>Active Role</span>
+                </div>
+              </div>
+
+              <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
+                Directing the Strategy Division at Galeri Investasi BEI UISI (GIBEI) — leading routine internal macroeconomic discussions, publishing curated fundamental/technical stock watchlists, and conducting university-wide investment classes to develop capital market competencies.
+              </p>
+
+              <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Investment Strategy
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Stock Watchlist
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Investment Class
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 border border-border/40 text-foreground/60 uppercase">
+                    # Capital Markets (IDX)
+                  </span>
+                </div>
+                <Link
+                  href="/experience/gibei-head-of-strategy"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                >
+                  View Details <FaArrowRight className="w-2.5 h-2.5" />
+                </Link>
+              </div>
+            </motion.article>
+
             {/* Galeri Investasi BEI UISI */}
             <motion.article
               initial={{ opacity: 0, y: 20 }}

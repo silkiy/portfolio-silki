@@ -13,6 +13,39 @@ export interface ExperienceDetail {
 }
 
 export const experienceData: Record<string, ExperienceDetail> = {
+  "gibei-head-of-strategy": {
+    slug: "gibei-head-of-strategy",
+    role: "Head of Strategy Division",
+    company: "Galeri Investasi BEI UISI (GIBEI)",
+    companyUrl: "https://uisi.ac.id",
+    location: "Gresik, East Java, Indonesia",
+    period: "Sep 2026 – Present",
+    type: "Leadership",
+    summary: "Leading the Strategy Division at Galeri Investasi BEI UISI (GIBEI). Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.",
+    responsibilities: [
+      "Lead routine internal strategic discussions among division analysts to dissect macroeconomic conditions, monetary policies, and IDX equities to generate actionable investment recommendations.",
+      "Curate and publish periodic stock watchlists (weekly/monthly) grounded in rigorous fundamental valuation and technical momentum analysis, complete with accumulation rationale and risk-reward evaluation.",
+      "Design and deliver educational Investment Classes for university students and internal members, teaching investment strategies, market-reading techniques, and quantitative research findings.",
+      "Establish standardized screening frameworks and research methodologies to streamline investment evaluation and maintain analytical discipline across the division.",
+      "Mentor and coordinate division analysts in executing equity valuation models, sector-specific market teardowns, and educational workshop presentations."
+    ],
+    achievements: [
+      "Pioneered a systematic, recurring market discussion pipeline translating macroeconomic shifts and IDX corporate actions into concrete investment insights.",
+      "Standardized the publication of curated periodic stock watchlists, significantly enhancing data-informed equity evaluation across the student investment community.",
+      "Led high-impact Investment Class workshops, elevating capital market literacy and practical analysis skill sets across the university.",
+      "Cultivated an analytical, high-conviction research culture within the Strategy Division, bridging fundamental valuation with active exchange dynamics."
+    ],
+    techStack: [
+      "Investment Strategy",
+      "Equity Research",
+      "Fundamental Analysis",
+      "Technical Analysis",
+      "Macroeconomic Analysis",
+      "Capital Markets (IDX)",
+      "Portfolio Strategy",
+      "Educational Leadership"
+    ],
+  },
   "galeri-investasi-bei-uisi": {
     slug: "galeri-investasi-bei-uisi",
     role: "Researcher (Internship)",
