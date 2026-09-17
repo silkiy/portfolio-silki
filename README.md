@@ -68,7 +68,7 @@ Architected with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and *
   - *Hyper-Gemma AI Trader: Autonomous Bitget Futures Execution with Trinity v2 Quant Engine* (Pure Quant Tactical architecture, Quant Trinity Z-Score/Hurst/VWAP/Kalman Filter, passive Gemma 4 AI via Ollama).
   - *Quantitative Strategy Research on TradingView: Prototyping Trinity with Pine Script v5* (Pine Script v5 prototyping, statistical arbitrage backtesting, Hurst exponent fractal filter, and dynamic ATR stops).
 - **Professional Experience & Research (`/experience/[slug]`)**:
-  - Educational researcher at **Galeri Investasi BEI UISI** (Capital market telemetry and investment literacy).
+  - Head of Strategy Division & Educational Researcher at **Galeri Investasi BEI UISI (GIBEI)** (Capital market strategy, equity research, and investment literacy).
   - Software engineer & research staff at **HMSI UISI (Ristek)** (IT trends, internal platform development).
   - Backend engineer at **Merkle Innovation (PT Merkle Inovasi Teknologi)** (RESTful APIs, PostgreSQL indexing).
 - **Honors & Awards Dossier (`/achievements/[slug]`)**:
@@ -81,7 +81,7 @@ Architected with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and *
 
 ### 2. Comprehensive Data Streams & Credentials Archive (`#resume`)
 - **Professional Summary**: Monospace engineering manifesto summarizing multi-disciplinary competencies across high-throughput distributed systems, Web3 protocols, and quantitative modeling.
-- **Completed Internships**: Detailed role cards for Galeri Investasi BEI UISI, HMSI UISI (Ristek), and PT Merkle Inovasi Teknologi with direct subpage routing.
+- **Leadership & Industry Experience**: Detailed role cards for Galeri Investasi BEI UISI (GIBEI), HMSI UISI (Ristek), and PT Merkle Inovasi Teknologi with direct subpage routing.
 - **Competency Roles Grid**: 6 dedicated role profiles detailing architectural ownership:
   - *Full-Stack Developer*: End-to-end system design from reactive clients to cloud persistence layers.
   - *Front-End Developer*: Accessible, fluid user interfaces with micro-interactions and strict WCAG adherence.
@@ -278,7 +278,7 @@ Dibangun menggunakan **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, d
   - *Hyper-Gemma AI Trader: Autonomous Bitget Futures Execution with Trinity v2 Quant Engine* (Arsitektur Pure Quant Tactical, Quant Trinity Z-Score/Hurst/VWAP/Kalman Filter, dan mode pasif Gemma 4 AI via Ollama).
   - *Quantitative Strategy Research on TradingView: Prototyping Trinity with Pine Script v5* (Prototipe riset Pine Script v5, backtesting arbitrase statistik, filter fraktal eksponen Hurst, dan stop ATR dinamis).
 - **Riwayat Pengalaman Kerja & Riset (`/experience/[slug]`)**:
-  - Peneliti (Magang) di **Galeri Investasi BEI UISI** (Riset instrumen pasar modal dan literasi investasi edukatif).
+  - Ketua Divisi Strategy & Peneliti di **Galeri Investasi BEI UISI (GIBEI)** (Strategi pasar modal, riset ekuitas, dan literasi investasi edukatif).
   - Software Engineer & Staf Ristek di **HMSI UISI** (Eksplorasi tren teknologi dan arsitektur platform internal).
   - Backend Engineer (Magang) di **Merkle Innovation (PT Merkle Inovasi Teknologi)** (Optimalisasi kueri relasional dan API RESTful).
 - **Rekam Jejak Prestasi & Penghargaan (`/achievements/[slug]`)**:
@@ -291,7 +291,7 @@ Dibangun menggunakan **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, d
 
 ### 2. Arsip Kredensial, Pengalaman & Rekam Jejak Akademik (`#resume`)
 - **Ringkasan Profesional**: Manifesto teknis yang merangkum kompetensi lintas bidang mencakup arsitektur sistem terdistribusi, protokol Web3, dan pemodelan pasar kuantitatif.
-- **Pengalaman Magang Selesai**: Kartu riwayat kerja terperinci untuk Galeri Investasi BEI UISI, HMSI UISI (Ristek), dan PT Merkle Inovasi Teknologi dengan tautan langsung ke sub-halaman.
+- **Kepemimpinan & Pengalaman Kerja**: Kartu riwayat kerja terperinci untuk Galeri Investasi BEI UISI (GIBEI), HMSI UISI (Ristek), dan PT Merkle Inovasi Teknologi dengan tautan langsung ke sub-halaman.
 - **Grid 6 Peran Kompetensi**: Pemetaan arsitektural dan tanggung jawab rekayasa:
   - *Full-Stack Developer*: Perancangan sistem menyeluruh dari antarmuka pengguna hingga lapisan persistensi data cloud.
   - *Front-End Developer*: Antarmuka pengguna responsif, ramah aksesibilitas (WCAG), dan berkinerja tinggi.

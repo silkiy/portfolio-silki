@@ -62,9 +62,13 @@ const Resume = () => {
             <strong className="text-foreground font-semibold uppercase">
               Next.js, React, and Node.js
             </strong>
-            . With proven experience across completed internships in{" "}
+            . Serving as{" "}
             <strong className="text-foreground font-semibold uppercase">
-              Educational Research at Galeri Investasi BEI UISI
+              Head of Strategy Division at Galeri Investasi BEI UISI (GIBEI)
+            </strong>{" "}
+            alongside completed internships in{" "}
+            <strong className="text-foreground font-semibold uppercase">
+              Educational Research at Galeri Investasi BEI UISI (GIBEI)
             </strong>
             ,{" "}
             <strong className="text-foreground font-semibold uppercase">
@@ -128,7 +132,7 @@ const Resume = () => {
                       Head of Strategy Division
                     </h4>
                     <p className="text-sm font-mono text-foreground/80 font-bold uppercase mt-1">
-                      Galeri Investasi BEI UISI
+                      Galeri Investasi BEI UISI (GIBEI)
                     </p>
                   </div>
                 </div>
@@ -140,7 +144,7 @@ const Resume = () => {
               </div>
 
               <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
-                Directing the Strategy Division at Galeri Investasi BEI UISI — leading routine internal macroeconomic discussions, publishing curated fundamental/technical stock watchlists, and conducting university-wide investment classes to develop capital market competencies.
+                Directing the Strategy Division at Galeri Investasi BEI UISI (GIBEI) — leading routine internal macroeconomic discussions, publishing curated fundamental/technical stock watchlists, and conducting university-wide investment classes to develop capital market competencies.
               </p>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-border/30">
@@ -208,7 +212,7 @@ const Resume = () => {
 
               <p className="text-xs md:text-sm font-mono text-foreground/70 leading-relaxed max-w-5xl mb-4">
                 Conducted comprehensive educational research at Galeri Investasi
-                BEI UISI focused on capital market mechanisms and investment
+                BEI UISI (GIBEI) focused on capital market mechanisms and investment
                 literacy, analyzing financial market instruments, and
                 representing the institution in the national Virtual Trading
                 Competition 2026 (IDX Mobile).
@@ -673,7 +677,7 @@ const Resume = () => {
                   </h4>
                   <p className="font-mono text-xs opacity-70 leading-relaxed mb-4">
                     Awarded Certificate of Appreciation as Participant
-                    representing Galeri Investasi UISI in the national
+                    representing Galeri Investasi BEI UISI (GIBEI) in the national
                     competition powered by IDX Mobile.
                   </p>
                 </div>

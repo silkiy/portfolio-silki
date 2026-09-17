@@ -79,10 +79,10 @@ export const achievementsData: Record<string, AchievementDetail> = {
     category: "National Financial Competition",
     date: "September 2026",
     image: "/images/wildan-silki-virtual-trading-competition-2026.webp",
-    summary: "Awarded Certificate of Appreciation as Participant in the Virtual Trading Competition 2026 powered by IDX Mobile, representing Galeri Investasi Universitas Internasional Semen Indonesia during the 49th Anniversary of the Indonesian Capital Market.",
+    summary: "Awarded Certificate of Appreciation as Participant in the Virtual Trading Competition 2026 powered by IDX Mobile, representing Galeri Investasi BEI UISI (GIBEI) during the 49th Anniversary of the Indonesian Capital Market.",
     significance: "Demonstrated real-time equity execution, algorithmic discipline, and capital market trading strategies under competitive exchange simulation supervised by Indonesian financial authorities (OJK, BEI/IDX, KPEI/IDClear, and KSEI).",
     highlights: [
-      "Represented Galeri Investasi Universitas Internasional Semen Indonesia (GI BEI UISI) on a national stage.",
+      "Represented Galeri Investasi BEI UISI (GIBEI) on a national stage.",
       "Executed real-time virtual market orders using the official IDX Mobile trading platform.",
       "Applied portfolio allocation, risk management parameters, and macroeconomic market analysis throughout the tournament.",
       "Conferred official Certificate of Appreciation on September 4, 2026 in Jakarta by market leaders."

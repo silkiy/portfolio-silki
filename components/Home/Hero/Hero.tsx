@@ -99,7 +99,7 @@ const Hero = () => {
             Education &amp; Certifications: Undergraduate at Universitas Internasional Semen Indonesia (UISI), Alumni of SMK Telkom Malang, Alumni of SMPN 3 Tulungagung. Certified in Blockchain Basics (Cyfrin Updraft), Learn OpenUSD (NVIDIA), AI on Jetson Nano (NVIDIA), SKD Civil Service Assessment (BKN), DOT Competency (PT DOT Indonesia), UKK Fullstack Developer (SMK Telkom Malang), Rapid Developer (Mendix), Code Olympiad 2nd Place (Coding Bee Academy), and Junior Mobile Programmer (Telkom Indonesia BNSP).
           </p>
           <p>
-            Professional Experience &amp; Research: Researcher (Internship) at Galeri Investasi BEI UISI (Educational Research &amp; Capital Markets), Software Engineer (Internship) at the Research and Technology (Ristek) Division of HMSI UISI (Internal Systems &amp; Technology Exploration), and Backend Engineer (Internship) at Merkle Innovation.
+            Professional Experience &amp; Research: Head of Strategy Division (Leadership) and Researcher (Internship) at Galeri Investasi BEI UISI (GIBEI) (Capital Market Strategy, Research &amp; Financial Literacy), Software Engineer (Internship) at the Research and Technology (Ristek) Division of HMSI UISI (Internal Systems &amp; Technology Exploration), and Backend Engineer (Internship) at Merkle Innovation.
           </p>
           <p>
             Training &amp; Competitions: Cyber Security Awareness Training (Telkom Indonesia &amp; Telkom Schools), Indie Game Ignite at COMPFEST 15 (Universitas Indonesia &amp; Agate), MANIAC XII Game Design Competition &amp; Workshop (Universitas Surabaya - UBAYA), and Modular Low-Code Design (Merkle Academy &amp; Mendix).

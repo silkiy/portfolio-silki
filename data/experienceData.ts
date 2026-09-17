@@ -16,12 +16,12 @@ export const experienceData: Record<string, ExperienceDetail> = {
   "gibei-head-of-strategy": {
     slug: "gibei-head-of-strategy",
     role: "Head of Strategy Division",
-    company: "Galeri Investasi BEI UISI",
+    company: "Galeri Investasi BEI UISI (GIBEI)",
     companyUrl: "https://uisi.ac.id",
     location: "Gresik, East Java, Indonesia",
     period: "Sep 2026 – Present",
     type: "Leadership",
-    summary: "Leading the Strategy Division at Galeri Investasi BEI UISI. Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.",
+    summary: "Leading the Strategy Division at Galeri Investasi BEI UISI (GIBEI). Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.",
     responsibilities: [
       "Lead routine internal strategic discussions among division analysts to dissect macroeconomic conditions, monetary policies, and IDX equities to generate actionable investment recommendations.",
       "Curate and publish periodic stock watchlists (weekly/monthly) grounded in rigorous fundamental valuation and technical momentum analysis, complete with accumulation rationale and risk-reward evaluation.",
@@ -49,21 +49,21 @@ export const experienceData: Record<string, ExperienceDetail> = {
   "galeri-investasi-bei-uisi": {
     slug: "galeri-investasi-bei-uisi",
     role: "Researcher (Internship)",
-    company: "Galeri Investasi BEI UISI",
+    company: "Galeri Investasi BEI UISI (GIBEI)",
     companyUrl: "https://uisi.ac.id",
     location: "Gresik, East Java, Indonesia",
     period: "Nov 2025 – Sep 2026 · 11 mos",
     type: "Internship (Completed)",
-    summary: "Conducted comprehensive educational research on capital market instruments, investment behavior, and financial literacy. Analyzed capital market data, formulated data-driven educational curricula, and published insights for academic and public investment communities.",
+    summary: "Conducted comprehensive educational research on capital market instruments, investment behavior, and financial literacy at Galeri Investasi BEI UISI (GIBEI). Analyzed capital market data, formulated data-driven educational curricula, and published insights for academic and public investment communities.",
     responsibilities: [
       "Conducted analytical research on domestic capital market instruments (IDX/BEI equities, mutual funds, and structured warrants).",
       "Formulated educational modules and quantitative market study presentations for undergraduate students and public investors.",
       "Tracked financial market telemetry, macro indicators, and sector trends to support data-informed research initiatives.",
-      "Participated as an institutional delegate representing Galeri Investasi UISI in the national Virtual Trading Competition 2026 powered by IDX Mobile (OJK, IDX, IDClear, KSEI).",
+      "Participated as an institutional delegate representing Galeri Investasi BEI UISI (GIBEI) in the national Virtual Trading Competition 2026 powered by IDX Mobile (OJK, IDX, IDClear, KSEI).",
       "Collaborated with faculty mentors and financial experts to organize investment seminars and academic workshops."
     ],
     achievements: [
-      "Represented Galeri Investasi UISI and earned official Certificate of Appreciation in the national Virtual Trading Competition 2026 organized by Pasar Modal Indonesia.",
+      "Represented Galeri Investasi BEI UISI (GIBEI) and earned official Certificate of Appreciation in the national Virtual Trading Competition 2026 organized by Pasar Modal Indonesia.",
       "Successfully authored and delivered multiple educational research reports on capital market dynamics.",
       "Enhanced investment literacy metrics across student participant cohorts through structured curriculum delivery.",
       "Bridged theoretical academic finance concepts with real-time exchange order book data and quantitative metrics."

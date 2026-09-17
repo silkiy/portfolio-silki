@@ -428,12 +428,22 @@ const jsonLd = {
       "worksFor": [
         {
           "@type": "EmployeeRole",
+          "roleName": "Head of Strategy Division",
+          "startDate": "2026-09",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Galeri Investasi BEI UISI (GIBEI)",
+            "address": "Gresik, East Java, Indonesia",
+          },
+        },
+        {
+          "@type": "EmployeeRole",
           "roleName": "Researcher (Internship)",
           "startDate": "2025-11",
           "endDate": "2026-09",
           "worksFor": {
             "@type": "Organization",
-            "name": "Galeri Investasi BEI UISI",
+            "name": "Galeri Investasi BEI UISI (GIBEI)",
             "address": "Gresik, East Java, Indonesia",
           },
         },
@@ -485,7 +495,7 @@ const jsonLd = {
           "Next.js, React, Node.js, TypeScript, Solidity, Rust, Python, Smart Contracts, Ethereum, Algorithmic Trading, Educational Research, Flutter",
         "responsibilities": [
           "Full-Stack web application architecture and development",
-          "Educational research and capital market analysis at Galeri Investasi BEI UISI",
+          "Educational research, strategy leadership, and capital market analysis at Galeri Investasi BEI UISI (GIBEI)",
           "Technology research, IT trend exploration, and internal software development at HMSI UISI",
           "Backend engineering and RESTful API design at PT Merkle Inovasi Teknologi",
           "Smart contract development and blockchain security",
@@ -517,7 +527,7 @@ const jsonLd = {
           "@type": "SiteNavigationElement",
           "position": 3,
           "name": "Experience",
-          "description": "Professional engineering background, capital market research at Galeri Investasi BEI UISI, and software roles.",
+          "description": "Professional engineering background, strategy leadership and capital market research at Galeri Investasi BEI UISI (GIBEI), and software roles.",
           "url": "https://wildansilki.xyz/#experience",
         },
         {

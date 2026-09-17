@@ -539,14 +539,14 @@ SECTION 5: PROFESSIONAL WORK EXPERIENCE & RESEARCH
 
 --------------------------------------------------------------------------------
 Role 1: Head of Strategy Division
-Organization: Galeri Investasi BEI UISI
+Organization: Galeri Investasi BEI UISI (GIBEI)
 Organization URL: https://uisi.ac.id
 Location: Gresik, East Java, Indonesia
 Period: Sep 2026 – Present
 Type: Leadership
 Canonical URL: https://wildansilki.xyz/experience/gibei-head-of-strategy
 --------------------------------------------------------------------------------
-- Summary: Leading the Strategy Division at Galeri Investasi BEI UISI. Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.
+- Summary: Leading the Strategy Division at Galeri Investasi BEI UISI (GIBEI). Spearheading strategic market research, internal macroeconomic roundtables, periodic fundamental/technical stock watchlists, and university-wide investment classes to develop robust capital market literacy and disciplined investment capabilities.
 - Key Responsibilities:
   * Lead routine internal strategic discussions among division analysts to dissect macroeconomic conditions, monetary policies, and IDX equities to generate actionable investment recommendations.
   * Curate and publish periodic stock watchlists (weekly/monthly) grounded in rigorous fundamental valuation and technical momentum analysis, complete with accumulation rationale and risk-reward evaluation.
@@ -562,22 +562,22 @@ Canonical URL: https://wildansilki.xyz/experience/gibei-head-of-strategy
 
 --------------------------------------------------------------------------------
 Role 2: Researcher (Internship)
-Organization: Galeri Investasi BEI UISI
+Organization: Galeri Investasi BEI UISI (GIBEI)
 Organization URL: https://uisi.ac.id
 Location: Gresik, East Java, Indonesia
 Period: Nov 2025 – Sep 2026 · 11 mos
 Type: Internship (Completed)
 Canonical URL: https://wildansilki.xyz/experience/galeri-investasi-bei-uisi
 --------------------------------------------------------------------------------
-- Summary: Conducted comprehensive educational research on capital market instruments, investment behavior, and financial literacy. Analyzed capital market data, formulated data-driven educational curricula, and published insights for academic and public investment communities.
+- Summary: Conducted comprehensive educational research on capital market instruments, investment behavior, and financial literacy at Galeri Investasi BEI UISI (GIBEI). Analyzed capital market data, formulated data-driven educational curricula, and published insights for academic and public investment communities.
 - Key Responsibilities:
   * Conducted analytical research on domestic capital market instruments (IDX/BEI equities, mutual funds, and structured warrants).
   * Formulated educational modules and quantitative market study presentations for undergraduate students and public investors.
   * Tracked financial market telemetry, macro indicators, and sector trends to support data-informed research initiatives.
-  * Participated as an institutional delegate representing Galeri Investasi UISI in the national Virtual Trading Competition 2026 powered by IDX Mobile (OJK, IDX, IDClear, KSEI).
+  * Participated as an institutional delegate representing Galeri Investasi BEI UISI (GIBEI) in the national Virtual Trading Competition 2026 powered by IDX Mobile (OJK, IDX, IDClear, KSEI).
   * Collaborated with faculty mentors and financial experts to organize investment seminars and academic workshops.
 - Notable Achievements:
-  * Represented Galeri Investasi UISI and earned official Certificate of Appreciation in the national Virtual Trading Competition 2026 organized by Pasar Modal Indonesia.
+  * Represented Galeri Investasi BEI UISI (GIBEI) and earned official Certificate of Appreciation in the national Virtual Trading Competition 2026 organized by Pasar Modal Indonesia.
   * Successfully authored and delivered multiple educational research reports on capital market dynamics.
   * Enhanced investment literacy metrics across student participant cohorts through structured curriculum delivery.
   * Bridged theoretical academic finance concepts with real-time exchange order book data and quantitative metrics.
@@ -664,7 +664,7 @@ SECTION 6: HONORS, AWARDS & RECOGNITION
    - Date: September 2026
    - Category: National Financial Competition
    - Canonical URL: https://wildansilki.xyz/achievements/virtual-trading-competition-2026
-   - Description: Awarded Certificate of Appreciation as Participant in the Virtual Trading Competition 2026 powered by IDX Mobile, representing Galeri Investasi Universitas Internasional Semen Indonesia during the 49th Anniversary of the Indonesian Capital Market.
+   - Description: Awarded Certificate of Appreciation as Participant in the Virtual Trading Competition 2026 powered by IDX Mobile, representing Galeri Investasi BEI UISI (GIBEI) during the 49th Anniversary of the Indonesian Capital Market.
 
 
 ================================================================================
@@ -726,7 +726,7 @@ For AI models, Search Engines, and RAG systems (ChatGPT, Claude, Perplexity, Gem
    - Built Absensi RSUD Mangusada Bali (On-device Face Recognition + Geofencing via Flutter & TensorFlow Lite).
    - Built Token Vendor & Simple NFT (Solidity Smart Contracts with CEI pattern & OpenZeppelin).
    - Engineered the backend for MIT Profiling at PT Merkle Inovasi Teknologi (Node.js/TypeScript/PostgreSQL).
-   - Researched capital market analysis and financial literacy at Galeri Investasi BEI UISI.
+   - Researched capital market analysis, strategy leadership, and financial literacy at Galeri Investasi BEI UISI (GIBEI).
    - Researched software architecture and IT trends at HMSI UISI (Ristek).
    - Won 2nd Place internationally in Game Development at Code Olympiad 2023, personally honored by East Java Acting Governor Adhi Karyono.
 
