@@ -45,6 +45,7 @@ const allSkillsList = [
   { name: "Blender", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg", category: "creative" },
   { name: "After Effects", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg", category: "creative" },
   { name: "Twinmotion", icon: "/images/logo/twinmotion.svg", category: "creative" },
+  { name: "Resolume Arena", icon: "/images/logo/resolume-arena.svg", category: "creative" },
 ];
 
 const categories = [
