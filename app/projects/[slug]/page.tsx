@@ -148,6 +148,30 @@ export default async function ProjectDetailPage({ params }: Props) {
           />
         </div>
 
+        {project.galleryImages && (
+          <section className="mb-12" aria-label={`${project.title} gallery`}>
+            <h2 className="text-xl sm:text-2xl font-bold uppercase tracking-wide border-b border-border/50 pb-3 mb-4">
+              Plugin Gallery
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {project.galleryImages.map((image) => (
+                <div
+                  key={image.src}
+                  className="relative aspect-video border border-border/50 bg-background/50 overflow-hidden"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Meta Stats Bar */}
         <div className="border border-border/60 bg-background/40 mb-12 overflow-hidden">
           <div className="grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border/40">
@@ -309,7 +333,9 @@ export default async function ProjectDetailPage({ params }: Props) {
             <FaArrowLeft className="w-3 h-3" /> Back to All Projects
           </Link>
           <a
-            href="mailto:contact.wildansilki@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=contact.wildansilki@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 border border-border/80 bg-foreground text-background text-xs uppercase font-bold hover:bg-background hover:text-foreground transition-colors"
           >
             Inquire About Collaboration

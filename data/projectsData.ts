@@ -5,6 +5,7 @@ export interface ProjectCaseStudy {
   role: string;
   timeline: string;
   heroImage: string;
+  galleryImages?: { src: string; alt: string }[];
   overview: string;
   problem: string;
   solution: string;
@@ -239,4 +240,56 @@ export const projectsData: Record<string, ProjectCaseStudy> = {
     techStack: ["Next.js", "React", "MongoDB", "Tailwind CSS", "TypeScript", "Vercel"],
     githubUrl: "https://github.com/silkiy",
   },
+  "resolume-ffgl-plugins": {
+    slug: "resolume-ffgl-plugins",
+    title: "Resolume FFGL Plugins — Windows Video Sources & Effects",
+    tagline: "A collection of Windows x64 FFGL video sources and effects for live visual production in Resolume Arena and Avenue.",
+    role: "C++ Plugin Developer",
+    timeline: "2026",
+    heroImage: "/images/project-resolume-ffgl-plugins.png",
+    galleryImages: [
+      {
+        src: "/images/project-resolume-screen-capture.png",
+        alt: "Screen Capture FFGL plugin preview",
+      },
+      {
+        src: "/images/project-resolume-cue-timer.png",
+        alt: "CueTimer FFGL plugin preview",
+      },
+      {
+        src: "/images/project-resolume-led-panel-check.png",
+        alt: "LEDPanelCheck FFGL plugin preview",
+      },
+      {
+        src: "/images/project-resolume-beat-mosaic.png",
+        alt: "BeatMosaic FFGL plugin preview",
+      },
+    ],
+    overview: "Resolume FFGL Plugins is an independent C++17 collection for Resolume Arena and Avenue. It includes Screen Capture for monitor and application-window input, CueTimer for transparent countdown overlays, LEDPanelCheck for LED-wall diagnostics, and BeatMosaic for audio-reactive visual accents.",
+    problem: "Live visual production needs purpose-built sources, timing overlays, LED-wall calibration patterns, and audio-reactive effects without leaving Resolume's layer and clip workflow.",
+    solution: "Built four independent Windows x64 FFGL plugins with OpenGL rendering. The collection combines Win32 GDI and Windows Graphics Capture with Direct3D 11 for screen input, monotonic timing and GLSL digit rendering for CueTimer, integer framebuffer diagnostics for LEDPanelCheck, and audio, FFT, beat-grid, and manual triggers for BeatMosaic.",
+    architecture: [
+      "Independent C++17 FFGL Plugin Projects",
+      "OpenGL Texture Upload and GLSL Rendering",
+      "Win32 GDI, Windows Graphics Capture, and Direct3D 11",
+      "CMake x64 Release Builds with SHA-256 Verified SDK Cache",
+    ],
+    challenges: [
+      {
+        problem: "Screen Capture needed to support both full-monitor and individual-window workflows while fitting frames into the viewport.",
+        solution: "Combined Win32 GDI monitor capture with Windows Graphics Capture and Direct3D 11 window capture, uploading both paths to OpenGL while preserving unused space as transparency."
+      },
+      {
+        problem: "Diagnostic patterns and timer digits must remain reliable across viewport sizes and orientations.",
+        solution: "Used integer framebuffer coordinates for one-pixel LED tests and aspect-ratio-aware GLSL rendering for the transparent countdown overlay."
+      },
+    ],
+    keyResults: [
+      "Four independent plugins with documented build and installation workflows",
+      "Standalone FFGL/OpenGL verification covering capture switching, resize, timer controls, transparency, exact one-pixel output, cabinet numbering, and simulated audio triggers",
+      "x64 Release DLLs with third-party notices and reproducible CMake build scripts",
+    ],
+    techStack: ["C++17", "FFGL", "OpenGL", "GLSL", "CMake", "Direct3D 11", "Windows Graphics Capture"],
+    githubUrl: "https://github.com/silkiy/plugin-resolume",
+  }
 };

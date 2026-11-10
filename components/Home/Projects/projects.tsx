@@ -63,6 +63,14 @@ const projectList = [
     tags: ["Next.js", "MongoDB", "AgriTech"],
     github: "https://github.com/silkiy",
   },
+  {
+    slug: "resolume-ffgl-plugins",
+    title: "Resolume FFGL Plugins",
+    description: "Windows x64 C++17 video sources and effects for screen capture, countdowns, LED diagnostics, and audio-reactive visuals.",
+    image: "/images/project-resolume-ffgl-plugins.png",
+    tags: ["C++17", "FFGL", "OpenGL", "Resolume"],
+    github: "https://github.com/silkiy/plugin-resolume",
+  },
 ];
 
 const Projects = () => {
