@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaVideo } from "react-icons/fa";
@@ -133,12 +132,13 @@ const Projects = () => {
 
               {/* Action Buttons */}
               <div className="z-10 flex items-center gap-3 shrink-0 self-start md:self-center opacity-100 md:opacity-0 md:-translate-x-3 md:group-hover:opacity-100 md:group-focus:opacity-100 md:group-hover:translate-x-0 md:group-focus:translate-x-0 transition-all duration-300">
-                <Link
+                <a
                   href={`/projects/${project.slug}`}
-                  className="px-4 py-2 border border-border/80 bg-background/90 hover:bg-foreground hover:text-background text-xs font-mono font-bold uppercase tracking-wider text-foreground transition-colors inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-foreground focus:outline-none"
+                  onClick={(event) => event.stopPropagation()}
+                  className="px-4 py-2 border border-border/80 bg-background/90 hover:bg-foreground hover:text-background text-xs font-mono font-bold uppercase tracking-wider text-foreground transition-colors inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-foreground focus:outline-none touch-manipulation"
                 >
                   Case Study <FaExternalLinkAlt className="w-3 h-3" />
-                </Link>
+                </a>
                 {project.github && (
                   <a
                     href={project.github}

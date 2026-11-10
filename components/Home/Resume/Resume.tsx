@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import ResumeCard from "./ResumeCard";
 import BadgeCard from "./BadgeCard";
@@ -162,12 +161,12 @@ const Resume = () => {
                     # Capital Markets (IDX)
                   </span>
                 </div>
-                <Link
+                <a
                   href="/experience/gibei-head-of-strategy"
-                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5 touch-manipulation"
                 >
                   View Details <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
 
@@ -233,12 +232,12 @@ const Resume = () => {
                     # Financial Literacy
                   </span>
                 </div>
-                <Link
+                <a
                   href="/experience/galeri-investasi-bei-uisi"
-                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5 touch-manipulation"
                 >
                   View Details <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
 
@@ -302,12 +301,12 @@ const Resume = () => {
                     # Internal Platform
                   </span>
                 </div>
-                <Link
+                <a
                   href="/experience/hmsi-uisi-ristek"
-                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5 touch-manipulation"
                 >
                   View Details <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
 
@@ -370,12 +369,12 @@ const Resume = () => {
                     # Enterprise Systems
                   </span>
                 </div>
-                <Link
+                <a
                   href="/experience/merkle-innovation"
-                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5"
+                  className="text-xs font-mono font-bold uppercase tracking-wider text-foreground hover:underline inline-flex items-center gap-1.5 touch-manipulation"
                 >
                   View Details <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
           </div>
@@ -601,12 +600,12 @@ const Resume = () => {
                     (Group 1D) by Coding Bee Academy.
                   </p>
                 </div>
-                <Link
+                <a
                   href="/achievements/provincial-recognition"
-                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline touch-manipulation"
                 >
                   Read Story <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
 
@@ -641,12 +640,12 @@ const Resume = () => {
                     Olympiad 2023.
                   </p>
                 </div>
-                <Link
+                <a
                   href="/achievements/outstanding-graduate"
-                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline touch-manipulation"
                 >
                   Read Story <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
 
@@ -681,12 +680,12 @@ const Resume = () => {
                     competition powered by IDX Mobile.
                   </p>
                 </div>
-                <Link
+                <a
                   href="/achievements/virtual-trading-competition-2026"
-                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline touch-manipulation"
                 >
                   Read Story <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
 
@@ -721,12 +720,12 @@ const Resume = () => {
                     Foundation during my time at SMK Telkom Malang.
                   </p>
                 </div>
-                <Link
+                <a
                   href="/achievements/executive-presentation"
-                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline"
+                  className="text-xs font-mono font-bold uppercase tracking-wider inline-flex items-center gap-1.5 group-hover:underline touch-manipulation"
                 >
                   Read Story <FaArrowRight className="w-2.5 h-2.5" />
-                </Link>
+                </a>
               </div>
             </motion.article>
           </div>
